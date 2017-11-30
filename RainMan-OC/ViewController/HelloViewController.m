@@ -119,9 +119,7 @@ static NSInteger const WeatherNameTag = 1500;
         
     }];
     [dataTask resume];
-    
 }
-
 
 #pragma mark - Private API
 
@@ -131,39 +129,47 @@ static NSInteger const WeatherNameTag = 1500;
     NSArray *dateName = @[@"未知",@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日"];
     WeatherWeekModel *weekWeather = [[WeatherWeekModel alloc] init];
     [weekWeather weekWeatherModel:self.taskWeatherDict];
-    for (NSInteger count=1; count<7; count++) {
-        UILabel *weatherName = (UILabel *)[self.weatherView viewWithTag:count+WeatherNameTag];
-        NSInteger dateNumber = weekWeather.dayWeathers[count].name;
-        if (dateNumber>7 || dateNumber<1) {
-            weatherName.text = dateName[dateNumber];
-        }else{
-            weatherName.text = dateName[dateNumber];
-            //NSLog(@"%td", weekWeather.dayWeathers[count].name);
-            //NSLog(@"%@", dateName[weekWeather.dayWeathers[count].name]);
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        for (NSInteger count=1; count<7; count++) {
+            NSInteger dateNumber = weekWeather.dayWeathers[count].name;
+            
+            NSString *temperatureDayMax = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[count].temperatureMax)];
+            NSString *temperatureDayMin = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[count].temperatureMin)];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UILabel *weatherName = (UILabel *)[self.weatherView viewWithTag:count+WeatherNameTag];
+                if (dateNumber>7 || dateNumber<1) {
+                    weatherName.text = dateName[dateNumber];
+                }else{
+                    weatherName.text = dateName[dateNumber];
+                }
+                
+                UILabel *weatherTemperature = (UILabel *)[self.weatherView viewWithTag:count+WeatherTemperatureTag];
+                weatherTemperature.text = [NSString stringWithFormat:@"%@/%@", temperatureDayMin, temperatureDayMax];
+                
+                UIImageView *weatherImage = (UIImageView *)[self.weatherView viewWithTag:count+WeatherImageTag];
+                [weatherImage setImage:weekWeather.dayWeathers[count].iconImage];
+            });
         }
-        // NSLog(@"%@", weatherName.text);
-        
-        UILabel *weatherTemperature = (UILabel *)[self.weatherView viewWithTag:count+WeatherTemperatureTag];
-        NSString *temperatureDayMax = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[count].temperatureMax)];
-        NSString *temperatureDayMin = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[count].temperatureMin)];
-        weatherTemperature.text = [NSString stringWithFormat:@"%@/%@", temperatureDayMin, temperatureDayMax];
-       // NSLog(@"%@", weatherTemperature.text);
-        
-        UIImageView *weatherImage = (UIImageView *)[self.weatherView viewWithTag:count+WeatherImageTag];
-        [weatherImage setImage:weekWeather.dayWeathers[count].iconImage];
-    }
-    self.temperatureMinLabel.text = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[0].temperatureMin)];
-    self.temperatureMaxLabel.text = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[0].temperatureMax)];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.temperatureMinLabel.text = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[0].temperatureMin)];
+            self.temperatureMaxLabel.text = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[0].temperatureMax)];
+        });
+    });
 }
 
 - (void)showCurrentWeather {
-    NSDictionary *currentWeatherDict = [self fetchCurrentWeather:self.taskWeatherDict];
-    self.rainLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDict[@"precipProbability"] floatValue]];
-    self.windLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDict[@"windSpeed"] floatValue]];
-    self.moistureLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDict[@"humidity"] floatValue]];
-    self.mainTemperatureLabel.text = [NSString stringWithFormat:@"%d", ChangeTemperature([currentWeatherDict[@"temperature"] floatValue])];
-    [self.mainImage setImage:[UIImage imageNamed:currentWeatherDict[@"icon"]]];
-    self.mainWeatherLabel.text = [currentWeatherDict[@"icon"] weatherName];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSDictionary *currentWeatherDict = [self fetchCurrentWeather:self.taskWeatherDict];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.rainLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDict[@"precipProbability"] floatValue]];
+            self.windLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDict[@"windSpeed"] floatValue]];
+            self.moistureLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDict[@"humidity"] floatValue]];
+            self.mainTemperatureLabel.text = [NSString stringWithFormat:@"%d", ChangeTemperature([currentWeatherDict[@"temperature"] floatValue])];
+            [self.mainImage setImage:[UIImage imageNamed:currentWeatherDict[@"icon"]]];
+            self.mainWeatherLabel.text = [currentWeatherDict[@"icon"] weatherName];
+        });
+    });
 }
 
 - (void)refreshWeatherView {
@@ -177,6 +183,7 @@ static NSInteger const WeatherNameTag = 1500;
     }
     return NULL;
 }
+
 - (IBAction)degreeButtonDidClick:(id)sender {
     [self refreshWeatherView];
 }
