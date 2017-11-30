@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="VYb-ua-nlE" customClass="CourseCountdownView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE COURSE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np9-6h-s0v">
+                    <rect key="frame" x="8" y="1" width="99" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_________" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-hk-PJK">
+                    <rect key="frame" x="29" y="3" width="78" height="26"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="21"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="嘘！还有" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djt-Gf-z0n">
+                    <rect key="frame" x="39" y="30" width="68" height="20"/>
+                    <fontDescription key="fontDescription" name="STYuanti-SC-Light" family="Yuanti SC" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下课" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6V9-ai-8dI">
+                    <rect key="frame" x="276" y="30" width="34" height="20"/>
+                    <fontDescription key="fontDescription" name="STYuanti-SC-Light" family="Yuanti SC" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YE9-EF-ggh">
+                    <rect key="frame" x="276" y="6" width="24" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="YoA-c1-edL">
+                    <rect key="frame" x="124" y="6" width="143" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="6hi-YG-3SW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="57"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="djt-Gf-z0n" firstAttribute="top" secondItem="bd5-hk-PJK" secondAttribute="bottom" constant="1.5" id="1vJ-Fh-vp9"/>
+                <constraint firstItem="YoA-c1-edL" firstAttribute="bottom" secondItem="djt-Gf-z0n" secondAttribute="bottom" id="4eg-kf-yY7"/>
+                <constraint firstItem="bd5-hk-PJK" firstAttribute="trailing" secondItem="Np9-6h-s0v" secondAttribute="trailing" id="B0i-j1-Q8l"/>
+                <constraint firstItem="6V9-ai-8dI" firstAttribute="bottom" secondItem="YoA-c1-edL" secondAttribute="bottom" id="Fxk-5J-Ph9"/>
+                <constraint firstItem="YE9-EF-ggh" firstAttribute="top" secondItem="YoA-c1-edL" secondAttribute="top" id="Icm-rg-wQT"/>
+                <constraint firstItem="Np9-6h-s0v" firstAttribute="top" secondItem="VYb-ua-nlE" secondAttribute="top" constant="1" id="NP3-TM-pEH"/>
+                <constraint firstItem="Np9-6h-s0v" firstAttribute="leading" secondItem="VYb-ua-nlE" secondAttribute="leading" constant="8" id="ON8-M5-99N"/>
+                <constraint firstItem="YE9-EF-ggh" firstAttribute="leading" secondItem="6V9-ai-8dI" secondAttribute="leading" id="Owf-eM-qxs"/>
+                <constraint firstItem="djt-Gf-z0n" firstAttribute="trailing" secondItem="bd5-hk-PJK" secondAttribute="trailing" id="djb-Ci-KCl"/>
+                <constraint firstItem="bd5-hk-PJK" firstAttribute="top" secondItem="Np9-6h-s0v" secondAttribute="bottom" constant="-17.5" id="ewo-hs-epo"/>
+                <constraint firstItem="6V9-ai-8dI" firstAttribute="leading" secondItem="YoA-c1-edL" secondAttribute="trailing" constant="9" id="mpf-Hi-zB8"/>
+                <constraint firstItem="YoA-c1-edL" firstAttribute="leading" secondItem="djt-Gf-z0n" secondAttribute="trailing" constant="17" id="v5k-oo-3YC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftLabel" destination="djt-Gf-z0n" id="f9N-bx-ElY"/>
+                <outlet property="rightLabel" destination="6V9-ai-8dI" id="s6E-dj-iKD"/>
+                <outlet property="timeLabel" destination="YoA-c1-edL" id="VlI-Ol-tdQ"/>
+                <outlet property="tmpSecondLabel" destination="YE9-EF-ggh" id="4yw-zC-Rma"/>
+            </connections>
+            <point key="canvasLocation" x="-83" y="425"/>
+        </view>
+    </objects>
+</document>

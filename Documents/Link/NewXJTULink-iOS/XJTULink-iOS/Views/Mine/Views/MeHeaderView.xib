@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b1y-Nu-cqm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+                </imageView>
+                <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5B-ez-5ab">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.67843137249999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="35z-Bz-JDi">
+                    <rect key="frame" x="110" y="73" width="99" height="99"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="99" id="0bo-Hi-3ql"/>
+                        <constraint firstAttribute="height" constant="99.5" id="maE-qw-QKf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU1-jI-z8X">
+                    <rect key="frame" x="142.5" y="186" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4f-71-H0V">
+                    <rect key="frame" x="145.5" y="211" width="29" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="A4f-71-H0V" secondAttribute="bottom" constant="17" id="2su-C0-tg9"/>
+                <constraint firstItem="b1y-Nu-cqm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PKx-rL-JWi"/>
+                <constraint firstItem="H5B-ez-5ab" firstAttribute="top" secondItem="b1y-Nu-cqm" secondAttribute="top" id="Uwk-C6-qxX"/>
+                <constraint firstItem="uU1-jI-z8X" firstAttribute="top" secondItem="35z-Bz-JDi" secondAttribute="bottom" constant="14.5" id="VXK-gq-Wga"/>
+                <constraint firstItem="H5B-ez-5ab" firstAttribute="leading" secondItem="b1y-Nu-cqm" secondAttribute="leading" id="WoW-Gx-Erk"/>
+                <constraint firstItem="H5B-ez-5ab" firstAttribute="bottom" secondItem="b1y-Nu-cqm" secondAttribute="bottom" id="gQu-MN-sL2"/>
+                <constraint firstAttribute="trailing" secondItem="b1y-Nu-cqm" secondAttribute="trailing" id="hF2-Bf-Ls2"/>
+                <constraint firstItem="A4f-71-H0V" firstAttribute="top" secondItem="uU1-jI-z8X" secondAttribute="bottom" constant="4" id="lWY-aB-kMt"/>
+                <constraint firstItem="A4f-71-H0V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="p0a-O8-2Dw"/>
+                <constraint firstItem="H5B-ez-5ab" firstAttribute="trailing" secondItem="b1y-Nu-cqm" secondAttribute="trailing" id="q5b-iv-9tD"/>
+                <constraint firstAttribute="bottom" secondItem="b1y-Nu-cqm" secondAttribute="bottom" id="qNv-VN-Myq"/>
+                <constraint firstItem="35z-Bz-JDi" firstAttribute="centerX" secondItem="uU1-jI-z8X" secondAttribute="centerX" id="skP-l8-y1T"/>
+                <constraint firstItem="b1y-Nu-cqm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u1w-lQ-hKY"/>
+                <constraint firstItem="uU1-jI-z8X" firstAttribute="centerX" secondItem="A4f-71-H0V" secondAttribute="centerX" id="xLu-Ke-ek7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="b1y-Nu-cqm" id="yiF-ur-g24"/>
+                <outlet property="headImageView" destination="35z-Bz-JDi" id="ED0-HE-6lf"/>
+                <outlet property="nameLabel" destination="A4f-71-H0V" id="fPi-3A-Kot"/>
+                <outlet property="nicknameLabel" destination="uU1-jI-z8X" id="C4C-Ya-QZQ"/>
+            </connections>
+            <point key="canvasLocation" x="59" y="-36.5"/>
+        </view>
+    </objects>
+</document>

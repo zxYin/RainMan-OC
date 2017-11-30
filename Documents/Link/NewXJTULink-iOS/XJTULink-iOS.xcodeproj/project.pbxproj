@@ -1,0 +1,1543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35440D4D41CA9CFE8D526D8D /* libPods-XJTULink-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BF057A04D6D58DEC1A964E /* libPods-XJTULink-iOS.a */; };
+		F20A620E1DF606AA00509346 /* MineItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20A620C1DF606AA00509346 /* MineItemCell.m */; };
+		F20A620F1DF606AA00509346 /* MineItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20A620D1DF606AA00509346 /* MineItemCell.xib */; };
+		F20A62131DF606D900509346 /* MeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20A62111DF606D900509346 /* MeHeaderView.m */; };
+		F20A62141DF606D900509346 /* MeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20A62121DF606D900509346 /* MeHeaderView.xib */; };
+		F210F8291CB2EDF900F06E94 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F210F8281CB2EDF900F06E94 /* Security.framework */; };
+		F21509251BB7E02A001FC53D /* XJTULink_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F21509241BB7E02A001FC53D /* XJTULink_iOSTests.m */; };
+		F21509301BB7E02A001FC53D /* XJTULink_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F215092F1BB7E02A001FC53D /* XJTULink_iOSUITests.m */; };
+		F21BC3381DEB0929003A290B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21BC3371DEB0929003A290B /* Images.xcassets */; };
+		F2215C6C1DF1ECFE007CC482 /* CourseCountdownViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2215C6B1DF1ECFE007CC482 /* CourseCountdownViewModel.m */; };
+		F23ED82C1DFB032C00C65645 /* CourseCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = F23ED82A1DFB032C00C65645 /* CourseCountdownView.m */; };
+		F23ED82D1DFB032C00C65645 /* CourseCountdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23ED82B1DFB032C00C65645 /* CourseCountdownView.xib */; };
+		F259239A1DE9C41B00EB1916 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923181DE9C41A00EB1916 /* HomeViewController.m */; };
+		F259239F1DE9C41B00EB1916 /* TransferAccountsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923251DE9C41A00EB1916 /* TransferAccountsTVC.m */; };
+		F25923A01DE9C41B00EB1916 /* RechargeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923281DE9C41A00EB1916 /* RechargeBar.m */; };
+		F25923A11DE9C41B00EB1916 /* RechargeBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25923291DE9C41A00EB1916 /* RechargeBar.xib */; };
+		F25923A51DE9C41B00EB1916 /* ToolsSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923331DE9C41A00EB1916 /* ToolsSection.m */; };
+		F25923A61DE9C41B00EB1916 /* ToolsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923351DE9C41A00EB1916 /* ToolsViewCell.m */; };
+		F25923A71DE9C41B00EB1916 /* ToolsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25923361DE9C41A00EB1916 /* ToolsViewCell.xib */; };
+		F25923B01DE9C41B00EB1916 /* HomePageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923481DE9C41A00EB1916 /* HomePageHeaderView.m */; };
+		F25923BC1DE9C41B00EB1916 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923641DE9C41A00EB1916 /* MineViewController.m */; };
+		F25923DA1DE9C45400EB1916 /* ToolsItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923D91DE9C45400EB1916 /* ToolsItemViewModel.m */; };
+		F25923DD1DE9C49900EB1916 /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923DC1DE9C49900EB1916 /* MineViewModel.m */; };
+		F25923E01DE9C51D00EB1916 /* MineItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F25923DF1DE9C51D00EB1916 /* MineItemViewModel.m */; };
+		F25EA4D51CA7C53100DC3BBC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25EA4D41CA7C53100DC3BBC /* JavaScriptCore.framework */; };
+		F27ADA731EA87878000BCFA5 /* AppDelegate+Patch.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ADA721EA87878000BCFA5 /* AppDelegate+Patch.m */; };
+		F27ADA751EA87D6D000BCFA5 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27ADA741EA87D6D000BCFA5 /* JSPatchPlatform.framework */; };
+		F2867A8F1D5CE466001841A6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F2867A8E1D5CE466001841A6 /* libsqlite3.tbd */; };
+		F2867A911D5CE471001841A6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2867A901D5CE471001841A6 /* CoreTelephony.framework */; };
+		F2867A931D5CE47F001841A6 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F2867A921D5CE47F001841A6 /* libstdc++.tbd */; };
+		F2867A951D5CE4B8001841A6 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F2867A941D5CE4B8001841A6 /* libiconv.tbd */; };
+		F2867A971D5CE501001841A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2867A961D5CE501001841A6 /* SystemConfiguration.framework */; };
+		F28681961BF3665000823A72 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28681951BF3665000823A72 /* NotificationCenter.framework */; };
+		F286819D1BF3665000823A72 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F286819B1BF3665000823A72 /* MainInterface.storyboard */; };
+		F28681A11BF3665000823A72 /* 西交Link.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F28681941BF3665000823A72 /* 西交Link.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F28681AE1BF370BE00823A72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28681AD1BF370BE00823A72 /* Images.xcassets */; };
+		F28ED8C01BEF672600F0CFAB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2312DD621BE3D93A009A2083 /* libz.tbd */; };
+		F29AE8AD1DF607AC0077E42E /* TransferPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AE8AB1DF607AC0077E42E /* TransferPasswordView.m */; };
+		F29AE8AE1DF607AC0077E42E /* TransferPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29AE8AC1DF607AC0077E42E /* TransferPasswordView.xib */; };
+		F29CD3271DDE353100036AAD /* AppDelegate+GYBootingProtection.m in Sources */ = {isa = PBXBuildFile; fileRef = F29CD31B1DDE353100036AAD /* AppDelegate+GYBootingProtection.m */; };
+		F29CD3281DDE353100036AAD /* GYBootingProtection.m in Sources */ = {isa = PBXBuildFile; fileRef = F29CD31D1DDE353100036AAD /* GYBootingProtection.m */; };
+		F29CD32A1DDE353100036AAD /* AppDelegate+LKPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F29CD3221DDE353100036AAD /* AppDelegate+LKPushManager.m */; };
+		F29CD32C1DDE353100036AAD /* AppDelegate+LKStatisticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F29CD3261DDE353100036AAD /* AppDelegate+LKStatisticsManager.m */; };
+		F2CB24511DDA193100EE802D /* UIViewController+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CB24501DDA193100EE802D /* UIViewController+Config.m */; };
+		F2D272FA1D51F7B200B64132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D2723C1D51F7B200B64132 /* LaunchScreen.storyboard */; };
+		F2D273A91D51F8A400B64132 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D273A41D51F8A400B64132 /* AppDelegate.m */; };
+		F2D273AB1D51F8A400B64132 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D273A61D51F8A400B64132 /* main.m */; };
+		F2DC835B1DF610160074B5C2 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DC83511DF610160074B5C2 /* NSString+Date.m */; };
+		F2DC835C1DF610160074B5C2 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DC83531DF610160074B5C2 /* UIImage+Tint.m */; };
+		F2DC835D1DF610160074B5C2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DC83561DF610160074B5C2 /* TodayViewController.m */; };
+		F2DC835E1DF610160074B5C2 /* CourseWidgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DC83591DF610160074B5C2 /* CourseWidgetCell.m */; };
+		F2DC835F1DF610160074B5C2 /* CourseWidgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DC835A1DF610160074B5C2 /* CourseWidgetCell.xib */; };
+		F2DCB1AF1DD9DDEF003FC4D4 /* LKMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DCB1AE1DD9DDEF003FC4D4 /* LKMain.storyboard */; };
+		F2EA0F561E785A0D0026AAF9 /* libUMessage_Sdk_1.5.0a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EA0F541E785A0D0026AAF9 /* libUMessage_Sdk_1.5.0a.a */; };
+		F2FF4FCE1DFFB8070028C343 /* UIViewController+LKStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF4FCD1DFFB8070028C343 /* UIViewController+LKStatistics.m */; };
+		F2FF4FD11DFFD1970028C343 /* UIControl+LKStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF4FD01DFFD1970028C343 /* UIControl+LKStatistics.m */; };
+		F2FF4FD41DFFD4F90028C343 /* UITableView+LKStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF4FD31DFFD4F90028C343 /* UITableView+LKStatistics.m */; };
+		F2FF4FD71DFFD95F0028C343 /* YLBaseAPIManager+LKStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF4FD61DFFD95F0028C343 /* YLBaseAPIManager+LKStatistics.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F21509211BB7E02A001FC53D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F21508FF1BB7E02A001FC53D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F21509061BB7E02A001FC53D;
+			remoteInfo = "XJTULink-iOS";
+		};
+		F215092C1BB7E02A001FC53D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F21508FF1BB7E02A001FC53D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F21509061BB7E02A001FC53D;
+			remoteInfo = "XJTULink-iOS";
+		};
+		F286819F1BF3665000823A72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F21508FF1BB7E02A001FC53D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F28681931BF3665000823A72;
+			remoteInfo = "XJTULink-Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F28681A51BF3665000823A72 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F28681A11BF3665000823A72 /* 西交Link.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28681CF1BF37C7B00823A72 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08BF057A04D6D58DEC1A964E /* libPods-XJTULink-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XJTULink-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		161381087E55A7D77CB71F77 /* Pods-XJTULink-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XJTULink-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XJTULink-iOS/Pods-XJTULink-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2312DD621BE3D93A009A2083 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		851964F0491CDEAEDD568EFC /* Pods-XJTULink-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XJTULink-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-XJTULink-iOS/Pods-XJTULink-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F20A620B1DF606AA00509346 /* MineItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineItemCell.h; sourceTree = "<group>"; };
+		F20A620C1DF606AA00509346 /* MineItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineItemCell.m; sourceTree = "<group>"; };
+		F20A620D1DF606AA00509346 /* MineItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineItemCell.xib; sourceTree = "<group>"; };
+		F20A62101DF606D900509346 /* MeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeHeaderView.h; sourceTree = "<group>"; };
+		F20A62111DF606D900509346 /* MeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeHeaderView.m; sourceTree = "<group>"; };
+		F20A62121DF606D900509346 /* MeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeHeaderView.xib; sourceTree = "<group>"; };
+		F210F8281CB2EDF900F06E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F21509071BB7E02A001FC53D /* 西交Link.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "西交Link.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21509201BB7E02A001FC53D /* XJTULink-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XJTULink-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21509241BB7E02A001FC53D /* XJTULink_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTULink_iOSTests.m; sourceTree = "<group>"; };
+		F21509261BB7E02A001FC53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F215092B1BB7E02A001FC53D /* XJTULink-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XJTULink-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F215092F1BB7E02A001FC53D /* XJTULink_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTULink_iOSUITests.m; sourceTree = "<group>"; };
+		F21509311BB7E02A001FC53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F21BC3371DEB0929003A290B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "XJTULink-iOS/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		F2215C6A1DF1ECFE007CC482 /* CourseCountdownViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCountdownViewModel.h; sourceTree = "<group>"; };
+		F2215C6B1DF1ECFE007CC482 /* CourseCountdownViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCountdownViewModel.m; sourceTree = "<group>"; };
+		F23ED8291DFB032C00C65645 /* CourseCountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCountdownView.h; sourceTree = "<group>"; };
+		F23ED82A1DFB032C00C65645 /* CourseCountdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCountdownView.m; sourceTree = "<group>"; };
+		F23ED82B1DFB032C00C65645 /* CourseCountdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseCountdownView.xib; sourceTree = "<group>"; };
+		F25923171DE9C41A00EB1916 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		F25923181DE9C41A00EB1916 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		F25923241DE9C41A00EB1916 /* TransferAccountsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferAccountsTVC.h; sourceTree = "<group>"; };
+		F25923251DE9C41A00EB1916 /* TransferAccountsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferAccountsTVC.m; sourceTree = "<group>"; };
+		F25923271DE9C41A00EB1916 /* RechargeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeBar.h; sourceTree = "<group>"; };
+		F25923281DE9C41A00EB1916 /* RechargeBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeBar.m; sourceTree = "<group>"; };
+		F25923291DE9C41A00EB1916 /* RechargeBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RechargeBar.xib; sourceTree = "<group>"; };
+		F25923321DE9C41A00EB1916 /* ToolsSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsSection.h; sourceTree = "<group>"; };
+		F25923331DE9C41A00EB1916 /* ToolsSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsSection.m; sourceTree = "<group>"; };
+		F25923341DE9C41A00EB1916 /* ToolsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsViewCell.h; sourceTree = "<group>"; };
+		F25923351DE9C41A00EB1916 /* ToolsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsViewCell.m; sourceTree = "<group>"; };
+		F25923361DE9C41A00EB1916 /* ToolsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolsViewCell.xib; sourceTree = "<group>"; };
+		F25923471DE9C41A00EB1916 /* HomePageHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageHeaderView.h; sourceTree = "<group>"; };
+		F25923481DE9C41A00EB1916 /* HomePageHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageHeaderView.m; sourceTree = "<group>"; };
+		F25923631DE9C41A00EB1916 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		F25923641DE9C41A00EB1916 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		F25923D81DE9C45400EB1916 /* ToolsItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsItemViewModel.h; sourceTree = "<group>"; };
+		F25923D91DE9C45400EB1916 /* ToolsItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsItemViewModel.m; sourceTree = "<group>"; };
+		F25923DB1DE9C49900EB1916 /* MineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
+		F25923DC1DE9C49900EB1916 /* MineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewModel.m; sourceTree = "<group>"; };
+		F25923DE1DE9C51D00EB1916 /* MineItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineItemViewModel.h; sourceTree = "<group>"; };
+		F25923DF1DE9C51D00EB1916 /* MineItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineItemViewModel.m; sourceTree = "<group>"; };
+		F25EA4D41CA7C53100DC3BBC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F277E47B1D54790B009F9347 /* 西交Link.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "西交Link.entitlements"; sourceTree = "<group>"; };
+		F27ADA711EA87878000BCFA5 /* AppDelegate+Patch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Patch.h"; sourceTree = "<group>"; };
+		F27ADA721EA87878000BCFA5 /* AppDelegate+Patch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Patch.m"; sourceTree = "<group>"; };
+		F27ADA741EA87D6D000BCFA5 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
+		F2867A8E1D5CE466001841A6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F2867A901D5CE471001841A6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F2867A921D5CE47F001841A6 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F2867A941D5CE4B8001841A6 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		F2867A961D5CE501001841A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F28681941BF3665000823A72 /* 西交Link.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "西交Link.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28681951BF3665000823A72 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F286819C1BF3665000823A72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F286819E1BF3665000823A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F28681AD1BF370BE00823A72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F28681D71BF37F5400823A72 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		F29AE8AA1DF607AC0077E42E /* TransferPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransferPasswordView.h; path = "XJTULink-iOS/Views/Homepage/ToolsModule/CardModule/TransferPasswordView.h"; sourceTree = SOURCE_ROOT; };
+		F29AE8AB1DF607AC0077E42E /* TransferPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransferPasswordView.m; path = "XJTULink-iOS/Views/Homepage/ToolsModule/CardModule/TransferPasswordView.m"; sourceTree = SOURCE_ROOT; };
+		F29AE8AC1DF607AC0077E42E /* TransferPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransferPasswordView.xib; path = "XJTULink-iOS/Views/Homepage/ToolsModule/CardModule/TransferPasswordView.xib"; sourceTree = SOURCE_ROOT; };
+		F29CD31A1DDE353100036AAD /* AppDelegate+GYBootingProtection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+GYBootingProtection.h"; sourceTree = "<group>"; };
+		F29CD31B1DDE353100036AAD /* AppDelegate+GYBootingProtection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+GYBootingProtection.m"; sourceTree = "<group>"; };
+		F29CD31C1DDE353100036AAD /* GYBootingProtection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYBootingProtection.h; sourceTree = "<group>"; };
+		F29CD31D1DDE353100036AAD /* GYBootingProtection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYBootingProtection.m; sourceTree = "<group>"; };
+		F29CD3211DDE353100036AAD /* AppDelegate+LKPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LKPushManager.h"; sourceTree = "<group>"; };
+		F29CD3221DDE353100036AAD /* AppDelegate+LKPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LKPushManager.m"; sourceTree = "<group>"; };
+		F29CD3251DDE353100036AAD /* AppDelegate+LKStatisticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LKStatisticsManager.h"; sourceTree = "<group>"; };
+		F29CD3261DDE353100036AAD /* AppDelegate+LKStatisticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LKStatisticsManager.m"; sourceTree = "<group>"; };
+		F2AEB6461D730EDD0029F7BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2CB244F1DDA193100EE802D /* UIViewController+Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Config.h"; sourceTree = "<group>"; };
+		F2CB24501DDA193100EE802D /* UIViewController+Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Config.m"; sourceTree = "<group>"; };
+		F2D2723C1D51F7B200B64132 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2D273A31D51F8A400B64132 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "XJTULink-iOS/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		F2D273A41D51F8A400B64132 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "XJTULink-iOS/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		F2D273A51D51F8A400B64132 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "XJTULink-iOS/Info.plist"; sourceTree = SOURCE_ROOT; };
+		F2D273A61D51F8A400B64132 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "XJTULink-iOS/main.m"; sourceTree = SOURCE_ROOT; };
+		F2D273A81D51F8A400B64132 /* XJTULink-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XJTULink-Prefix.pch"; path = "XJTULink-iOS/XJTULink-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		F2DC83501DF610160074B5C2 /* NSString+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Date.h"; sourceTree = "<group>"; };
+		F2DC83511DF610160074B5C2 /* NSString+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Date.m"; sourceTree = "<group>"; };
+		F2DC83521DF610160074B5C2 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		F2DC83531DF610160074B5C2 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		F2DC83551DF610160074B5C2 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		F2DC83561DF610160074B5C2 /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		F2DC83581DF610160074B5C2 /* CourseWidgetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseWidgetCell.h; sourceTree = "<group>"; };
+		F2DC83591DF610160074B5C2 /* CourseWidgetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseWidgetCell.m; sourceTree = "<group>"; };
+		F2DC835A1DF610160074B5C2 /* CourseWidgetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseWidgetCell.xib; sourceTree = "<group>"; };
+		F2DCB1AE1DD9DDEF003FC4D4 /* LKMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LKMain.storyboard; sourceTree = "<group>"; };
+		F2EA0F541E785A0D0026AAF9 /* libUMessage_Sdk_1.5.0a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.5.0a.a; sourceTree = "<group>"; };
+		F2EA0F551E785A0D0026AAF9 /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
+		F2FF4FCC1DFFB8070028C343 /* UIViewController+LKStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LKStatistics.h"; sourceTree = "<group>"; };
+		F2FF4FCD1DFFB8070028C343 /* UIViewController+LKStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LKStatistics.m"; sourceTree = "<group>"; };
+		F2FF4FCF1DFFD1970028C343 /* UIControl+LKStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+LKStatistics.h"; sourceTree = "<group>"; };
+		F2FF4FD01DFFD1970028C343 /* UIControl+LKStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+LKStatistics.m"; sourceTree = "<group>"; };
+		F2FF4FD21DFFD4F90028C343 /* UITableView+LKStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+LKStatistics.h"; sourceTree = "<group>"; };
+		F2FF4FD31DFFD4F90028C343 /* UITableView+LKStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LKStatistics.m"; sourceTree = "<group>"; };
+		F2FF4FD51DFFD95F0028C343 /* YLBaseAPIManager+LKStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YLBaseAPIManager+LKStatistics.h"; sourceTree = "<group>"; };
+		F2FF4FD61DFFD95F0028C343 /* YLBaseAPIManager+LKStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YLBaseAPIManager+LKStatistics.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F21509041BB7E02A001FC53D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27ADA751EA87D6D000BCFA5 /* JSPatchPlatform.framework in Frameworks */,
+				F2867A971D5CE501001841A6 /* SystemConfiguration.framework in Frameworks */,
+				F2867A911D5CE471001841A6 /* CoreTelephony.framework in Frameworks */,
+				F2867A951D5CE4B8001841A6 /* libiconv.tbd in Frameworks */,
+				F2867A931D5CE47F001841A6 /* libstdc++.tbd in Frameworks */,
+				F2867A8F1D5CE466001841A6 /* libsqlite3.tbd in Frameworks */,
+				F28ED8C01BEF672600F0CFAB /* libz.tbd in Frameworks */,
+				F2EA0F561E785A0D0026AAF9 /* libUMessage_Sdk_1.5.0a.a in Frameworks */,
+				F210F8291CB2EDF900F06E94 /* Security.framework in Frameworks */,
+				F25EA4D51CA7C53100DC3BBC /* JavaScriptCore.framework in Frameworks */,
+				35440D4D41CA9CFE8D526D8D /* libPods-XJTULink-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F215091D1BB7E02A001FC53D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21509281BB7E02A001FC53D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28681911BF3665000823A72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28681961BF3665000823A72 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E89ED969A959FACE4E38DA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				161381087E55A7D77CB71F77 /* Pods-XJTULink-iOS.debug.xcconfig */,
+				851964F0491CDEAEDD568EFC /* Pods-XJTULink-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAF0471AB1056F397A6A4031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2AEB6461D730EDD0029F7BA /* Foundation.framework */,
+				F2867A961D5CE501001841A6 /* SystemConfiguration.framework */,
+				F2867A941D5CE4B8001841A6 /* libiconv.tbd */,
+				F2867A921D5CE47F001841A6 /* libstdc++.tbd */,
+				F2867A901D5CE471001841A6 /* CoreTelephony.framework */,
+				F2867A8E1D5CE466001841A6 /* libsqlite3.tbd */,
+				F210F8281CB2EDF900F06E94 /* Security.framework */,
+				F25EA4D41CA7C53100DC3BBC /* JavaScriptCore.framework */,
+				F28681D71BF37F5400823A72 /* libPods.a */,
+				2312DD621BE3D93A009A2083 /* libz.tbd */,
+				F28681951BF3665000823A72 /* NotificationCenter.framework */,
+				08BF057A04D6D58DEC1A964E /* libPods-XJTULink-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F20A620A1DF606AA00509346 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F20A62101DF606D900509346 /* MeHeaderView.h */,
+				F20A62111DF606D900509346 /* MeHeaderView.m */,
+				F20A62121DF606D900509346 /* MeHeaderView.xib */,
+				F20A620B1DF606AA00509346 /* MineItemCell.h */,
+				F20A620C1DF606AA00509346 /* MineItemCell.m */,
+				F20A620D1DF606AA00509346 /* MineItemCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F210330B1D60C63800ED31F5 /* UMessage */ = {
+			isa = PBXGroup;
+			children = (
+				F2EA0F541E785A0D0026AAF9 /* libUMessage_Sdk_1.5.0a.a */,
+				F2EA0F551E785A0D0026AAF9 /* UMessage.h */,
+			);
+			path = UMessage;
+			sourceTree = "<group>";
+		};
+		F21508FE1BB7E02A001FC53D = {
+			isa = PBXGroup;
+			children = (
+				F21509091BB7E02A001FC53D /* XJTULink-iOS */,
+				F21509231BB7E02A001FC53D /* XJTULink-iOSTests */,
+				F215092E1BB7E02A001FC53D /* XJTULink-iOSUITests */,
+				F28681971BF3665000823A72 /* XJTULink-Widget */,
+				F21509081BB7E02A001FC53D /* Products */,
+				EAF0471AB1056F397A6A4031 /* Frameworks */,
+				6E89ED969A959FACE4E38DA3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F21509081BB7E02A001FC53D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F21509071BB7E02A001FC53D /* 西交Link.app */,
+				F21509201BB7E02A001FC53D /* XJTULink-iOSTests.xctest */,
+				F215092B1BB7E02A001FC53D /* XJTULink-iOSUITests.xctest */,
+				F28681941BF3665000823A72 /* 西交Link.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F21509091BB7E02A001FC53D /* XJTULink-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F277E47B1D54790B009F9347 /* 西交Link.entitlements */,
+				F2D271061D51F6CD00B64132 /* Vendors */,
+				F2D273471D51F7CC00B64132 /* Models */,
+				F2D271C61D51F7B200B64132 /* Views */,
+				F2D273C71D51FFD200B64132 /* ViewModels */,
+				F29CD3181DDE353100036AAD /* Startup */,
+				F2D2733B1D51F7B800B64132 /* Supporting Files */,
+			);
+			path = "XJTULink-iOS";
+			sourceTree = "<group>";
+		};
+		F21509231BB7E02A001FC53D /* XJTULink-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F21509241BB7E02A001FC53D /* XJTULink_iOSTests.m */,
+				F21509261BB7E02A001FC53D /* Info.plist */,
+			);
+			path = "XJTULink-iOSTests";
+			sourceTree = "<group>";
+		};
+		F215092E1BB7E02A001FC53D /* XJTULink-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F215092F1BB7E02A001FC53D /* XJTULink_iOSUITests.m */,
+				F21509311BB7E02A001FC53D /* Info.plist */,
+			);
+			path = "XJTULink-iOSUITests";
+			sourceTree = "<group>";
+		};
+		F23ED8281DFB032C00C65645 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				F23ED8291DFB032C00C65645 /* CourseCountdownView.h */,
+				F23ED82A1DFB032C00C65645 /* CourseCountdownView.m */,
+				F23ED82B1DFB032C00C65645 /* CourseCountdownView.xib */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
+		F25923161DE9C41A00EB1916 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				F25923171DE9C41A00EB1916 /* HomeViewController.h */,
+				F25923181DE9C41A00EB1916 /* HomeViewController.m */,
+				F25923221DE9C41A00EB1916 /* ToolsModule */,
+				F25923311DE9C41A00EB1916 /* ToolsSection */,
+				F25923371DE9C41A00EB1916 /* Views */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		F25923221DE9C41A00EB1916 /* ToolsModule */ = {
+			isa = PBXGroup;
+			children = (
+				F25923231DE9C41A00EB1916 /* CardModule */,
+			);
+			path = ToolsModule;
+			sourceTree = "<group>";
+		};
+		F25923231DE9C41A00EB1916 /* CardModule */ = {
+			isa = PBXGroup;
+			children = (
+				F25923241DE9C41A00EB1916 /* TransferAccountsTVC.h */,
+				F25923251DE9C41A00EB1916 /* TransferAccountsTVC.m */,
+				F25923261DE9C41A00EB1916 /* Views */,
+			);
+			path = CardModule;
+			sourceTree = "<group>";
+		};
+		F25923261DE9C41A00EB1916 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F29AE8AA1DF607AC0077E42E /* TransferPasswordView.h */,
+				F29AE8AB1DF607AC0077E42E /* TransferPasswordView.m */,
+				F29AE8AC1DF607AC0077E42E /* TransferPasswordView.xib */,
+				F25923271DE9C41A00EB1916 /* RechargeBar.h */,
+				F25923281DE9C41A00EB1916 /* RechargeBar.m */,
+				F25923291DE9C41A00EB1916 /* RechargeBar.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F25923311DE9C41A00EB1916 /* ToolsSection */ = {
+			isa = PBXGroup;
+			children = (
+				F25923321DE9C41A00EB1916 /* ToolsSection.h */,
+				F25923331DE9C41A00EB1916 /* ToolsSection.m */,
+				F25923341DE9C41A00EB1916 /* ToolsViewCell.h */,
+				F25923351DE9C41A00EB1916 /* ToolsViewCell.m */,
+				F25923361DE9C41A00EB1916 /* ToolsViewCell.xib */,
+			);
+			path = ToolsSection;
+			sourceTree = "<group>";
+		};
+		F25923371DE9C41A00EB1916 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F23ED8281DFB032C00C65645 /* Countdown */,
+				F25923471DE9C41A00EB1916 /* HomePageHeaderView.h */,
+				F25923481DE9C41A00EB1916 /* HomePageHeaderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F25923491DE9C41A00EB1916 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F20A620A1DF606AA00509346 /* Views */,
+				F25923631DE9C41A00EB1916 /* MineViewController.h */,
+				F25923641DE9C41A00EB1916 /* MineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		F28681971BF3665000823A72 /* XJTULink-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				F2DC834F1DF610160074B5C2 /* Category */,
+				F2DC83541DF610160074B5C2 /* View */,
+				F28681AD1BF370BE00823A72 /* Images.xcassets */,
+				F286819B1BF3665000823A72 /* MainInterface.storyboard */,
+				F286819E1BF3665000823A72 /* Info.plist */,
+			);
+			path = "XJTULink-Widget";
+			sourceTree = "<group>";
+		};
+		F29CD3181DDE353100036AAD /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF4FCB1DFFB7F40028C343 /* Statistics */,
+				F29CD3191DDE353100036AAD /* BootingProtection */,
+				F29CD31E1DDE353100036AAD /* Config */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		F29CD3191DDE353100036AAD /* BootingProtection */ = {
+			isa = PBXGroup;
+			children = (
+				F29CD31A1DDE353100036AAD /* AppDelegate+GYBootingProtection.h */,
+				F29CD31B1DDE353100036AAD /* AppDelegate+GYBootingProtection.m */,
+				F29CD31C1DDE353100036AAD /* GYBootingProtection.h */,
+				F29CD31D1DDE353100036AAD /* GYBootingProtection.m */,
+			);
+			path = BootingProtection;
+			sourceTree = "<group>";
+		};
+		F29CD31E1DDE353100036AAD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F29CD3211DDE353100036AAD /* AppDelegate+LKPushManager.h */,
+				F29CD3221DDE353100036AAD /* AppDelegate+LKPushManager.m */,
+				F29CD3251DDE353100036AAD /* AppDelegate+LKStatisticsManager.h */,
+				F29CD3261DDE353100036AAD /* AppDelegate+LKStatisticsManager.m */,
+				F27ADA711EA87878000BCFA5 /* AppDelegate+Patch.h */,
+				F27ADA721EA87878000BCFA5 /* AppDelegate+Patch.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F2CB244E1DDA190A00EE802D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F2CB244F1DDA193100EE802D /* UIViewController+Config.h */,
+				F2CB24501DDA193100EE802D /* UIViewController+Config.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F2D271061D51F6CD00B64132 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				F27ADA741EA87D6D000BCFA5 /* JSPatchPlatform.framework */,
+				F210330B1D60C63800ED31F5 /* UMessage */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		F2D271C61D51F7B200B64132 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2CB244E1DDA190A00EE802D /* Category */,
+				F2DCB1AE1DD9DDEF003FC4D4 /* LKMain.storyboard */,
+				F2D2723C1D51F7B200B64132 /* LaunchScreen.storyboard */,
+				F25923161DE9C41A00EB1916 /* Homepage */,
+				F25923491DE9C41A00EB1916 /* Mine */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2D2733B1D51F7B800B64132 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F21BC3371DEB0929003A290B /* Images.xcassets */,
+				F2D273A31D51F8A400B64132 /* AppDelegate.h */,
+				F2D273A41D51F8A400B64132 /* AppDelegate.m */,
+				F2D273A51D51F8A400B64132 /* Info.plist */,
+				F2D273A61D51F8A400B64132 /* main.m */,
+				F2D273A81D51F8A400B64132 /* XJTULink-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2D273471D51F7CC00B64132 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2D273C71D51FFD200B64132 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2215C6A1DF1ECFE007CC482 /* CourseCountdownViewModel.h */,
+				F2215C6B1DF1ECFE007CC482 /* CourseCountdownViewModel.m */,
+				F25923D81DE9C45400EB1916 /* ToolsItemViewModel.h */,
+				F25923D91DE9C45400EB1916 /* ToolsItemViewModel.m */,
+				F25923DB1DE9C49900EB1916 /* MineViewModel.h */,
+				F25923DC1DE9C49900EB1916 /* MineViewModel.m */,
+				F25923DE1DE9C51D00EB1916 /* MineItemViewModel.h */,
+				F25923DF1DE9C51D00EB1916 /* MineItemViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F2DC834F1DF610160074B5C2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F2DC83501DF610160074B5C2 /* NSString+Date.h */,
+				F2DC83511DF610160074B5C2 /* NSString+Date.m */,
+				F2DC83521DF610160074B5C2 /* UIImage+Tint.h */,
+				F2DC83531DF610160074B5C2 /* UIImage+Tint.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F2DC83541DF610160074B5C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2DC83551DF610160074B5C2 /* TodayViewController.h */,
+				F2DC83561DF610160074B5C2 /* TodayViewController.m */,
+				F2DC83571DF610160074B5C2 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2DC83571DF610160074B5C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2DC83581DF610160074B5C2 /* CourseWidgetCell.h */,
+				F2DC83591DF610160074B5C2 /* CourseWidgetCell.m */,
+				F2DC835A1DF610160074B5C2 /* CourseWidgetCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2FF4FCB1DFFB7F40028C343 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF4FCC1DFFB8070028C343 /* UIViewController+LKStatistics.h */,
+				F2FF4FCD1DFFB8070028C343 /* UIViewController+LKStatistics.m */,
+				F2FF4FCF1DFFD1970028C343 /* UIControl+LKStatistics.h */,
+				F2FF4FD01DFFD1970028C343 /* UIControl+LKStatistics.m */,
+				F2FF4FD21DFFD4F90028C343 /* UITableView+LKStatistics.h */,
+				F2FF4FD31DFFD4F90028C343 /* UITableView+LKStatistics.m */,
+				F2FF4FD51DFFD95F0028C343 /* YLBaseAPIManager+LKStatistics.h */,
+				F2FF4FD61DFFD95F0028C343 /* YLBaseAPIManager+LKStatistics.m */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F21509061BB7E02A001FC53D /* XJTULink-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F21509341BB7E02A001FC53D /* Build configuration list for PBXNativeTarget "XJTULink-iOS" */;
+			buildPhases = (
+				4014A335EE5EC2C33486D47E /* [CP] Check Pods Manifest.lock */,
+				F21509031BB7E02A001FC53D /* Sources */,
+				F21509041BB7E02A001FC53D /* Frameworks */,
+				23EFC8AC1BE6C5FD0080090E /* Auto Build */,
+				F21509051BB7E02A001FC53D /* Resources */,
+				F28681A51BF3665000823A72 /* Embed App Extensions */,
+				F28681CF1BF37C7B00823A72 /* Embed Frameworks */,
+				17122D6834C867A42D2299BF /* [CP] Embed Pods Frameworks */,
+				CF25DED4376DB299877CFBAD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F28681A01BF3665000823A72 /* PBXTargetDependency */,
+			);
+			name = "XJTULink-iOS";
+			productName = "XJTULink-iOS";
+			productReference = F21509071BB7E02A001FC53D /* 西交Link.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F215091F1BB7E02A001FC53D /* XJTULink-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F21509371BB7E02A001FC53D /* Build configuration list for PBXNativeTarget "XJTULink-iOSTests" */;
+			buildPhases = (
+				F215091C1BB7E02A001FC53D /* Sources */,
+				F215091D1BB7E02A001FC53D /* Frameworks */,
+				F215091E1BB7E02A001FC53D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F21509221BB7E02A001FC53D /* PBXTargetDependency */,
+			);
+			name = "XJTULink-iOSTests";
+			productName = "XJTULink-iOSTests";
+			productReference = F21509201BB7E02A001FC53D /* XJTULink-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F215092A1BB7E02A001FC53D /* XJTULink-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F215093A1BB7E02A001FC53D /* Build configuration list for PBXNativeTarget "XJTULink-iOSUITests" */;
+			buildPhases = (
+				F21509271BB7E02A001FC53D /* Sources */,
+				F21509281BB7E02A001FC53D /* Frameworks */,
+				F21509291BB7E02A001FC53D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F215092D1BB7E02A001FC53D /* PBXTargetDependency */,
+			);
+			name = "XJTULink-iOSUITests";
+			productName = "XJTULink-iOSUITests";
+			productReference = F215092B1BB7E02A001FC53D /* XJTULink-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F28681931BF3665000823A72 /* XJTULink-Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28681A21BF3665000823A72 /* Build configuration list for PBXNativeTarget "XJTULink-Widget" */;
+			buildPhases = (
+				F28681901BF3665000823A72 /* Sources */,
+				F28681911BF3665000823A72 /* Frameworks */,
+				F28681A71BF3672F00823A72 /* Auto Build */,
+				F28681921BF3665000823A72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XJTULink-Widget";
+			productName = "XJTULink-Widget";
+			productReference = F28681941BF3665000823A72 /* 西交Link.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F21508FF1BB7E02A001FC53D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Yunpeng;
+				TargetAttributes = {
+					F21509061BB7E02A001FC53D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = W6Z7US22L6;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
+					};
+					F215091F1BB7E02A001FC53D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 7QEXRCW5Y6;
+						TestTargetID = F21509061BB7E02A001FC53D;
+					};
+					F215092A1BB7E02A001FC53D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 7QEXRCW5Y6;
+						TestTargetID = F21509061BB7E02A001FC53D;
+					};
+					F28681931BF3665000823A72 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = N6S63Q864S;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F21509021BB7E02A001FC53D /* Build configuration list for PBXProject "XJTULink-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F21508FE1BB7E02A001FC53D;
+			productRefGroup = F21509081BB7E02A001FC53D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F21509061BB7E02A001FC53D /* XJTULink-iOS */,
+				F215091F1BB7E02A001FC53D /* XJTULink-iOSTests */,
+				F215092A1BB7E02A001FC53D /* XJTULink-iOSUITests */,
+				F28681931BF3665000823A72 /* XJTULink-Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F21509051BB7E02A001FC53D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23ED82D1DFB032C00C65645 /* CourseCountdownView.xib in Resources */,
+				F2DCB1AF1DD9DDEF003FC4D4 /* LKMain.storyboard in Resources */,
+				F21BC3381DEB0929003A290B /* Images.xcassets in Resources */,
+				F25923A71DE9C41B00EB1916 /* ToolsViewCell.xib in Resources */,
+				F20A620F1DF606AA00509346 /* MineItemCell.xib in Resources */,
+				F2D272FA1D51F7B200B64132 /* LaunchScreen.storyboard in Resources */,
+				F29AE8AE1DF607AC0077E42E /* TransferPasswordView.xib in Resources */,
+				F20A62141DF606D900509346 /* MeHeaderView.xib in Resources */,
+				F25923A11DE9C41B00EB1916 /* RechargeBar.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F215091E1BB7E02A001FC53D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21509291BB7E02A001FC53D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28681921BF3665000823A72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28681AE1BF370BE00823A72 /* Images.xcassets in Resources */,
+				F2DC835F1DF610160074B5C2 /* CourseWidgetCell.xib in Resources */,
+				F286819D1BF3665000823A72 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17122D6834C867A42D2299BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XJTULink-iOS/Pods-XJTULink-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23EFC8AC1BE6C5FD0080090E /* Auto Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Auto Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		4014A335EE5EC2C33486D47E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF25DED4376DB299877CFBAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XJTULink-iOS/Pods-XJTULink-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F28681A71BF3672F00823A72 /* Auto Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Auto Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F21509031BB7E02A001FC53D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25923A01DE9C41B00EB1916 /* RechargeBar.m in Sources */,
+				F20A62131DF606D900509346 /* MeHeaderView.m in Sources */,
+				F25923A61DE9C41B00EB1916 /* ToolsViewCell.m in Sources */,
+				F2FF4FCE1DFFB8070028C343 /* UIViewController+LKStatistics.m in Sources */,
+				F29CD32C1DDE353100036AAD /* AppDelegate+LKStatisticsManager.m in Sources */,
+				F2D273AB1D51F8A400B64132 /* main.m in Sources */,
+				F25923BC1DE9C41B00EB1916 /* MineViewController.m in Sources */,
+				F29CD32A1DDE353100036AAD /* AppDelegate+LKPushManager.m in Sources */,
+				F27ADA731EA87878000BCFA5 /* AppDelegate+Patch.m in Sources */,
+				F20A620E1DF606AA00509346 /* MineItemCell.m in Sources */,
+				F2215C6C1DF1ECFE007CC482 /* CourseCountdownViewModel.m in Sources */,
+				F23ED82C1DFB032C00C65645 /* CourseCountdownView.m in Sources */,
+				F259239A1DE9C41B00EB1916 /* HomeViewController.m in Sources */,
+				F2CB24511DDA193100EE802D /* UIViewController+Config.m in Sources */,
+				F2D273A91D51F8A400B64132 /* AppDelegate.m in Sources */,
+				F259239F1DE9C41B00EB1916 /* TransferAccountsTVC.m in Sources */,
+				F25923DD1DE9C49900EB1916 /* MineViewModel.m in Sources */,
+				F2FF4FD11DFFD1970028C343 /* UIControl+LKStatistics.m in Sources */,
+				F25923DA1DE9C45400EB1916 /* ToolsItemViewModel.m in Sources */,
+				F25923E01DE9C51D00EB1916 /* MineItemViewModel.m in Sources */,
+				F25923B01DE9C41B00EB1916 /* HomePageHeaderView.m in Sources */,
+				F29AE8AD1DF607AC0077E42E /* TransferPasswordView.m in Sources */,
+				F2FF4FD71DFFD95F0028C343 /* YLBaseAPIManager+LKStatistics.m in Sources */,
+				F29CD3281DDE353100036AAD /* GYBootingProtection.m in Sources */,
+				F29CD3271DDE353100036AAD /* AppDelegate+GYBootingProtection.m in Sources */,
+				F25923A51DE9C41B00EB1916 /* ToolsSection.m in Sources */,
+				F2FF4FD41DFFD4F90028C343 /* UITableView+LKStatistics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F215091C1BB7E02A001FC53D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21509251BB7E02A001FC53D /* XJTULink_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21509271BB7E02A001FC53D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21509301BB7E02A001FC53D /* XJTULink_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28681901BF3665000823A72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DC835D1DF610160074B5C2 /* TodayViewController.m in Sources */,
+				F2DC835C1DF610160074B5C2 /* UIImage+Tint.m in Sources */,
+				F2DC835E1DF610160074B5C2 /* CourseWidgetCell.m in Sources */,
+				F2DC835B1DF610160074B5C2 /* NSString+Date.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F21509221BB7E02A001FC53D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F21509061BB7E02A001FC53D /* XJTULink-iOS */;
+			targetProxy = F21509211BB7E02A001FC53D /* PBXContainerItemProxy */;
+		};
+		F215092D1BB7E02A001FC53D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F21509061BB7E02A001FC53D /* XJTULink-iOS */;
+			targetProxy = F215092C1BB7E02A001FC53D /* PBXContainerItemProxy */;
+		};
+		F28681A01BF3665000823A72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F28681931BF3665000823A72 /* XJTULink-Widget */;
+			targetProxy = F286819F1BF3665000823A72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F286819B1BF3665000823A72 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F286819C1BF3665000823A72 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F21509321BB7E02A001FC53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yunpeng Li (7XV8MAS3LP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yunpeng Li (7XV8MAS3LP)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		F21509331BB7E02A001FC53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yunpeng Li (N6S63Q864S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yunpeng Li (N6S63Q864S)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		F21509351BB7E02A001FC53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161381087E55A7D77CB71F77 /* Pods-XJTULink-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "XJTULink-iOS/西交Link.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W6Z7US22L6;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_SOURCE_FILE_NAMES = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XJTULink-iOS",
+					"$(PROJECT_DIR)/XJTULink-iOS/Vendors",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XJTULink-iOS/XJTULink-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Aspects\"",
+					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/DZNEmptyDataSet\"",
+					"\"${PODS_ROOT}/Headers/Public/DateTools\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/FLEX\"",
+					"\"${PODS_ROOT}/Headers/Public/LKActivityModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKBaseModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKCardModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKClassroomModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKCourseModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKDiscoverModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKFlowModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKLibraryModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKLoginModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKMediator\"",
+					"\"${PODS_ROOT}/Headers/Public/LKNewsModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKRecruitmentModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKResourceModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKSettingModule\"",
+					"\"${PODS_ROOT}/Headers/Public/MGSwipeTableCell\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL-Universal\"",
+					"\"${PODS_ROOT}/Headers/Public/PNChart\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SAMKeychain\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/TBActionSheet\"",
+					"\"${PODS_ROOT}/Headers/Public/UICountingLabel\"",
+					"\"${PODS_ROOT}/Headers/Public/UITableView+FDTemplateLayoutCell\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengUShare\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"${PODS_ROOT}/Headers/Public/YYText\"",
+				);
+				INFOPLIST_FILE = "XJTULink-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XJTULink-iOS",
+					"$(PROJECT_DIR)/XJTULink-iOS/Vendors/UMessage",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"Aspects\"",
+					"-l\"BlocksKit\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"DZNEmptyDataSet\"",
+					"-l\"FLEX\"",
+					"-l\"DateTools\"",
+					"-l\"JPFPSStatus\"",
+					"-l\"FLAnimatedImage\"",
+					"-l\"LKActivityModule\"",
+					"-l\"LKBaseModule\"",
+					"-l\"LKCardModule\"",
+					"-l\"LKClassroomModule\"",
+					"-l\"LKCourseModule\"",
+					"-l\"LKDiscoverModule\"",
+					"-l\"LKFlowModule\"",
+					"-l\"LKLibraryModule\"",
+					"-l\"LKLoginModule\"",
+					"-l\"LKMediator\"",
+					"-l\"LKNewsModule\"",
+					"-l\"LKSettingModule\"",
+					"-l\"MGSwipeTableCell\"",
+					"-l\"Mantle\"",
+					"-l\"Masonry\"",
+					"-l\"PNChart\"",
+					"-l\"ReactiveCocoa\"",
+					"-l\"SAMKeychain\"",
+					"-l\"SDCycleScrollView\"",
+					"-l\"SDWebImage\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialSina\"",
+					"-l\"SocialWeChat\"",
+					"-l\"TBActionSheet\"",
+					"-l\"UICountingLabel\"",
+					"-l\"UITableView+FDTemplateLayoutCell\"",
+					"-l\"UMSocialLog\"",
+					"-l\"WeChatSDK\"",
+					"-l\"WeiboSDK\"",
+					"-l\"YLBadge\"",
+					"-l\"YYCache\"",
+					"-l\"YYText\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"sqlite3\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TencentOpenAPI\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMMobClick\"",
+					"-framework",
+					"\"UMSocialCore\"",
+					"-framework",
+					"\"UMSocialNetwork\"",
+					"-framework",
+					"\"UShareUI\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.xjtulink;
+				PRODUCT_NAME = "西交Link";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		F21509361BB7E02A001FC53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 851964F0491CDEAEDD568EFC /* Pods-XJTULink-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "XJTULink-iOS/西交Link.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W6Z7US22L6;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_SOURCE_FILE_NAMES = "FLEX*";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XJTULink-iOS",
+					"$(PROJECT_DIR)/XJTULink-iOS/Vendors",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XJTULink-iOS/XJTULink-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Aspects\"",
+					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/DZNEmptyDataSet\"",
+					"\"${PODS_ROOT}/Headers/Public/DateTools\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/FLEX\"",
+					"\"${PODS_ROOT}/Headers/Public/LKActivityModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKBaseModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKCardModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKClassroomModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKCourseModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKDiscoverModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKFlowModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKLibraryModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKLoginModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKMediator\"",
+					"\"${PODS_ROOT}/Headers/Public/LKNewsModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKRecruitmentModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKResourceModule\"",
+					"\"${PODS_ROOT}/Headers/Public/LKSettingModule\"",
+					"\"${PODS_ROOT}/Headers/Public/MGSwipeTableCell\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL-Universal\"",
+					"\"${PODS_ROOT}/Headers/Public/PNChart\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SAMKeychain\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/TBActionSheet\"",
+					"\"${PODS_ROOT}/Headers/Public/UICountingLabel\"",
+					"\"${PODS_ROOT}/Headers/Public/UITableView+FDTemplateLayoutCell\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengUShare\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"${PODS_ROOT}/Headers/Public/YYText\"",
+				);
+				INFOPLIST_FILE = "XJTULink-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XJTULink-iOS",
+					"$(PROJECT_DIR)/XJTULink-iOS/Vendors/UMessage",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"Aspects\"",
+					"-l\"BlocksKit\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"DZNEmptyDataSet\"",
+					"-l\"FLEX\"",
+					"-l\"DateTools\"",
+					"-l\"JPFPSStatus\"",
+					"-l\"FLAnimatedImage\"",
+					"-l\"LKActivityModule\"",
+					"-l\"LKBaseModule\"",
+					"-l\"LKCardModule\"",
+					"-l\"LKClassroomModule\"",
+					"-l\"LKCourseModule\"",
+					"-l\"LKDiscoverModule\"",
+					"-l\"LKFlowModule\"",
+					"-l\"LKLibraryModule\"",
+					"-l\"LKLoginModule\"",
+					"-l\"LKMediator\"",
+					"-l\"LKNewsModule\"",
+					"-l\"LKSettingModule\"",
+					"-l\"MGSwipeTableCell\"",
+					"-l\"Mantle\"",
+					"-l\"Masonry\"",
+					"-l\"PNChart\"",
+					"-l\"ReactiveCocoa\"",
+					"-l\"SAMKeychain\"",
+					"-l\"SDCycleScrollView\"",
+					"-l\"SDWebImage\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialSina\"",
+					"-l\"SocialWeChat\"",
+					"-l\"TBActionSheet\"",
+					"-l\"UICountingLabel\"",
+					"-l\"UITableView+FDTemplateLayoutCell\"",
+					"-l\"UMSocialLog\"",
+					"-l\"WeChatSDK\"",
+					"-l\"WeiboSDK\"",
+					"-l\"YLBadge\"",
+					"-l\"YYCache\"",
+					"-l\"YYText\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"sqlite3\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TencentOpenAPI\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMMobClick\"",
+					"-framework",
+					"\"UMSocialCore\"",
+					"-framework",
+					"\"UMSocialNetwork\"",
+					"-framework",
+					"\"UShareUI\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.xjtulink;
+				PRODUCT_NAME = "西交Link";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		F21509381BB7E02A001FC53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "XJTULink-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "link.xjtu.XJTULink-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XJTULink-iOS.app/XJTULink-iOS";
+			};
+			name = Debug;
+		};
+		F21509391BB7E02A001FC53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "XJTULink-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "link.xjtu.XJTULink-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XJTULink-iOS.app/XJTULink-iOS";
+			};
+			name = Release;
+		};
+		F215093B1BB7E02A001FC53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "XJTULink-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "link.xjtu.XJTULink-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "XJTULink-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F215093C1BB7E02A001FC53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "XJTULink-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "link.xjtu.XJTULink-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "XJTULink-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		F28681A31BF3665000823A72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "XJTULink-iOS/西交Link.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N6S63Q864S;
+				INFOPLIST_FILE = "XJTULink-Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.xjtulink.widget;
+				PRODUCT_NAME = "西交Link";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F28681A41BF3665000823A72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "XJTULink-iOS/西交Link.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N6S63Q864S;
+				INFOPLIST_FILE = "XJTULink-Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.xjtulink.widget;
+				PRODUCT_NAME = "西交Link";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F21509021BB7E02A001FC53D /* Build configuration list for PBXProject "XJTULink-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21509321BB7E02A001FC53D /* Debug */,
+				F21509331BB7E02A001FC53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F21509341BB7E02A001FC53D /* Build configuration list for PBXNativeTarget "XJTULink-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21509351BB7E02A001FC53D /* Debug */,
+				F21509361BB7E02A001FC53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F21509371BB7E02A001FC53D /* Build configuration list for PBXNativeTarget "XJTULink-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21509381BB7E02A001FC53D /* Debug */,
+				F21509391BB7E02A001FC53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F215093A1BB7E02A001FC53D /* Build configuration list for PBXNativeTarget "XJTULink-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F215093B1BB7E02A001FC53D /* Debug */,
+				F215093C1BB7E02A001FC53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28681A21BF3665000823A72 /* Build configuration list for PBXNativeTarget "XJTULink-Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28681A31BF3665000823A72 /* Debug */,
+				F28681A41BF3665000823A72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F21508FF1BB7E02A001FC53D /* Project object */;
+}

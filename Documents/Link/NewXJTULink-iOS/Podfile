@@ -1,0 +1,137 @@
+
+platform :ios, '9.0'
+
+workspace 'XJTULink-iOS.xcworkspace'
+project 'XJTULink-iOS.xcodeproj'
+
+target 'XJTULink-iOS' do
+pod 'LKBaseModule',         :path => './XJTULink-iOS/LKBaseModule'
+pod 'LKResourceModule',     :path => './XJTULink-iOS/LKResourceModule'
+pod 'LKDiscoverModule',     :path => './XJTULink-iOS/LKDiscoverModule'
+pod 'LKNewsModule',         :path => './XJTULink-iOS/LKNewsModule'
+pod 'LKFlowModule',         :path => './XJTULink-iOS/LKFlowModule'
+pod 'LKCardModule',         :path => './XJTULink-iOS/LKCardModule'
+pod 'LKLoginModule',        :path => './XJTULink-iOS/LKLoginModule'
+pod 'LKCourseModule',       :path => './XJTULink-iOS/LKCourseModule'
+pod 'LKActivityModule',     :path => './XJTULink-iOS/LKActivityModule'
+pod 'LKLibraryModule',      :path => './XJTULink-iOS/LKLibraryModule'
+pod 'LKSettingModule',      :path => './XJTULink-iOS/LKSettingModule'
+pod 'LKClassroomModule',    :path => './XJTULink-iOS/LKClassroomModule'
+pod 'LKRecruitmentModule',  :path => './XJTULink-iOS/LKRecruitmentModule'
+pod 'LKMediator',           :path => './XJTULink-iOS/LKMediator'
+
+#   基础通用库
+
+pod 'AFNetworking', '~> 3.1.0'
+pod 'Aspects', '~> 1.4.1'
+pod 'BlocksKit', '~> 2.2.5'
+pod 'CocoaLumberjack', '~> 3.0.0'
+pod 'DateTools', '~> 1.7.0'
+#pod 'libextobjc', '~> 0.4.1'
+pod 'Mantle', '~> 2.0.4'
+pod 'Masonry', '~> 1.0.0'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'TBActionSheet', '~> 1.4.3'
+pod 'YYCache', '~> 1.0.3'
+pod 'JPFPSStatus', '~> 0.1'
+
+#   加密相关
+pod 'OpenSSL-Universal', '~> 1.0.1.18'
+pod 'SAMKeychain', '~> 1.5.2'
+
+#   数据分析
+pod 'UMengAnalytics-NO-IDFA', '~> 4.1.9'
+pod 'UMengUShare/UI'
+pod 'UMengUShare/Social/Sina'
+pod 'UMengUShare/Social/WeChat'
+pod 'UMengUShare/Social/QQ'
+
+#   Debug
+pod 'FLEX', '~> 2.4.0'
+#    pod 'FLEX', '~> 2.1.0', :configurations => ['Debug']
+
+#   第三方View库
+pod 'DZNEmptyDataSet', '~> 1.8.1'
+pod 'FLAnimatedImage', '~> 1.0.12'
+#pod 'IDMPhotoBrowser', '~> 1.10' # -> DACircularProgress、pop、SDWebImage
+pod 'MGSwipeTableCell', '~> 1.5.1'
+pod 'PNChart', '~> 0.8.9'
+pod 'SVProgressHUD', '~> 2.0.4'
+pod 'SDWebImage', '~> 3.8.2'
+pod 'SDCycleScrollView', '~> 1.65'
+pod 'UICountingLabel', '~> 1.2.0'
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.4'
+pod 'YLBadge', '~> 1.0.1'
+pod 'YYText', '~> 1.0.5'
+
+end
+
+
+# 基础组件
+target 'LKBaseModule' do
+project './XJTULink-iOS/LKBaseModule/LKBaseModule.xcodeproj'
+
+end
+
+# 中介者模块
+target 'LKMediator' do
+project './XJTULink-iOS/LKMediator/LKMediator.xcodeproj'
+
+end
+
+
+# 发现模块
+target 'LKDiscoverModule' do
+project './XJTULink-iOS/LKDiscoverModule/LKDiscoverModule.xcodeproj'
+
+end
+
+# 新闻模块
+target 'LKNewsModule' do
+project './XJTULink-iOS/LKNewsModule/LKNewsModule.xcodeproj'
+end
+
+
+# 宿舍流量Module
+target 'LKFlowModule' do
+project './XJTULink-iOS/LKFlowModule/LKFlowModule.xcodeproj'
+end
+
+# 一卡通相关
+target 'LKCardModule' do
+project './XJTULink-iOS/LKCardModule/LKCardModule.xcodeproj'
+end
+
+# 活动相关
+target 'LKActivityModule' do
+project './XJTULink-iOS/LKActivityModule/LKActivityModule.xcodeproj'
+end
+
+# 课程相关
+target 'LKCourseModule' do
+project './XJTULink-iOS/LKCourseModule/LKCourseModule.xcodeproj'
+end
+
+# 图书馆相关
+target 'LKLibraryModule' do
+project './XJTULink-iOS/LKLibraryModule/LKLibraryModule.xcodeproj'
+end
+
+# 招聘相关
+target 'LKRecruitmentModule' do
+project './XJTULink-iOS/LKRecruitmentModule/LKRecruitmentModule.xcodeproj'
+end
+
+# 设置相关
+target 'LKSettingModule' do
+project './XJTULink-iOS/LKSettingModule/LKSettingModule.xcodeproj'
+end
+
+
+target 'LKClassroomModule' do
+project './XJTULink-iOS/LKClassroomModule/LKClassroomModule.xcodeproj'
+end
+
+target 'LKLoginModule' do
+project './XJTULink-iOS/LKLoginModule/LKLoginModule.xcodeproj'
+end

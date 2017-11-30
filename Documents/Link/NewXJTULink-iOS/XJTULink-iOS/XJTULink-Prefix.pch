@@ -1,0 +1,26 @@
+//
+//  XJTULink-Prefix.pch
+//  XJTULink-iOS
+//
+//  Created by Yunpeng on 16/4/5.
+//  Copyright © 2016年 Yunpeng. All rights reserved.
+//
+
+
+
+#ifndef XJTULink_Prefix_pch
+#define XJTULink_Prefix_pch
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Mantle/Mantle.h>
+#import <BlocksKit/BlocksKit.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "Constants.h"
+#import "Macros.h"
+#import "AppContext.h"
+#import "AppMediator.h"
+#import "Foundation+LKTools.h"
+
+
+#endif /* XJTULink_Prefix_pch */

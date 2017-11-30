@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF67CB44A7396FC06150FE16 /* libPods-LKSettingModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E443AF448DCC32B8D81B11 /* libPods-LKSettingModule.a */; };
+		F234B6741DF373B500560724 /* LKVersionAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F234B6721DF373B500560724 /* LKVersionAPIManager.h */; };
+		F234B6751DF373B500560724 /* LKVersionAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F234B6731DF373B500560724 /* LKVersionAPIManager.m */; };
+		F234B6781DF373BF00560724 /* LKVersionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F234B6761DF373BF00560724 /* LKVersionManager.h */; };
+		F234B6791DF373BF00560724 /* LKVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F234B6771DF373BF00560724 /* LKVersionManager.m */; };
+		F23F6F521DF76ECC009D4F72 /* LKToggleSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F23F6F4F1DF76ECC009D4F72 /* LKToggleSwitchCell.h */; };
+		F23F6F531DF76ECC009D4F72 /* LKToggleSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F6F501DF76ECC009D4F72 /* LKToggleSwitchCell.m */; };
+		F23F6F541DF76ECC009D4F72 /* LKToggleSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23F6F511DF76ECC009D4F72 /* LKToggleSwitchCell.xib */; };
+		F23F6F5B1DF7898F009D4F72 /* InfoEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F23F6F591DF7898F009D4F72 /* InfoEditViewController.h */; };
+		F23F6F5C1DF7898F009D4F72 /* InfoEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F6F5A1DF7898F009D4F72 /* InfoEditViewController.m */; };
+		F23F6F5F1DF78BC8009D4F72 /* StuInfoAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F23F6F5D1DF78BC8009D4F72 /* StuInfoAPIManager.h */; };
+		F23F6F601DF78BC8009D4F72 /* StuInfoAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F6F5E1DF78BC8009D4F72 /* StuInfoAPIManager.m */; };
+		F242F5951DF75F5B00CEBB94 /* AvatarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F242F5911DF75F5B00CEBB94 /* AvatarViewController.h */; };
+		F242F5961DF75F5B00CEBB94 /* AvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F242F5921DF75F5B00CEBB94 /* AvatarViewController.m */; };
+		F242F5971DF75F5B00CEBB94 /* ProfileViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F242F5931DF75F5B00CEBB94 /* ProfileViewController.h */; };
+		F242F5981DF75F5B00CEBB94 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F242F5941DF75F5B00CEBB94 /* ProfileViewController.m */; };
+		F242F5A71DF75F7B00CEBB94 /* AboutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F242F5A31DF75F7B00CEBB94 /* AboutViewController.h */; };
+		F242F5A81DF75F7B00CEBB94 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F242F5A41DF75F7B00CEBB94 /* AboutViewController.m */; };
+		F242F5A91DF75F7B00CEBB94 /* PreferenceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F242F5A51DF75F7B00CEBB94 /* PreferenceViewController.h */; };
+		F242F5AA1DF75F7B00CEBB94 /* PreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F242F5A61DF75F7B00CEBB94 /* PreferenceViewController.m */; };
+		F242F5B01DF7600600CEBB94 /* LKDebugViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F242F5AE1DF7600600CEBB94 /* LKDebugViewController.h */; };
+		F242F5B11DF7600600CEBB94 /* LKDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F242F5AF1DF7600600CEBB94 /* LKDebugViewController.m */; };
+		F269C77E1DFC7DDE005B4B80 /* LKUpdateAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = F269C77B1DFC7DDE005B4B80 /* LKUpdateAlertView.h */; };
+		F269C77F1DFC7DDE005B4B80 /* LKUpdateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F269C77C1DFC7DDE005B4B80 /* LKUpdateAlertView.m */; };
+		F269C7801DFC7DDE005B4B80 /* LKUpdateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F269C77D1DFC7DDE005B4B80 /* LKUpdateAlertView.xib */; };
+		F29000381DEB5E9100D071EC /* LKSettingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F290002E1DEB5E9100D071EC /* LKSettingModule.framework */; };
+		F290003D1DEB5E9100D071EC /* LKSettingModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F290003C1DEB5E9100D071EC /* LKSettingModuleTests.m */; };
+		F290004D1DEB692A00D071EC /* LKSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F290004C1DEB692A00D071EC /* LKSetting.storyboard */; };
+		F29000501DEB6A0400D071EC /* SettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F290004E1DEB6A0400D071EC /* SettingViewController.h */; };
+		F29000511DEB6A0400D071EC /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F290004F1DEB6A0400D071EC /* SettingViewController.m */; };
+		F29000541DEB6BF300D071EC /* LKSettingModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F29000521DEB6BF300D071EC /* LKSettingModule.h */; };
+		F29000551DEB6BF300D071EC /* LKSettingModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F29000531DEB6BF300D071EC /* LKSettingModule.m */; };
+		F2EDD8E81DF5A23D006A4CE5 /* LKMailSender.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EDD8E61DF5A23D006A4CE5 /* LKMailSender.h */; };
+		F2EDD8E91DF5A23D006A4CE5 /* LKMailSender.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDD8E71DF5A23D006A4CE5 /* LKMailSender.m */; };
+		F2FF4FC11DFF042C0028C343 /* LKDebugItemPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F2FF4FBF1DFF042C0028C343 /* LKDebugItemPickerViewController.h */; };
+		F2FF4FC21DFF042C0028C343 /* LKDebugItemPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF4FC01DFF042C0028C343 /* LKDebugItemPickerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F29000391DEB5E9100D071EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29000251DEB5E9100D071EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F290002D1DEB5E9100D071EC;
+			remoteInfo = LKSettingModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33583CAB153F4766D49389A7 /* Pods-LKSettingModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKSettingModule.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-LKSettingModule/Pods-LKSettingModule.release.xcconfig"; sourceTree = "<group>"; };
+		3A6473B7E73A938550DDE0E7 /* Pods-LKSettingModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKSettingModule.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-LKSettingModule/Pods-LKSettingModule.debug.xcconfig"; sourceTree = "<group>"; };
+		C9E443AF448DCC32B8D81B11 /* libPods-LKSettingModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKSettingModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F234B6721DF373B500560724 /* LKVersionAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKVersionAPIManager.h; sourceTree = "<group>"; };
+		F234B6731DF373B500560724 /* LKVersionAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKVersionAPIManager.m; sourceTree = "<group>"; };
+		F234B6761DF373BF00560724 /* LKVersionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKVersionManager.h; sourceTree = "<group>"; };
+		F234B6771DF373BF00560724 /* LKVersionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKVersionManager.m; sourceTree = "<group>"; };
+		F23F6F4F1DF76ECC009D4F72 /* LKToggleSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKToggleSwitchCell.h; sourceTree = "<group>"; };
+		F23F6F501DF76ECC009D4F72 /* LKToggleSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKToggleSwitchCell.m; sourceTree = "<group>"; };
+		F23F6F511DF76ECC009D4F72 /* LKToggleSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKToggleSwitchCell.xib; sourceTree = "<group>"; };
+		F23F6F591DF7898F009D4F72 /* InfoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoEditViewController.h; sourceTree = "<group>"; };
+		F23F6F5A1DF7898F009D4F72 /* InfoEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoEditViewController.m; sourceTree = "<group>"; };
+		F23F6F5D1DF78BC8009D4F72 /* StuInfoAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuInfoAPIManager.h; sourceTree = "<group>"; };
+		F23F6F5E1DF78BC8009D4F72 /* StuInfoAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuInfoAPIManager.m; sourceTree = "<group>"; };
+		F242F5911DF75F5B00CEBB94 /* AvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarViewController.h; sourceTree = "<group>"; };
+		F242F5921DF75F5B00CEBB94 /* AvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
+		F242F5931DF75F5B00CEBB94 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		F242F5941DF75F5B00CEBB94 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		F242F5A31DF75F7B00CEBB94 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		F242F5A41DF75F7B00CEBB94 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		F242F5A51DF75F7B00CEBB94 /* PreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceViewController.h; sourceTree = "<group>"; };
+		F242F5A61DF75F7B00CEBB94 /* PreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceViewController.m; sourceTree = "<group>"; };
+		F242F5AE1DF7600600CEBB94 /* LKDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDebugViewController.h; sourceTree = "<group>"; };
+		F242F5AF1DF7600600CEBB94 /* LKDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDebugViewController.m; sourceTree = "<group>"; };
+		F269C77B1DFC7DDE005B4B80 /* LKUpdateAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKUpdateAlertView.h; sourceTree = "<group>"; };
+		F269C77C1DFC7DDE005B4B80 /* LKUpdateAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUpdateAlertView.m; sourceTree = "<group>"; };
+		F269C77D1DFC7DDE005B4B80 /* LKUpdateAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKUpdateAlertView.xib; sourceTree = "<group>"; };
+		F290002E1DEB5E9100D071EC /* LKSettingModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LKSettingModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29000321DEB5E9100D071EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29000371DEB5E9100D071EC /* LKSettingModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKSettingModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F290003C1DEB5E9100D071EC /* LKSettingModuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKSettingModuleTests.m; sourceTree = "<group>"; };
+		F290003E1DEB5E9100D071EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F290004C1DEB692A00D071EC /* LKSetting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LKSetting.storyboard; sourceTree = "<group>"; };
+		F290004E1DEB6A0400D071EC /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		F290004F1DEB6A0400D071EC /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		F29000521DEB6BF300D071EC /* LKSettingModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSettingModule.h; sourceTree = "<group>"; };
+		F29000531DEB6BF300D071EC /* LKSettingModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSettingModule.m; sourceTree = "<group>"; };
+		F2EDD8E61DF5A23D006A4CE5 /* LKMailSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMailSender.h; sourceTree = "<group>"; };
+		F2EDD8E71DF5A23D006A4CE5 /* LKMailSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMailSender.m; sourceTree = "<group>"; };
+		F2FF4FBF1DFF042C0028C343 /* LKDebugItemPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDebugItemPickerViewController.h; sourceTree = "<group>"; };
+		F2FF4FC01DFF042C0028C343 /* LKDebugItemPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDebugItemPickerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F290002A1DEB5E9100D071EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF67CB44A7396FC06150FE16 /* libPods-LKSettingModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29000341DEB5E9100D071EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29000381DEB5E9100D071EC /* LKSettingModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96752696F73C36626D9E0E1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9E443AF448DCC32B8D81B11 /* libPods-LKSettingModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		998608F1550A5ACA58B3FFF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A6473B7E73A938550DDE0E7 /* Pods-LKSettingModule.debug.xcconfig */,
+				33583CAB153F4766D49389A7 /* Pods-LKSettingModule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F234B6711DF373B500560724 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F234B6721DF373B500560724 /* LKVersionAPIManager.h */,
+				F234B6731DF373B500560724 /* LKVersionAPIManager.m */,
+				F23F6F5D1DF78BC8009D4F72 /* StuInfoAPIManager.h */,
+				F23F6F5E1DF78BC8009D4F72 /* StuInfoAPIManager.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F23F6F4E1DF76E25009D4F72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F23F6F4F1DF76ECC009D4F72 /* LKToggleSwitchCell.h */,
+				F23F6F501DF76ECC009D4F72 /* LKToggleSwitchCell.m */,
+				F23F6F511DF76ECC009D4F72 /* LKToggleSwitchCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F242F5901DF75F5B00CEBB94 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F242F5911DF75F5B00CEBB94 /* AvatarViewController.h */,
+				F242F5921DF75F5B00CEBB94 /* AvatarViewController.m */,
+				F242F5931DF75F5B00CEBB94 /* ProfileViewController.h */,
+				F242F5941DF75F5B00CEBB94 /* ProfileViewController.m */,
+				F23F6F591DF7898F009D4F72 /* InfoEditViewController.h */,
+				F23F6F5A1DF7898F009D4F72 /* InfoEditViewController.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F242F5A21DF75F7B00CEBB94 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				F242F5A31DF75F7B00CEBB94 /* AboutViewController.h */,
+				F242F5A41DF75F7B00CEBB94 /* AboutViewController.m */,
+				F242F5A51DF75F7B00CEBB94 /* PreferenceViewController.h */,
+				F242F5A61DF75F7B00CEBB94 /* PreferenceViewController.m */,
+			);
+			path = Preference;
+			sourceTree = "<group>";
+		};
+		F242F5AB1DF75F8B00CEBB94 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				F23F6F4E1DF76E25009D4F72 /* Views */,
+				F242F5AE1DF7600600CEBB94 /* LKDebugViewController.h */,
+				F242F5AF1DF7600600CEBB94 /* LKDebugViewController.m */,
+				F2FF4FBF1DFF042C0028C343 /* LKDebugItemPickerViewController.h */,
+				F2FF4FC01DFF042C0028C343 /* LKDebugItemPickerViewController.m */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		F269C7791DFC7DD2005B4B80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F269C77A1DFC7DDE005B4B80 /* LKUpdateAlert */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F269C77A1DFC7DDE005B4B80 /* LKUpdateAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F269C77B1DFC7DDE005B4B80 /* LKUpdateAlertView.h */,
+				F269C77C1DFC7DDE005B4B80 /* LKUpdateAlertView.m */,
+				F269C77D1DFC7DDE005B4B80 /* LKUpdateAlertView.xib */,
+			);
+			path = LKUpdateAlert;
+			sourceTree = "<group>";
+		};
+		F29000241DEB5E9100D071EC = {
+			isa = PBXGroup;
+			children = (
+				F29000301DEB5E9100D071EC /* LKSettingModule */,
+				F290003B1DEB5E9100D071EC /* LKSettingModuleTests */,
+				F290002F1DEB5E9100D071EC /* Products */,
+				998608F1550A5ACA58B3FFF5 /* Pods */,
+				96752696F73C36626D9E0E1D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F290002F1DEB5E9100D071EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F290002E1DEB5E9100D071EC /* LKSettingModule.framework */,
+				F29000371DEB5E9100D071EC /* LKSettingModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F29000301DEB5E9100D071EC /* LKSettingModule */ = {
+			isa = PBXGroup;
+			children = (
+				F234B6711DF373B500560724 /* Networking */,
+				F29000481DEB5FB300D071EC /* Model */,
+				F29000491DEB5FB300D071EC /* Public */,
+				F290004A1DEB5FB300D071EC /* View */,
+				F290004B1DEB5FB300D071EC /* ViewModel */,
+				F29000321DEB5E9100D071EC /* Info.plist */,
+			);
+			path = LKSettingModule;
+			sourceTree = "<group>";
+		};
+		F290003B1DEB5E9100D071EC /* LKSettingModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F290003C1DEB5E9100D071EC /* LKSettingModuleTests.m */,
+				F290003E1DEB5E9100D071EC /* Info.plist */,
+			);
+			path = LKSettingModuleTests;
+			sourceTree = "<group>";
+		};
+		F29000481DEB5FB300D071EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2EDD8E61DF5A23D006A4CE5 /* LKMailSender.h */,
+				F2EDD8E71DF5A23D006A4CE5 /* LKMailSender.m */,
+				F234B6761DF373BF00560724 /* LKVersionManager.h */,
+				F234B6771DF373BF00560724 /* LKVersionManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F29000491DEB5FB300D071EC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				F29000521DEB6BF300D071EC /* LKSettingModule.h */,
+				F29000531DEB6BF300D071EC /* LKSettingModule.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		F290004A1DEB5FB300D071EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F269C7791DFC7DD2005B4B80 /* Views */,
+				F242F5AB1DF75F8B00CEBB94 /* Debug */,
+				F242F5A21DF75F7B00CEBB94 /* Preference */,
+				F242F5901DF75F5B00CEBB94 /* Profile */,
+				F290004C1DEB692A00D071EC /* LKSetting.storyboard */,
+				F290004E1DEB6A0400D071EC /* SettingViewController.h */,
+				F290004F1DEB6A0400D071EC /* SettingViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F290004B1DEB5FB300D071EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F290002B1DEB5E9100D071EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F242F5971DF75F5B00CEBB94 /* ProfileViewController.h in Headers */,
+				F234B6781DF373BF00560724 /* LKVersionManager.h in Headers */,
+				F242F5A91DF75F7B00CEBB94 /* PreferenceViewController.h in Headers */,
+				F23F6F5B1DF7898F009D4F72 /* InfoEditViewController.h in Headers */,
+				F29000541DEB6BF300D071EC /* LKSettingModule.h in Headers */,
+				F23F6F521DF76ECC009D4F72 /* LKToggleSwitchCell.h in Headers */,
+				F269C77E1DFC7DDE005B4B80 /* LKUpdateAlertView.h in Headers */,
+				F242F5951DF75F5B00CEBB94 /* AvatarViewController.h in Headers */,
+				F234B6741DF373B500560724 /* LKVersionAPIManager.h in Headers */,
+				F242F5B01DF7600600CEBB94 /* LKDebugViewController.h in Headers */,
+				F242F5A71DF75F7B00CEBB94 /* AboutViewController.h in Headers */,
+				F23F6F5F1DF78BC8009D4F72 /* StuInfoAPIManager.h in Headers */,
+				F29000501DEB6A0400D071EC /* SettingViewController.h in Headers */,
+				F2FF4FC11DFF042C0028C343 /* LKDebugItemPickerViewController.h in Headers */,
+				F2EDD8E81DF5A23D006A4CE5 /* LKMailSender.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F290002D1DEB5E9100D071EC /* LKSettingModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29000421DEB5E9100D071EC /* Build configuration list for PBXNativeTarget "LKSettingModule" */;
+			buildPhases = (
+				9B4BA09794B433C41103585D /* [CP] Check Pods Manifest.lock */,
+				F29000291DEB5E9100D071EC /* Sources */,
+				F290002A1DEB5E9100D071EC /* Frameworks */,
+				F290002B1DEB5E9100D071EC /* Headers */,
+				F290002C1DEB5E9100D071EC /* Resources */,
+				3027A6D2FC9F16B9B8B5C55E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LKSettingModule;
+			productName = LKSettingModule;
+			productReference = F290002E1DEB5E9100D071EC /* LKSettingModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F29000361DEB5E9100D071EC /* LKSettingModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29000451DEB5E9100D071EC /* Build configuration list for PBXNativeTarget "LKSettingModuleTests" */;
+			buildPhases = (
+				F29000331DEB5E9100D071EC /* Sources */,
+				F29000341DEB5E9100D071EC /* Frameworks */,
+				F29000351DEB5E9100D071EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F290003A1DEB5E9100D071EC /* PBXTargetDependency */,
+			);
+			name = LKSettingModuleTests;
+			productName = LKSettingModuleTests;
+			productReference = F29000371DEB5E9100D071EC /* LKSettingModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F29000251DEB5E9100D071EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Yunpeng;
+				TargetAttributes = {
+					F290002D1DEB5E9100D071EC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					F29000361DEB5E9100D071EC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F29000281DEB5E9100D071EC /* Build configuration list for PBXProject "LKSettingModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F29000241DEB5E9100D071EC;
+			productRefGroup = F290002F1DEB5E9100D071EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F290002D1DEB5E9100D071EC /* LKSettingModule */,
+				F29000361DEB5E9100D071EC /* LKSettingModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F290002C1DEB5E9100D071EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F269C7801DFC7DDE005B4B80 /* LKUpdateAlertView.xib in Resources */,
+				F23F6F541DF76ECC009D4F72 /* LKToggleSwitchCell.xib in Resources */,
+				F290004D1DEB692A00D071EC /* LKSetting.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29000351DEB5E9100D071EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3027A6D2FC9F16B9B8B5C55E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-LKSettingModule/Pods-LKSettingModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B4BA09794B433C41103585D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F29000291DEB5E9100D071EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F242F5AA1DF75F7B00CEBB94 /* PreferenceViewController.m in Sources */,
+				F242F5B11DF7600600CEBB94 /* LKDebugViewController.m in Sources */,
+				F29000511DEB6A0400D071EC /* SettingViewController.m in Sources */,
+				F23F6F531DF76ECC009D4F72 /* LKToggleSwitchCell.m in Sources */,
+				F23F6F5C1DF7898F009D4F72 /* InfoEditViewController.m in Sources */,
+				F23F6F601DF78BC8009D4F72 /* StuInfoAPIManager.m in Sources */,
+				F234B6791DF373BF00560724 /* LKVersionManager.m in Sources */,
+				F269C77F1DFC7DDE005B4B80 /* LKUpdateAlertView.m in Sources */,
+				F242F5A81DF75F7B00CEBB94 /* AboutViewController.m in Sources */,
+				F2EDD8E91DF5A23D006A4CE5 /* LKMailSender.m in Sources */,
+				F242F5961DF75F5B00CEBB94 /* AvatarViewController.m in Sources */,
+				F242F5981DF75F5B00CEBB94 /* ProfileViewController.m in Sources */,
+				F234B6751DF373B500560724 /* LKVersionAPIManager.m in Sources */,
+				F2FF4FC21DFF042C0028C343 /* LKDebugItemPickerViewController.m in Sources */,
+				F29000551DEB6BF300D071EC /* LKSettingModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29000331DEB5E9100D071EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F290003D1DEB5E9100D071EC /* LKSettingModuleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F290003A1DEB5E9100D071EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F290002D1DEB5E9100D071EC /* LKSettingModule */;
+			targetProxy = F29000391DEB5E9100D071EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F29000401DEB5E9100D071EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F29000411DEB5E9100D071EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F29000431DEB5E9100D071EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6473B7E73A938550DDE0E7 /* Pods-LKSettingModule.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LKSettingModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKSettingModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F29000441DEB5E9100D071EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33583CAB153F4766D49389A7 /* Pods-LKSettingModule.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LKSettingModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKSettingModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F29000461DEB5E9100D071EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LKSettingModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKSettingModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F29000471DEB5E9100D071EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LKSettingModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKSettingModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F29000281DEB5E9100D071EC /* Build configuration list for PBXProject "LKSettingModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29000401DEB5E9100D071EC /* Debug */,
+				F29000411DEB5E9100D071EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29000421DEB5E9100D071EC /* Build configuration list for PBXNativeTarget "LKSettingModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29000431DEB5E9100D071EC /* Debug */,
+				F29000441DEB5E9100D071EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29000451DEB5E9100D071EC /* Build configuration list for PBXNativeTarget "LKSettingModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29000461DEB5E9100D071EC /* Debug */,
+				F29000471DEB5E9100D071EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F29000251DEB5E9100D071EC /* Project object */;
+}

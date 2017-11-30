@@ -1,0 +1,3974 @@
+diff --git a/HelloWorld-ios.xcodeproj/project.pbxproj b/HelloWorld-ios.xcodeproj/project.pbxproj
+index 82ecb7a..aec639a 100644
+--- a/HelloWorld-ios.xcodeproj/project.pbxproj
++++ b/HelloWorld-ios.xcodeproj/project.pbxproj
+@@ -7,12 +7,16 @@
+ 	objects = {
+ 
+ /* Begin PBXBuildFile section */
+-		654B2B401E9E2C6200629BEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654B2B3F1E9E2C6200629BEF /* main.m */; };
+-		654B2B431E9E2C6200629BEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654B2B421E9E2C6200629BEF /* AppDelegate.m */; };
+-		654B2B461E9E2C6200629BEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654B2B451E9E2C6200629BEF /* ViewController.m */; };
+-		654B2B491E9E2C6200629BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654B2B471E9E2C6200629BEF /* Main.storyboard */; };
+-		654B2B4B1E9E2C6200629BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654B2B4A1E9E2C6200629BEF /* Assets.xcassets */; };
+-		654B2B4E1E9E2C6200629BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654B2B4C1E9E2C6200629BEF /* LaunchScreen.storyboard */; };
++		6502A37F1EB4E0C900774F62 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6502A37E1EB4E0C900774F62 /* Info.plist */; };
++		6502A3871EB4E0D000774F62 /* WeatherCurrentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502A3821EB4E0D000774F62 /* WeatherCurrentModel.m */; };
++		6502A3881EB4E0D000774F62 /* WeatherDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502A3841EB4E0D000774F62 /* WeatherDayModel.m */; };
++		6502A3891EB4E0D000774F62 /* WeatherWeekModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502A3861EB4E0D000774F62 /* WeatherWeekModel.m */; };
++		6502A38D1EB4E0D700774F62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6502A38B1EB4E0D700774F62 /* Assets.xcassets */; };
++		6502A38E1EB4E0D700774F62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6502A38C1EB4E0D700774F62 /* LaunchScreen.storyboard */; };
++		6502A3931EB4E0DD00774F62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502A3911EB4E0DD00774F62 /* AppDelegate.m */; };
++		6502A3941EB4E0DD00774F62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502A3921EB4E0DD00774F62 /* main.m */; };
++		6502A3971EB4E0E400774F62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6502A3961EB4E0E400774F62 /* Main.storyboard */; };
++		6502A39B1EB4E0EA00774F62 /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502A39A1EB4E0EA00774F62 /* HelloViewController.m */; };
+ 		654B2B591E9E2C6200629BEF /* HelloWorld_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654B2B581E9E2C6200629BEF /* HelloWorld_iosTests.m */; };
+ 		654B2B641E9E2C6200629BEF /* HelloWorld_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654B2B631E9E2C6200629BEF /* HelloWorld_iosUITests.m */; };
+ /* End PBXBuildFile section */
+@@ -35,16 +39,22 @@
+ /* End PBXContainerItemProxy section */
+ 
+ /* Begin PBXFileReference section */
++		6502A37E1EB4E0C900774F62 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
++		6502A3811EB4E0D000774F62 /* WeatherCurrentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCurrentModel.h; sourceTree = "<group>"; };
++		6502A3821EB4E0D000774F62 /* WeatherCurrentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCurrentModel.m; sourceTree = "<group>"; };
++		6502A3831EB4E0D000774F62 /* WeatherDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDayModel.h; sourceTree = "<group>"; };
++		6502A3841EB4E0D000774F62 /* WeatherDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDayModel.m; sourceTree = "<group>"; };
++		6502A3851EB4E0D000774F62 /* WeatherWeekModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherWeekModel.h; sourceTree = "<group>"; };
++		6502A3861EB4E0D000774F62 /* WeatherWeekModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherWeekModel.m; sourceTree = "<group>"; };
++		6502A38B1EB4E0D700774F62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
++		6502A38C1EB4E0D700774F62 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
++		6502A3901EB4E0DD00774F62 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
++		6502A3911EB4E0DD00774F62 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
++		6502A3921EB4E0DD00774F62 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
++		6502A3961EB4E0E400774F62 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
++		6502A3991EB4E0EA00774F62 /* HelloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloViewController.h; sourceTree = "<group>"; };
++		6502A39A1EB4E0EA00774F62 /* HelloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloViewController.m; sourceTree = "<group>"; };
+ 		654B2B3B1E9E2C6200629BEF /* HelloWorld-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelloWorld-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+-		654B2B3F1E9E2C6200629BEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+-		654B2B411E9E2C6200629BEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+-		654B2B421E9E2C6200629BEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+-		654B2B441E9E2C6200629BEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+-		654B2B451E9E2C6200629BEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+-		654B2B481E9E2C6200629BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+-		654B2B4A1E9E2C6200629BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+-		654B2B4D1E9E2C6200629BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+-		654B2B4F1E9E2C6200629BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+ 		654B2B541E9E2C6200629BEF /* HelloWorld-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HelloWorld-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+ 		654B2B581E9E2C6200629BEF /* HelloWorld_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorld_iosTests.m; sourceTree = "<group>"; };
+ 		654B2B5A1E9E2C6200629BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+@@ -78,6 +88,62 @@
+ /* End PBXFrameworksBuildPhase section */
+ 
+ /* Begin PBXGroup section */
++		6502A37D1EB4E0C000774F62 /* Category */ = {
++			isa = PBXGroup;
++			children = (
++			);
++			path = Category;
++			sourceTree = "<group>";
++		};
++		6502A3801EB4E0D000774F62 /* Model */ = {
++			isa = PBXGroup;
++			children = (
++				6502A3811EB4E0D000774F62 /* WeatherCurrentModel.h */,
++				6502A3821EB4E0D000774F62 /* WeatherCurrentModel.m */,
++				6502A3831EB4E0D000774F62 /* WeatherDayModel.h */,
++				6502A3841EB4E0D000774F62 /* WeatherDayModel.m */,
++				6502A3851EB4E0D000774F62 /* WeatherWeekModel.h */,
++				6502A3861EB4E0D000774F62 /* WeatherWeekModel.m */,
++			);
++			path = Model;
++			sourceTree = "<group>";
++		};
++		6502A38A1EB4E0D700774F62 /* Resource */ = {
++			isa = PBXGroup;
++			children = (
++				6502A38B1EB4E0D700774F62 /* Assets.xcassets */,
++				6502A38C1EB4E0D700774F62 /* LaunchScreen.storyboard */,
++			);
++			path = Resource;
++			sourceTree = "<group>";
++		};
++		6502A38F1EB4E0DD00774F62 /* Supporting Files */ = {
++			isa = PBXGroup;
++			children = (
++				6502A3901EB4E0DD00774F62 /* AppDelegate.h */,
++				6502A3911EB4E0DD00774F62 /* AppDelegate.m */,
++				6502A3921EB4E0DD00774F62 /* main.m */,
++			);
++			path = "Supporting Files";
++			sourceTree = "<group>";
++		};
++		6502A3951EB4E0E400774F62 /* View */ = {
++			isa = PBXGroup;
++			children = (
++				6502A3961EB4E0E400774F62 /* Main.storyboard */,
++			);
++			path = View;
++			sourceTree = "<group>";
++		};
++		6502A3981EB4E0EA00774F62 /* ViewController */ = {
++			isa = PBXGroup;
++			children = (
++				6502A3991EB4E0EA00774F62 /* HelloViewController.h */,
++				6502A39A1EB4E0EA00774F62 /* HelloViewController.m */,
++			);
++			path = ViewController;
++			sourceTree = "<group>";
++		};
+ 		654B2B321E9E2C6200629BEF = {
+ 			isa = PBXGroup;
+ 			children = (
+@@ -101,27 +167,17 @@
+ 		654B2B3D1E9E2C6200629BEF /* HelloWorld-ios */ = {
+ 			isa = PBXGroup;
+ 			children = (
+-				654B2B411E9E2C6200629BEF /* AppDelegate.h */,
+-				654B2B421E9E2C6200629BEF /* AppDelegate.m */,
+-				654B2B441E9E2C6200629BEF /* ViewController.h */,
+-				654B2B451E9E2C6200629BEF /* ViewController.m */,
+-				654B2B471E9E2C6200629BEF /* Main.storyboard */,
+-				654B2B4A1E9E2C6200629BEF /* Assets.xcassets */,
+-				654B2B4C1E9E2C6200629BEF /* LaunchScreen.storyboard */,
+-				654B2B4F1E9E2C6200629BEF /* Info.plist */,
+-				654B2B3E1E9E2C6200629BEF /* Supporting Files */,
++				6502A3981EB4E0EA00774F62 /* ViewController */,
++				6502A3951EB4E0E400774F62 /* View */,
++				6502A38F1EB4E0DD00774F62 /* Supporting Files */,
++				6502A38A1EB4E0D700774F62 /* Resource */,
++				6502A3801EB4E0D000774F62 /* Model */,
++				6502A37E1EB4E0C900774F62 /* Info.plist */,
++				6502A37D1EB4E0C000774F62 /* Category */,
+ 			);
+ 			path = "HelloWorld-ios";
+ 			sourceTree = "<group>";
+ 		};
+-		654B2B3E1E9E2C6200629BEF /* Supporting Files */ = {
+-			isa = PBXGroup;
+-			children = (
+-				654B2B3F1E9E2C6200629BEF /* main.m */,
+-			);
+-			name = "Supporting Files";
+-			sourceTree = "<group>";
+-		};
+ 		654B2B571E9E2C6200629BEF /* HelloWorld-iosTests */ = {
+ 			isa = PBXGroup;
+ 			children = (
+@@ -202,6 +258,10 @@
+ 		654B2B331E9E2C6200629BEF /* Project object */ = {
+ 			isa = PBXProject;
+ 			attributes = {
++				KnownAssetTags = (
++					0,
++					1,
++				);
+ 				LastUpgradeCheck = 0830;
+ 				ORGANIZATIONNAME = yinzixin;
+ 				TargetAttributes = {
+@@ -249,9 +309,10 @@
+ 			isa = PBXResourcesBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
+-				654B2B4E1E9E2C6200629BEF /* LaunchScreen.storyboard in Resources */,
+-				654B2B4B1E9E2C6200629BEF /* Assets.xcassets in Resources */,
+-				654B2B491E9E2C6200629BEF /* Main.storyboard in Resources */,
++				6502A38E1EB4E0D700774F62 /* LaunchScreen.storyboard in Resources */,
++				6502A38D1EB4E0D700774F62 /* Assets.xcassets in Resources */,
++				6502A37F1EB4E0C900774F62 /* Info.plist in Resources */,
++				6502A3971EB4E0E400774F62 /* Main.storyboard in Resources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+ 		};
+@@ -276,9 +337,12 @@
+ 			isa = PBXSourcesBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
+-				654B2B461E9E2C6200629BEF /* ViewController.m in Sources */,
+-				654B2B431E9E2C6200629BEF /* AppDelegate.m in Sources */,
+-				654B2B401E9E2C6200629BEF /* main.m in Sources */,
++				6502A3941EB4E0DD00774F62 /* main.m in Sources */,
++				6502A3931EB4E0DD00774F62 /* AppDelegate.m in Sources */,
++				6502A3871EB4E0D000774F62 /* WeatherCurrentModel.m in Sources */,
++				6502A39B1EB4E0EA00774F62 /* HelloViewController.m in Sources */,
++				6502A3891EB4E0D000774F62 /* WeatherWeekModel.m in Sources */,
++				6502A3881EB4E0D000774F62 /* WeatherDayModel.m in Sources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+ 		};
+@@ -313,25 +377,6 @@
+ 		};
+ /* End PBXTargetDependency section */
+ 
+-/* Begin PBXVariantGroup section */
+-		654B2B471E9E2C6200629BEF /* Main.storyboard */ = {
+-			isa = PBXVariantGroup;
+-			children = (
+-				654B2B481E9E2C6200629BEF /* Base */,
+-			);
+-			name = Main.storyboard;
+-			sourceTree = "<group>";
+-		};
+-		654B2B4C1E9E2C6200629BEF /* LaunchScreen.storyboard */ = {
+-			isa = PBXVariantGroup;
+-			children = (
+-				654B2B4D1E9E2C6200629BEF /* Base */,
+-			);
+-			name = LaunchScreen.storyboard;
+-			sourceTree = "<group>";
+-		};
+-/* End PBXVariantGroup section */
+-
+ /* Begin XCBuildConfiguration section */
+ 		654B2B661E9E2C6200629BEF /* Debug */ = {
+ 			isa = XCBuildConfiguration;
+@@ -430,7 +475,7 @@
+ 				DEVELOPMENT_TEAM = W6Z7US22L6;
+ 				INFOPLIST_FILE = "HelloWorld-ios/Info.plist";
+ 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+-				PRODUCT_BUNDLE_IDENTIFIER = "yzxPersonalHelloWorldcom.app.HelloWorld-ios";
++				PRODUCT_BUNDLE_IDENTIFIER = yzxPersonalHelloWorldapp;
+ 				PRODUCT_NAME = "$(TARGET_NAME)";
+ 			};
+ 			name = Debug;
+@@ -442,7 +487,7 @@
+ 				DEVELOPMENT_TEAM = W6Z7US22L6;
+ 				INFOPLIST_FILE = "HelloWorld-ios/Info.plist";
+ 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+-				PRODUCT_BUNDLE_IDENTIFIER = "yzxPersonalHelloWorldcom.app.HelloWorld-ios";
++				PRODUCT_BUNDLE_IDENTIFIER = yzxPersonalHelloWorldapp;
+ 				PRODUCT_NAME = "$(TARGET_NAME)";
+ 			};
+ 			name = Release;
+@@ -516,6 +561,7 @@
+ 				654B2B6A1E9E2C6200629BEF /* Release */,
+ 			);
+ 			defaultConfigurationIsVisible = 0;
++			defaultConfigurationName = Release;
+ 		};
+ 		654B2B6B1E9E2C6200629BEF /* Build configuration list for PBXNativeTarget "HelloWorld-iosTests" */ = {
+ 			isa = XCConfigurationList;
+@@ -524,6 +570,7 @@
+ 				654B2B6D1E9E2C6200629BEF /* Release */,
+ 			);
+ 			defaultConfigurationIsVisible = 0;
++			defaultConfigurationName = Release;
+ 		};
+ 		654B2B6E1E9E2C6200629BEF /* Build configuration list for PBXNativeTarget "HelloWorld-iosUITests" */ = {
+ 			isa = XCConfigurationList;
+@@ -532,6 +579,7 @@
+ 				654B2B701E9E2C6200629BEF /* Release */,
+ 			);
+ 			defaultConfigurationIsVisible = 0;
++			defaultConfigurationName = Release;
+ 		};
+ /* End XCConfigurationList section */
+ 	};
+diff --git a/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist b/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+new file mode 100644
+index 0000000..e6b44ac
+--- /dev/null
++++ b/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+@@ -0,0 +1,579 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<Bucket
++   type = "1"
++   version = "2.0">
++   <Breakpoints>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.h"
++            timestampString = "514954629.027062"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "12"
++            endingLineNumber = "12"
++            landmarkName = "@interface Week"
++            landmarkType = "2">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.h"
++            timestampString = "514954629.027062"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "14"
++            endingLineNumber = "14"
++            landmarkName = "@interface Week"
++            landmarkType = "2">
++            <Locations>
++               <Location
++                  shouldBeEnabled = "No"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "-[Week weatherDictionary]"
++                  moduleName = "HelloWorld-ios"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/yinzixin/Documents/%E9%9B%B6%E5%AE%A2%E5%B7%A5%E4%BD%9C%E5%AE%A4/HelloWorld-ios/HelloWorld-ios/Week.h"
++                  timestampString = "514887875.346602"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "15"
++                  endingLineNumber = "15"
++                  offsetFromSymbolStart = "12">
++               </Location>
++               <Location
++                  shouldBeEnabled = "No"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "-[Week setWeatherDictionary:]"
++                  moduleName = "HelloWorld-ios"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/yinzixin/Documents/%E9%9B%B6%E5%AE%A2%E5%B7%A5%E4%BD%9C%E5%AE%A4/HelloWorld-ios/HelloWorld-ios/Week.h"
++                  timestampString = "514887875.348036"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "15"
++                  endingLineNumber = "15"
++                  offsetFromSymbolStart = "49">
++               </Location>
++            </Locations>
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/ViewController.h"
++            timestampString = "514814108.576332"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "11"
++            endingLineNumber = "11"
++            landmarkName = "-degree:"
++            landmarkType = "6">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/ViewController.m"
++            timestampString = "514957866.90836"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "122"
++            endingLineNumber = "122"
++            landmarkName = "@implementation ViewController"
++            landmarkType = "3">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/ViewController.m"
++            timestampString = "514957866.90836"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "123"
++            endingLineNumber = "123"
++            landmarkName = "@implementation ViewController"
++            landmarkType = "3">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "18"
++            endingLineNumber = "18"
++            landmarkName = "-weekdayStringFromDate"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "19"
++            endingLineNumber = "19"
++            landmarkName = "-weekdayStringFromDate"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "39"
++            endingLineNumber = "39"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "37"
++            endingLineNumber = "37"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "36"
++            endingLineNumber = "36"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "28"
++            endingLineNumber = "28"
++            landmarkName = "-init"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/OneDayOfOneWeek.h"
++            timestampString = "514898686.953195"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "13"
++            endingLineNumber = "13"
++            landmarkName = "temperatureMax"
++            landmarkType = "24">
++            <Locations>
++               <Location
++                  shouldBeEnabled = "No"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "-[OneDayOfOneWeek temperatureMax]"
++                  moduleName = "HelloWorld-ios"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/yinzixin/Documents/%E9%9B%B6%E5%AE%A2%E5%B7%A5%E4%BD%9C%E5%AE%A4/HelloWorld-ios/HelloWorld-ios/OneDayOfOneWeek.h"
++                  timestampString = "514900643.669854"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "13"
++                  endingLineNumber = "13"
++                  offsetFromSymbolStart = "12">
++               </Location>
++               <Location
++                  shouldBeEnabled = "No"
++                  ignoreCount = "0"
++                  continueAfterRunningActions = "No"
++                  symbolName = "-[OneDayOfOneWeek setTemperatureMax:]"
++                  moduleName = "HelloWorld-ios"
++                  usesParentBreakpointCondition = "Yes"
++                  urlString = "file:///Users/yinzixin/Documents/%E9%9B%B6%E5%AE%A2%E5%B7%A5%E4%BD%9C%E5%AE%A4/HelloWorld-ios/HelloWorld-ios/OneDayOfOneWeek.h"
++                  timestampString = "514900643.671194"
++                  startingColumnNumber = "9223372036854775807"
++                  endingColumnNumber = "9223372036854775807"
++                  startingLineNumber = "13"
++                  endingLineNumber = "13"
++                  offsetFromSymbolStart = "35">
++               </Location>
++            </Locations>
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/ViewController.m"
++            timestampString = "514957558.13061"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "94"
++            endingLineNumber = "94"
++            landmarkName = "-getWeatherData"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "44"
++            endingLineNumber = "44"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "56"
++            endingLineNumber = "56"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "45"
++            endingLineNumber = "45"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "46"
++            endingLineNumber = "46"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "47"
++            endingLineNumber = "47"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "48"
++            endingLineNumber = "48"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "49"
++            endingLineNumber = "49"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "50"
++            endingLineNumber = "50"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "52"
++            endingLineNumber = "52"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "51"
++            endingLineNumber = "51"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "Yes"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "63"
++            endingLineNumber = "63"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "57"
++            endingLineNumber = "57"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "59"
++            endingLineNumber = "59"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "58"
++            endingLineNumber = "58"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "60"
++            endingLineNumber = "60"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514956177.976142"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "68"
++            endingLineNumber = "68"
++            landmarkName = "-current"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/Week.m"
++            timestampString = "514957448.375017"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "42"
++            endingLineNumber = "42"
++            landmarkName = "-initWeathers"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/HelloViewController.m"
++            timestampString = "515129535.955939"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "10"
++            endingLineNumber = "10">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            shouldBeEnabled = "No"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "HelloWorld-ios/HelloViewController.m"
++            timestampString = "515074254.469538"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "10"
++            endingLineNumber = "10">
++         </BreakpointContent>
++      </BreakpointProxy>
++   </Breakpoints>
++</Bucket>
+diff --git a/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcschemes/HelloWorld-ios.xcscheme b/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcschemes/HelloWorld-ios.xcscheme
+index 015fcc0..8dfb606 100644
+--- a/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcschemes/HelloWorld-ios.xcscheme
++++ b/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcschemes/HelloWorld-ios.xcscheme
+@@ -5,6 +5,22 @@
+    <BuildAction
+       parallelizeBuildables = "YES"
+       buildImplicitDependencies = "YES">
++      <BuildActionEntries>
++         <BuildActionEntry
++            buildForTesting = "YES"
++            buildForRunning = "YES"
++            buildForProfiling = "YES"
++            buildForArchiving = "YES"
++            buildForAnalyzing = "YES">
++            <BuildableReference
++               BuildableIdentifier = "primary"
++               BlueprintIdentifier = "654B2B3A1E9E2C6200629BEF"
++               BuildableName = "HelloWorld-ios.app"
++               BlueprintName = "HelloWorld-ios"
++               ReferencedContainer = "container:HelloWorld-ios.xcodeproj">
++            </BuildableReference>
++         </BuildActionEntry>
++      </BuildActionEntries>
+    </BuildAction>
+    <TestAction
+       buildConfiguration = "Debug"
+@@ -12,7 +28,36 @@
+       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+       shouldUseLaunchSchemeArgsEnv = "YES">
+       <Testables>
++         <TestableReference
++            skipped = "NO">
++            <BuildableReference
++               BuildableIdentifier = "primary"
++               BlueprintIdentifier = "654B2B531E9E2C6200629BEF"
++               BuildableName = "HelloWorld-iosTests.xctest"
++               BlueprintName = "HelloWorld-iosTests"
++               ReferencedContainer = "container:HelloWorld-ios.xcodeproj">
++            </BuildableReference>
++         </TestableReference>
++         <TestableReference
++            skipped = "NO">
++            <BuildableReference
++               BuildableIdentifier = "primary"
++               BlueprintIdentifier = "654B2B5E1E9E2C6200629BEF"
++               BuildableName = "HelloWorld-iosUITests.xctest"
++               BlueprintName = "HelloWorld-iosUITests"
++               ReferencedContainer = "container:HelloWorld-ios.xcodeproj">
++            </BuildableReference>
++         </TestableReference>
+       </Testables>
++      <MacroExpansion>
++         <BuildableReference
++            BuildableIdentifier = "primary"
++            BlueprintIdentifier = "654B2B3A1E9E2C6200629BEF"
++            BuildableName = "HelloWorld-ios.app"
++            BlueprintName = "HelloWorld-ios"
++            ReferencedContainer = "container:HelloWorld-ios.xcodeproj">
++         </BuildableReference>
++      </MacroExpansion>
+       <AdditionalOptions>
+       </AdditionalOptions>
+    </TestAction>
+@@ -26,6 +71,16 @@
+       debugDocumentVersioning = "YES"
+       debugServiceExtension = "internal"
+       allowLocationSimulation = "YES">
++      <BuildableProductRunnable
++         runnableDebuggingMode = "0">
++         <BuildableReference
++            BuildableIdentifier = "primary"
++            BlueprintIdentifier = "654B2B3A1E9E2C6200629BEF"
++            BuildableName = "HelloWorld-ios.app"
++            BlueprintName = "HelloWorld-ios"
++            ReferencedContainer = "container:HelloWorld-ios.xcodeproj">
++         </BuildableReference>
++      </BuildableProductRunnable>
+       <AdditionalOptions>
+       </AdditionalOptions>
+    </LaunchAction>
+@@ -35,6 +90,16 @@
+       savedToolIdentifier = ""
+       useCustomWorkingDirectory = "NO"
+       debugDocumentVersioning = "YES">
++      <BuildableProductRunnable
++         runnableDebuggingMode = "0">
++         <BuildableReference
++            BuildableIdentifier = "primary"
++            BlueprintIdentifier = "654B2B3A1E9E2C6200629BEF"
++            BuildableName = "HelloWorld-ios.app"
++            BlueprintName = "HelloWorld-ios"
++            ReferencedContainer = "container:HelloWorld-ios.xcodeproj">
++         </BuildableReference>
++      </BuildableProductRunnable>
+    </ProfileAction>
+    <AnalyzeAction
+       buildConfiguration = "Debug">
+diff --git a/HelloWorld-ios/Base.lproj/Main.storyboard b/HelloWorld-ios/Base.lproj/Main.storyboard
+deleted file mode 100644
+index 4529698..0000000
+--- a/HelloWorld-ios/Base.lproj/Main.storyboard
++++ /dev/null
+@@ -1,26 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+-    <dependencies>
+-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+-    </dependencies>
+-    <scenes>
+-        <!--View Controller-->
+-        <scene sceneID="tne-QT-ifu">
+-            <objects>
+-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+-                    <layoutGuides>
+-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+-                    </layoutGuides>
+-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+-                    </view>
+-                </viewController>
+-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+-            </objects>
+-        </scene>
+-    </scenes>
+-</document>
+diff --git a/HelloWorld-ios/Info.plist b/HelloWorld-ios/Info.plist
+old mode 100644
+new mode 100755
+index 38e98af..a0c86d1
+--- a/HelloWorld-ios/Info.plist
++++ b/HelloWorld-ios/Info.plist
+@@ -28,6 +28,8 @@
+ 	<array>
+ 		<string>armv7</string>
+ 	</array>
++	<key>UIStatusBarHidden</key>
++	<false/>
+ 	<key>UISupportedInterfaceOrientations</key>
+ 	<array>
+ 		<string>UIInterfaceOrientationPortrait</string>
+diff --git a/HelloWorld-ios/Model/WeatherCurrentModel.h b/HelloWorld-ios/Model/WeatherCurrentModel.h
+new file mode 100644
+index 0000000..fad02cf
+--- /dev/null
++++ b/HelloWorld-ios/Model/WeatherCurrentModel.h
+@@ -0,0 +1,14 @@
++//
++//  NSObject+currently.h
++//  HelloWorld-ios
++//
++//  Created by 殷子欣 on 2017/4/27.
++//  Copyright © 2017年 yinzixin. All rights reserved.
++//
++
++#import <Foundation/Foundation.h>
++#import <UIKit/UIKit.h>
++@interface WeatherCurrentModel : NSObject
++@property (nonatomic, copy) NSMutableDictionary *currentWeatherDictionary;
++-(NSDictionary *)getCurrentWeather:(NSDictionary*)mainWeatherDictionary;
++@end
+diff --git a/HelloWorld-ios/Model/WeatherCurrentModel.m b/HelloWorld-ios/Model/WeatherCurrentModel.m
+new file mode 100644
+index 0000000..f5b7ef4
+--- /dev/null
++++ b/HelloWorld-ios/Model/WeatherCurrentModel.m
+@@ -0,0 +1,19 @@
++//
++//  NSObject+currently.m
++//  HelloWorld-ios
++//
++//  Created by 殷子欣 on 2017/4/27.
++//  Copyright © 2017年 yinzixin. All rights reserved.
++//
++
++#import "WeatherCurrentModel.h"
++
++@implementation WeatherCurrentModel
++//更新当前的天气
++-(NSDictionary *)getCurrentWeather:(NSDictionary *)mainWeatherDictionary {
++    if ([mainWeatherDictionary[@"currently"] isKindOfClass:[NSDictionary class]]) {
++        return mainWeatherDictionary[@"currently"];
++    }
++    return NULL;
++}
++@end
+diff --git a/HelloWorld-ios/Model/WeatherDayModel.h b/HelloWorld-ios/Model/WeatherDayModel.h
+new file mode 100755
+index 0000000..75c3bb0
+--- /dev/null
++++ b/HelloWorld-ios/Model/WeatherDayModel.h
+@@ -0,0 +1,17 @@
++//
++//  OneDayOfOneWeek.h
++//  HelloWorld-ios
++//
++//  Created by 殷子欣 on 2017/4/15.
++//  Copyright © 2017年 yinzixin. All rights reserved.
++//
++
++
++#import <Foundation/Foundation.h>
++#import <UIKit/UIKit.h>
++@interface WeatherDayModel : NSObject
++@property(nonatomic, assign) NSInteger temperatureMax;
++@property(nonatomic, assign) NSInteger temperatureMin;
++@property(nonatomic, retain) UIImage *iconimage;
++@property(nonatomic, assign) NSInteger name;
++@end
+diff --git a/HelloWorld-ios/Model/WeatherDayModel.m b/HelloWorld-ios/Model/WeatherDayModel.m
+new file mode 100755
+index 0000000..dcb7b43
+--- /dev/null
++++ b/HelloWorld-ios/Model/WeatherDayModel.m
+@@ -0,0 +1,12 @@
++//
++//  OneDayOfOneWeek.m
++//  HelloWorld-ios
++//
++//  Created by 殷子欣 on 2017/4/15.
++//  Copyright © 2017年 yinzixin. All rights reserved.
++//
++
++#import "WeatherDayModel.h"
++@implementation WeatherDayModel
++@end
++
+diff --git a/HelloWorld-ios/Model/WeatherWeekModel.h b/HelloWorld-ios/Model/WeatherWeekModel.h
+new file mode 100644
+index 0000000..beba338
+--- /dev/null
++++ b/HelloWorld-ios/Model/WeatherWeekModel.h
+@@ -0,0 +1,15 @@
++//
++//  Week.h
++//  HelloWorld-ios
++//
++//  Created by 殷子欣 on 2017/4/22.
++//  Copyright © 2017年 yinzixin. All rights reserved.
++//
++
++#import "WeatherDayModel.h"
++#import <Foundation/Foundation.h>
++@interface WeatherWeekModel : NSObject
++@property (nonatomic, strong) NSMutableArray<WeatherDayModel *> *dayWeathers;
++- (void)setWeekWeathers:(NSDictionary*)mainWeatherDictionary;
++- (NSInteger)getWeekdayInteger;
++@end
+diff --git a/HelloWorld-ios/Model/WeatherWeekModel.m b/HelloWorld-ios/Model/WeatherWeekModel.m
+new file mode 100644
+index 0000000..a2dbba1
+--- /dev/null
++++ b/HelloWorld-ios/Model/WeatherWeekModel.m
+@@ -0,0 +1,64 @@
++//
++//  Week.m
++//  HelloWorld-ios
++//
++//  Created by 殷子欣 on 2017/4/22.
++//  Copyright © 2017年 yinzixin. All rights reserved.
++//
++
++#import "WeatherWeekModel.h"
++@implementation WeatherWeekModel
++
++#pragma mark -Life Cycle
++- (id)init {
++    if (self = [super init]) {
++        self.dayWeathers = [[NSMutableArray alloc] init];
++        for (NSInteger count=0; count<7; count++) {
++            WeatherDayModel *objc = [[WeatherDayModel alloc] init];
++            [self.dayWeathers addObject: objc];
++        }
++    }
++    return self;
++}
++
++#pragma mark - Public API
++
++#pragma mark - Private API
++
++#pragma mark - Getter && Setter
++//获取今天是星期几
++- (NSInteger)getWeekdayInteger {
++    NSDate *weatherDate = [NSDate date];
++    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
++    NSDateComponents *comps = [[NSDateComponents alloc] init];
++    comps = [calendar components: NSCalendarUnitWeekday fromDate:weatherDate];
++    NSInteger weekDay = [comps weekday];
++    NSLog(@"%td", weekDay);
++    return weekDay;
++}
++
++
++- (void)setWeekWeathers:(NSDictionary *)mainWeatherDictionary {
++    //星期几更新完毕
++    NSInteger todayWeekDay = [self getWeekdayInteger] - 1;
++    for (NSInteger count = 0; count < 7; count++) {
++        self.dayWeathers[count].name = (todayWeekDay + count <= 7) ? (todayWeekDay + count) : (todayWeekDay + count - 7);
++    }
++    //更新最高气温最低气温
++    if ([mainWeatherDictionary[@"daily"] isKindOfClass:[NSDictionary class]]) {
++        NSDictionary *dailyDictionary = mainWeatherDictionary[@"daily"];
++        if ([dailyDictionary[@"data"] isKindOfClass:[NSArray class]]) {
++            NSArray *weathers = dailyDictionary[@"data"];
++            for (NSInteger count = 0; count <7; count++) {
++                if ([weathers[count] isKindOfClass:[NSDictionary class]]) {
++                    self.dayWeathers[count].temperatureMax = [weathers[count][@"temperatureMax"] floatValue];
++                    self.dayWeathers[count].temperatureMin = [weathers[count][@"temperatureMin"] floatValue];
++                    self.dayWeathers[count].iconimage = [UIImage imageNamed: weathers[count][@"icon"]];
++                    NSLog(@"%@", weathers[count][@"icon"]);
++                }
++            }
++        }
++    }
++
++}
++@end
+diff --git a/HelloWorld-ios/Assets.xcassets/AppIcon.appiconset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/AppIcon.appiconset/Contents.json
+old mode 100644
+new mode 100755
+similarity index 77%
+rename from HelloWorld-ios/Assets.xcassets/AppIcon.appiconset/Contents.json
+rename to HelloWorld-ios/Resource/Assets.xcassets/AppIcon.appiconset/Contents.json
+index 118c98f..b8236c6
+--- a/HelloWorld-ios/Assets.xcassets/AppIcon.appiconset/Contents.json
++++ b/HelloWorld-ios/Resource/Assets.xcassets/AppIcon.appiconset/Contents.json
+@@ -2,6 +2,16 @@
+   "images" : [
+     {
+       "idiom" : "iphone",
++      "size" : "20x20",
++      "scale" : "2x"
++    },
++    {
++      "idiom" : "iphone",
++      "size" : "20x20",
++      "scale" : "3x"
++    },
++    {
++      "idiom" : "iphone",
+       "size" : "29x29",
+       "scale" : "2x"
+     },
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/Contents.json
+new file mode 100755
+index 0000000..da4a164
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/Contents.json
+@@ -0,0 +1,6 @@
++{
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/clear-day.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/clear-day.imageset/Contents.json
+new file mode 100755
+index 0000000..54d2de3
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/clear-day.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "clear-day-1.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/clear-day.imageset/clear-day-1.png b/HelloWorld-ios/Resource/Assets.xcassets/clear-day.imageset/clear-day-1.png
+new file mode 100755
+index 0000000..86e10e2
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/clear-day.imageset/clear-day-1.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/clear-night.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/clear-night.imageset/Contents.json
+new file mode 100755
+index 0000000..ed8cc12
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/clear-night.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "clear-night-1.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/clear-night.imageset/clear-night-1.png b/HelloWorld-ios/Resource/Assets.xcassets/clear-night.imageset/clear-night-1.png
+new file mode 100755
+index 0000000..547662f
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/clear-night.imageset/clear-night-1.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/cloudy.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/cloudy.imageset/Contents.json
+new file mode 100755
+index 0000000..3c44e41
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/cloudy.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "cloudy-1.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/cloudy.imageset/cloudy-1.png b/HelloWorld-ios/Resource/Assets.xcassets/cloudy.imageset/cloudy-1.png
+new file mode 100755
+index 0000000..09db064
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/cloudy.imageset/cloudy-1.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/degree.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/degree.imageset/Contents.json
+new file mode 100755
+index 0000000..67374d0
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/degree.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x",
++      "filename" : "degree.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/degree.imageset/degree.png b/HelloWorld-ios/Resource/Assets.xcassets/degree.imageset/degree.png
+new file mode 100755
+index 0000000..311ee9c
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/degree.imageset/degree.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/fog.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/fog.imageset/Contents.json
+new file mode 100755
+index 0000000..ea01b95
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/fog.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "fog-1.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/fog.imageset/fog-1.png b/HelloWorld-ios/Resource/Assets.xcassets/fog.imageset/fog-1.png
+new file mode 100755
+index 0000000..951c390
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/fog.imageset/fog-1.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/heatindex.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/heatindex.imageset/Contents.json
+new file mode 100755
+index 0000000..253b302
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/heatindex.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x",
++      "filename" : "heatindex.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/heatindex.imageset/heatindex.png b/HelloWorld-ios/Resource/Assets.xcassets/heatindex.imageset/heatindex.png
+new file mode 100755
+index 0000000..204e16e
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/heatindex.imageset/heatindex.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/moisture.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/moisture.imageset/Contents.json
+new file mode 100755
+index 0000000..12058f6
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/moisture.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "humidity.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/moisture.imageset/humidity.png b/HelloWorld-ios/Resource/Assets.xcassets/moisture.imageset/humidity.png
+new file mode 100755
+index 0000000..3e77431
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/moisture.imageset/humidity.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-day.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-day.imageset/Contents.json
+new file mode 100755
+index 0000000..dfc6128
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-day.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "partly-cloudy-1.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-day.imageset/partly-cloudy-1.png b/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-day.imageset/partly-cloudy-1.png
+new file mode 100755
+index 0000000..0869fe0
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-day.imageset/partly-cloudy-1.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-night.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-night.imageset/Contents.json
+new file mode 100755
+index 0000000..28f59a3
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-night.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "cloudy-night-1.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-night.imageset/cloudy-night-1.png b/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-night.imageset/cloudy-night-1.png
+new file mode 100755
+index 0000000..09db064
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/partly-cloudy-night.imageset/cloudy-night-1.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/rain.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/rain.imageset/Contents.json
+new file mode 100755
+index 0000000..617cec2
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/rain.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "rain.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/rain.imageset/rain.png b/HelloWorld-ios/Resource/Assets.xcassets/rain.imageset/rain.png
+new file mode 100755
+index 0000000..fde9f36
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/rain.imageset/rain.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/sleet.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/sleet.imageset/Contents.json
+new file mode 100755
+index 0000000..ee5f516
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/sleet.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "sleet-1.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/sleet.imageset/sleet-1.png b/HelloWorld-ios/Resource/Assets.xcassets/sleet.imageset/sleet-1.png
+new file mode 100755
+index 0000000..f317ef1
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/sleet.imageset/sleet-1.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/snow.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/snow.imageset/Contents.json
+new file mode 100755
+index 0000000..917484d
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/snow.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "snow-1.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/snow.imageset/snow-1.png b/HelloWorld-ios/Resource/Assets.xcassets/snow.imageset/snow-1.png
+new file mode 100755
+index 0000000..37e4173
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/snow.imageset/snow-1.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/umbrella.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/umbrella.imageset/Contents.json
+new file mode 100755
+index 0000000..eaba774
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/umbrella.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x",
++      "filename" : "umbrella.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/umbrella.imageset/umbrella.png b/HelloWorld-ios/Resource/Assets.xcassets/umbrella.imageset/umbrella.png
+new file mode 100755
+index 0000000..4d02443
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/umbrella.imageset/umbrella.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/wind.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/wind.imageset/Contents.json
+new file mode 100755
+index 0000000..16fd481
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/wind.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x",
++      "filename" : "wind-1.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/wind.imageset/wind-1.png b/HelloWorld-ios/Resource/Assets.xcassets/wind.imageset/wind-1.png
+new file mode 100755
+index 0000000..f85c4c3
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/wind.imageset/wind-1.png differ
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/windbag.imageset/Contents.json b/HelloWorld-ios/Resource/Assets.xcassets/windbag.imageset/Contents.json
+new file mode 100755
+index 0000000..80bc091
+--- /dev/null
++++ b/HelloWorld-ios/Resource/Assets.xcassets/windbag.imageset/Contents.json
+@@ -0,0 +1,21 @@
++{
++  "images" : [
++    {
++      "idiom" : "universal",
++      "scale" : "1x",
++      "filename" : "windbag.png"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "version" : 1,
++    "author" : "xcode"
++  }
++}
+\ No newline at end of file
+diff --git a/HelloWorld-ios/Resource/Assets.xcassets/windbag.imageset/windbag.png b/HelloWorld-ios/Resource/Assets.xcassets/windbag.imageset/windbag.png
+new file mode 100755
+index 0000000..3a32561
+Binary files /dev/null and b/HelloWorld-ios/Resource/Assets.xcassets/windbag.imageset/windbag.png differ
+diff --git a/HelloWorld-ios/Base.lproj/LaunchScreen.storyboard b/HelloWorld-ios/Resource/LaunchScreen.storyboard
+old mode 100644
+new mode 100755
+similarity index 100%
+rename from HelloWorld-ios/Base.lproj/LaunchScreen.storyboard
+rename to HelloWorld-ios/Resource/LaunchScreen.storyboard
+diff --git a/HelloWorld-ios/AppDelegate.h b/HelloWorld-ios/Supporting Files/AppDelegate.h
+old mode 100644
+new mode 100755
+similarity index 100%
+rename from HelloWorld-ios/AppDelegate.h
+rename to HelloWorld-ios/Supporting Files/AppDelegate.h
+diff --git a/HelloWorld-ios/AppDelegate.m b/HelloWorld-ios/Supporting Files/AppDelegate.m
+old mode 100644
+new mode 100755
+similarity index 100%
+rename from HelloWorld-ios/AppDelegate.m
+rename to HelloWorld-ios/Supporting Files/AppDelegate.m
+diff --git a/HelloWorld-ios/main.m b/HelloWorld-ios/Supporting Files/main.m
+old mode 100644
+new mode 100755
+similarity index 100%
+rename from HelloWorld-ios/main.m
+rename to HelloWorld-ios/Supporting Files/main.m
+diff --git a/HelloWorld-ios/View/Main.storyboard b/HelloWorld-ios/View/Main.storyboard
+new file mode 100755
+index 0000000..35e6508
+--- /dev/null
++++ b/HelloWorld-ios/View/Main.storyboard
+@@ -0,0 +1,456 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
++    <device id="retina4_7" orientation="portrait">
++        <adaptation id="fullscreen"/>
++    </device>
++    <dependencies>
++        <deployment identifier="iOS"/>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
++        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
++        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
++    </dependencies>
++    <scenes>
++        <!--Hello View Controller-->
++        <scene sceneID="tne-QT-ifu">
++            <objects>
++                <viewController id="BYZ-38-t0r" customClass="HelloViewController" sceneMemberID="viewController">
++                    <layoutGuides>
++                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
++                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
++                    </layoutGuides>
++                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
++                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
++                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
++                        <subviews>
++                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIh-N4-8Y8">
++                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
++                                <subviews>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风力" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM9-4D-pLx">
++                                        <rect key="frame" x="186" y="354" width="35" height="12"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="12" id="Z6J-4i-FRa"/>
++                                            <constraint firstAttribute="width" constant="35" id="dJI-hO-nBe"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="降雨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X8-cc-DtI">
++                                        <rect key="frame" x="107" y="354" width="35" height="12"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="35" id="Pgy-oB-urP"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="湿度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhU-DT-jWS">
++                                        <rect key="frame" x="265" y="354" width="35" height="12"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="35" id="9OE-qC-YKD"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkQ-Om-TEk">
++                                        <rect key="frame" x="265" y="334" width="32" height="20"/>
++                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPP-iz-g4R">
++                                        <rect key="frame" x="186" y="334" width="32" height="20"/>
++                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddz-Cg-zJd">
++                                        <rect key="frame" x="107" y="334" width="32" height="20"/>
++                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最低" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np0-Qw-aX1">
++                                        <rect key="frame" x="28" y="334" width="39" height="21"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="39" id="LEY-AT-Sua"/>
++                                            <constraint firstAttribute="height" constant="21" id="tG7-wH-wE5"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最高" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc7-4L-xc1">
++                                        <rect key="frame" x="308" y="334" width="39" height="21"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="21" id="OZb-l9-Gws"/>
++                                            <constraint firstAttribute="width" constant="39" id="lQy-Z1-NYY"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asj-FS-aWK">
++                                        <rect key="frame" x="28" y="310" width="39" height="21"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="21" id="9gl-JT-LvS"/>
++                                            <constraint firstAttribute="width" constant="39" id="Q04-Dv-wsP"/>
++                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="RGa-WJ-J5F"/>
++                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="viT-gB-WEy"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
++                                        <color key="textColor" red="0.079289935529232025" green="0.48990768194198608" blue="0.94690829515457153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZm-gu-BGV">
++                                        <rect key="frame" x="308" y="310" width="39" height="21"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="C2g-s5-Rsg"/>
++                                            <constraint firstAttribute="width" constant="39" id="Cjo-c7-NI2"/>
++                                            <constraint firstAttribute="height" constant="21" id="FkC-tB-k0j"/>
++                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="y6o-Hr-NTn"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
++                                        <color key="textColor" red="1" green="0.082626763759999999" blue="0.17670409209999999" alpha="1" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moisture" translatesAutoresizingMaskIntoConstraints="NO" id="wbM-Kf-fKh">
++                                        <rect key="frame" x="237" y="341" width="25" height="25"/>
++                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                    </imageView>
++                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="Xzt-Qi-2L9">
++                                        <rect key="frame" x="79" y="341" width="25" height="25"/>
++                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                    </imageView>
++                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="windbag" translatesAutoresizingMaskIntoConstraints="NO" id="IBs-ss-Eu8">
++                                        <rect key="frame" x="158" y="341" width="25" height="25"/>
++                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                    </imageView>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20°/ 25°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhQ-pd-WN6">
++                                        <rect key="frame" x="28" y="619" width="44.5" height="14"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="44.5" id="4C5-JH-xnA"/>
++                                            <constraint firstAttribute="height" constant="14" id="tif-EE-UxC"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20°/ 25°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqv-2g-B1A">
++                                        <rect key="frame" x="82" y="619" width="47" height="14"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="47" id="7jb-3G-xmL"/>
++                                            <constraint firstAttribute="height" constant="14" id="fsK-b4-DVM"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1003" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20°/ 25°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8w-TR-cSn">
++                                        <rect key="frame" x="139" y="619" width="47" height="14"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="47" id="Ou2-eE-lOl"/>
++                                            <constraint firstAttribute="height" constant="14" id="kuT-CS-ijz"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20°/ 25°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aT-n8-iB0">
++                                        <rect key="frame" x="190" y="619" width="47" height="14"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="47" id="6R4-ch-Ngk"/>
++                                            <constraint firstAttribute="height" constant="14" id="x5v-b8-MiI"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1005" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20°/ 25°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CC-TI-9eL">
++                                        <rect key="frame" x="244" y="619" width="47" height="14"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="47" id="Kwq-WZ-YU9"/>
++                                            <constraint firstAttribute="height" constant="14" id="ydr-GR-750"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1501" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周一" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-R6-Tqy">
++                                        <rect key="frame" x="34" y="548" width="33" height="20"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="33" id="Y8y-7m-UNb"/>
++                                            <constraint firstAttribute="height" constant="20" id="x6L-ce-qos"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1502" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周二" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNQ-7I-6Vq">
++                                        <rect key="frame" x="86" y="548" width="40" height="20"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="20" id="3CJ-2J-Akm"/>
++                                            <constraint firstAttribute="width" constant="40" id="ynk-vY-IA1"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1504" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周四" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLq-Qa-MgK">
++                                        <rect key="frame" x="194" y="548" width="40" height="20"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="40" id="Wug-E9-4pi"/>
++                                            <constraint firstAttribute="height" constant="20" id="pBf-Fu-7g1"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1506" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周六" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddg-N2-v2C">
++                                        <rect key="frame" x="302" y="547" width="40" height="21"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="21" id="gG6-Su-YTs"/>
++                                            <constraint firstAttribute="width" constant="40" id="hlO-bk-ffm"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴天" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsb-PL-oMw">
++                                        <rect key="frame" x="163" y="75" width="113" height="53"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="113" id="6bj-A3-8s0"/>
++                                            <constraint firstAttribute="height" constant="53" id="kOT-cp-as2"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="外国-某城市" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktF-yR-6wx">
++                                        <rect key="frame" x="138" y="28" width="106" height="18"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="18" id="pma-Vb-yTC"/>
++                                            <constraint firstAttribute="width" constant="106" id="q6N-wx-fBV"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1505" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周五" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxR-GM-rgy">
++                                        <rect key="frame" x="248" y="548" width="40" height="20"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="20" id="oY0-Gd-YUO"/>
++                                            <constraint firstAttribute="width" constant="40" id="p5u-fh-WEE"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1503" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周三" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iee-nN-d2y">
++                                        <rect key="frame" x="140" y="548" width="40" height="20"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="40" id="Jcz-kR-cdf"/>
++                                            <constraint firstAttribute="height" constant="20" id="iOd-T1-a2c"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <label opaque="NO" userInteractionEnabled="NO" tag="1006" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20°/ 25°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wK1-N0-Plz">
++                                        <rect key="frame" x="298" y="619" width="47" height="14"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="14" id="72e-SE-e9p"/>
++                                            <constraint firstAttribute="width" constant="47" id="Qrs-lA-ERf"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                    <imageView userInteractionEnabled="NO" tag="501" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="TEY-qs-DVV">
++                                        <rect key="frame" x="33" y="576" width="35" height="35"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="35" id="Oxb-bK-E0r"/>
++                                            <constraint firstAttribute="height" constant="35" id="e1f-7B-XR8"/>
++                                        </constraints>
++                                    </imageView>
++                                    <imageView userInteractionEnabled="NO" tag="502" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="oVT-dB-0AS">
++                                        <rect key="frame" x="88" y="576" width="35" height="35"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="35" id="IoY-fv-Pln"/>
++                                            <constraint firstAttribute="width" constant="35" id="hyd-HL-gUU"/>
++                                        </constraints>
++                                    </imageView>
++                                    <imageView userInteractionEnabled="NO" tag="503" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="nMm-Rf-IHD">
++                                        <rect key="frame" x="142" y="576" width="35" height="35"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="35" id="g5I-mg-HNX"/>
++                                            <constraint firstAttribute="width" constant="35" id="mlZ-ff-ZDZ"/>
++                                        </constraints>
++                                    </imageView>
++                                    <imageView userInteractionEnabled="NO" tag="504" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="3WQ-f8-oHV">
++                                        <rect key="frame" x="196" y="576" width="35" height="35"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="35" id="QkB-mF-r2v"/>
++                                            <constraint firstAttribute="width" constant="35" id="qzV-5o-h2L"/>
++                                        </constraints>
++                                    </imageView>
++                                    <imageView userInteractionEnabled="NO" tag="505" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="I57-2i-Plz">
++                                        <rect key="frame" x="250" y="576" width="35" height="35"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="35" id="0rK-oQ-wSD"/>
++                                            <constraint firstAttribute="width" constant="35" id="irO-Ax-Mez"/>
++                                        </constraints>
++                                    </imageView>
++                                    <imageView userInteractionEnabled="NO" tag="506" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="gHC-0d-g43">
++                                        <rect key="frame" x="304" y="576" width="35" height="35"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="35" id="HaI-tm-cC6"/>
++                                            <constraint firstAttribute="width" constant="35" id="o50-V7-odw"/>
++                                        </constraints>
++                                    </imageView>
++                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heatindex" translatesAutoresizingMaskIntoConstraints="NO" id="avT-jO-owu">
++                                        <rect key="frame" x="75" y="287" width="225" height="66"/>
++                                        <constraints>
++                                            <constraint firstAttribute="width" constant="225" id="2Qe-gI-uDV"/>
++                                        </constraints>
++                                    </imageView>
++                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="MsW-Am-sFA">
++                                        <rect key="frame" x="75" y="62" width="80" height="80"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="80" id="QSq-3e-BMY"/>
++                                            <constraint firstAttribute="width" constant="80" id="XHQ-YW-enZ"/>
++                                        </constraints>
++                                    </imageView>
++                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mA-0I-wI4">
++                                        <rect key="frame" x="276.5" y="146" width="30" height="30"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="30" id="Psf-NM-QvM"/>
++                                            <constraint firstAttribute="width" constant="30" id="g56-pF-oij"/>
++                                        </constraints>
++                                        <state key="normal" image="degree">
++                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
++                                            <color key="titleShadowColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
++                                        </state>
++                                        <connections>
++                                            <action selector="degreeButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51k-tc-kat"/>
++                                        </connections>
++                                    </button>
++                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebt-Dx-HBg">
++                                        <rect key="frame" x="61.5" y="150" width="250" height="133"/>
++                                        <constraints>
++                                            <constraint firstAttribute="height" constant="133" id="55k-8a-DdT"/>
++                                            <constraint firstAttribute="width" constant="250" id="Tis-fa-SFs"/>
++                                        </constraints>
++                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="130"/>
++                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
++                                        <nil key="highlightedColor"/>
++                                    </label>
++                                </subviews>
++                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
++                                <constraints>
++                                    <constraint firstAttribute="bottom" secondItem="jhQ-pd-WN6" secondAttribute="bottom" constant="34" id="0LK-m6-1aI"/>
++                                    <constraint firstItem="Ebt-Dx-HBg" firstAttribute="top" secondItem="kIh-N4-8Y8" secondAttribute="top" constant="150" id="1PV-nR-zsr"/>
++                                    <constraint firstItem="TEY-qs-DVV" firstAttribute="centerX" secondItem="jhQ-pd-WN6" secondAttribute="centerX" id="36S-BD-a1b"/>
++                                    <constraint firstItem="gHC-0d-g43" firstAttribute="centerY" secondItem="I57-2i-Plz" secondAttribute="centerY" id="47b-dX-D18"/>
++                                    <constraint firstItem="6aT-n8-iB0" firstAttribute="centerY" secondItem="e8w-TR-cSn" secondAttribute="centerY" id="48Y-5s-5E0"/>
++                                    <constraint firstItem="ddg-N2-v2C" firstAttribute="leading" secondItem="GxR-GM-rgy" secondAttribute="trailing" constant="14" id="4HT-iR-hqq"/>
++                                    <constraint firstItem="fsb-PL-oMw" firstAttribute="top" secondItem="kIh-N4-8Y8" secondAttribute="top" constant="75" id="4oK-Ux-Kmy"/>
++                                    <constraint firstItem="QZm-gu-BGV" firstAttribute="leading" secondItem="Asj-FS-aWK" secondAttribute="trailing" constant="241" id="7ch-vK-slz"/>
++                                    <constraint firstItem="gHC-0d-g43" firstAttribute="leading" secondItem="I57-2i-Plz" secondAttribute="trailing" constant="19" id="7ho-Xa-2k4"/>
++                                    <constraint firstItem="wK1-N0-Plz" firstAttribute="centerY" secondItem="3CC-TI-9eL" secondAttribute="centerY" id="7iE-JB-72f"/>
++                                    <constraint firstAttribute="trailing" secondItem="ktF-yR-6wx" secondAttribute="trailing" constant="131" id="8hK-W4-Ro9"/>
++                                    <constraint firstAttribute="trailing" secondItem="rhU-DT-jWS" secondAttribute="trailing" constant="75" id="9LF-Je-GYX"/>
++                                    <constraint firstItem="I57-2i-Plz" firstAttribute="centerY" secondItem="3WQ-f8-oHV" secondAttribute="centerY" id="9sK-o0-alK"/>
++                                    <constraint firstItem="5mA-0I-wI4" firstAttribute="top" secondItem="kIh-N4-8Y8" secondAttribute="top" constant="146" id="9vy-1N-tHA"/>
++                                    <constraint firstItem="3CC-TI-9eL" firstAttribute="centerY" secondItem="6aT-n8-iB0" secondAttribute="centerY" id="D5h-LV-OIS"/>
++                                    <constraint firstItem="QLq-Qa-MgK" firstAttribute="centerY" secondItem="Iee-nN-d2y" secondAttribute="centerY" id="D8z-HM-ebm"/>
++                                    <constraint firstItem="gM9-4D-pLx" firstAttribute="firstBaseline" secondItem="5X8-cc-DtI" secondAttribute="firstBaseline" id="DAz-lP-Fwf"/>
++                                    <constraint firstItem="Np0-Qw-aX1" firstAttribute="top" secondItem="Asj-FS-aWK" secondAttribute="bottom" constant="3" id="EEX-VY-kwX"/>
++                                    <constraint firstItem="3WQ-f8-oHV" firstAttribute="centerY" secondItem="nMm-Rf-IHD" secondAttribute="centerY" id="FA2-n2-hfF"/>
++                                    <constraint firstItem="3WQ-f8-oHV" firstAttribute="leading" secondItem="nMm-Rf-IHD" secondAttribute="trailing" constant="19" id="FwA-la-sn7"/>
++                                    <constraint firstItem="jhQ-pd-WN6" firstAttribute="top" secondItem="TEY-qs-DVV" secondAttribute="bottom" constant="8" id="G4X-z4-3vp"/>
++                                    <constraint firstItem="QZm-gu-BGV" firstAttribute="centerY" secondItem="Asj-FS-aWK" secondAttribute="centerY" id="GrK-IL-Usp"/>
++                                    <constraint firstAttribute="bottom" secondItem="gM9-4D-pLx" secondAttribute="bottom" constant="301" id="GxL-3U-QWk"/>
++                                    <constraint firstItem="avT-jO-owu" firstAttribute="leading" secondItem="kIh-N4-8Y8" secondAttribute="leading" constant="75" id="H56-dS-Xpf"/>
++                                    <constraint firstItem="Asj-FS-aWK" firstAttribute="leading" secondItem="kIh-N4-8Y8" secondAttribute="leading" constant="28" id="HMu-8N-fch"/>
++                                    <constraint firstItem="e8w-TR-cSn" firstAttribute="leading" secondItem="Uqv-2g-B1A" secondAttribute="trailing" constant="10" id="JAp-tF-beW"/>
++                                    <constraint firstItem="PVB-R6-Tqy" firstAttribute="centerX" secondItem="TEY-qs-DVV" secondAttribute="centerX" id="MAb-xp-GAb"/>
++                                    <constraint firstItem="gM9-4D-pLx" firstAttribute="firstBaseline" secondItem="rhU-DT-jWS" secondAttribute="firstBaseline" id="O3Z-Mf-wq5"/>
++                                    <constraint firstItem="e8w-TR-cSn" firstAttribute="centerY" secondItem="Uqv-2g-B1A" secondAttribute="centerY" id="OJQ-fh-Wef"/>
++                                    <constraint firstItem="Np0-Qw-aX1" firstAttribute="centerX" secondItem="Asj-FS-aWK" secondAttribute="centerX" id="OLG-gC-fzB"/>
++                                    <constraint firstItem="nMm-Rf-IHD" firstAttribute="centerY" secondItem="oVT-dB-0AS" secondAttribute="centerY" id="OnU-VM-jAr"/>
++                                    <constraint firstItem="6aT-n8-iB0" firstAttribute="leading" secondItem="e8w-TR-cSn" secondAttribute="trailing" constant="4" id="R0w-4Y-7aY"/>
++                                    <constraint firstItem="GxR-GM-rgy" firstAttribute="leading" secondItem="QLq-Qa-MgK" secondAttribute="trailing" constant="14" id="ST9-OE-Y3k"/>
++                                    <constraint firstItem="ddg-N2-v2C" firstAttribute="centerY" secondItem="GxR-GM-rgy" secondAttribute="centerY" id="Spk-6v-LkL"/>
++                                    <constraint firstItem="Iee-nN-d2y" firstAttribute="centerY" secondItem="hNQ-7I-6Vq" secondAttribute="centerY" id="Sut-Dx-7Ku"/>
++                                    <constraint firstItem="ktF-yR-6wx" firstAttribute="top" secondItem="kIh-N4-8Y8" secondAttribute="top" constant="28" id="Sxd-8r-pmR"/>
++                                    <constraint firstItem="avT-jO-owu" firstAttribute="centerX" secondItem="kIh-N4-8Y8" secondAttribute="centerX" id="TSM-4J-UwC"/>
++                                    <constraint firstItem="GxR-GM-rgy" firstAttribute="centerY" secondItem="QLq-Qa-MgK" secondAttribute="centerY" id="TZc-U5-jf8"/>
++                                    <constraint firstItem="oVT-dB-0AS" firstAttribute="leading" secondItem="TEY-qs-DVV" secondAttribute="trailing" constant="20" id="Xna-PY-rXB"/>
++                                    <constraint firstItem="hNQ-7I-6Vq" firstAttribute="leading" secondItem="PVB-R6-Tqy" secondAttribute="trailing" constant="19" id="Y8U-6f-OYQ"/>
++                                    <constraint firstItem="nMm-Rf-IHD" firstAttribute="leading" secondItem="oVT-dB-0AS" secondAttribute="trailing" constant="19" id="Zbh-dS-RwB"/>
++                                    <constraint firstItem="gM9-4D-pLx" firstAttribute="baseline" secondItem="rhU-DT-jWS" secondAttribute="baseline" id="c7h-1Q-zdk"/>
++                                    <constraint firstItem="Oc7-4L-xc1" firstAttribute="centerX" secondItem="QZm-gu-BGV" secondAttribute="centerX" id="cUe-A1-nV6"/>
++                                    <constraint firstItem="gM9-4D-pLx" firstAttribute="baseline" secondItem="5X8-cc-DtI" secondAttribute="baseline" id="dQX-tp-ZJw"/>
++                                    <constraint firstItem="Uqv-2g-B1A" firstAttribute="centerY" secondItem="jhQ-pd-WN6" secondAttribute="centerY" id="duI-oJ-86A"/>
++                                    <constraint firstItem="gM9-4D-pLx" firstAttribute="leading" secondItem="5X8-cc-DtI" secondAttribute="trailing" constant="44" id="f7A-y5-lV9"/>
++                                    <constraint firstItem="Asj-FS-aWK" firstAttribute="top" secondItem="kIh-N4-8Y8" secondAttribute="top" constant="310" id="fPz-iW-OQH"/>
++                                    <constraint firstItem="oVT-dB-0AS" firstAttribute="centerY" secondItem="TEY-qs-DVV" secondAttribute="centerY" id="gPv-X0-7mc"/>
++                                    <constraint firstItem="Ebt-Dx-HBg" firstAttribute="leading" secondItem="kIh-N4-8Y8" secondAttribute="leading" constant="61.5" id="gbD-UI-3k6"/>
++                                    <constraint firstAttribute="trailing" secondItem="5mA-0I-wI4" secondAttribute="trailing" constant="68.5" id="h7y-Ig-MY4"/>
++                                    <constraint firstItem="Oc7-4L-xc1" firstAttribute="top" secondItem="QZm-gu-BGV" secondAttribute="bottom" constant="3" id="iyE-1K-wZH"/>
++                                    <constraint firstItem="jhQ-pd-WN6" firstAttribute="leading" secondItem="kIh-N4-8Y8" secondAttribute="leading" constant="28" id="j2w-C8-Kmi"/>
++                                    <constraint firstItem="Uqv-2g-B1A" firstAttribute="leading" secondItem="jhQ-pd-WN6" secondAttribute="trailing" constant="9.5" id="lNp-Tf-S7o"/>
++                                    <constraint firstItem="MsW-Am-sFA" firstAttribute="leading" secondItem="kIh-N4-8Y8" secondAttribute="leading" constant="75" id="lX4-AT-Ahp"/>
++                                    <constraint firstItem="fsb-PL-oMw" firstAttribute="leading" secondItem="MsW-Am-sFA" secondAttribute="trailing" constant="8" id="mCA-fs-nvJ"/>
++                                    <constraint firstItem="hNQ-7I-6Vq" firstAttribute="centerY" secondItem="PVB-R6-Tqy" secondAttribute="centerY" id="oIb-WP-0uB"/>
++                                    <constraint firstItem="wK1-N0-Plz" firstAttribute="leading" secondItem="3CC-TI-9eL" secondAttribute="trailing" constant="7" id="qtk-Nm-BmS"/>
++                                    <constraint firstItem="MsW-Am-sFA" firstAttribute="top" secondItem="kIh-N4-8Y8" secondAttribute="top" constant="62" id="rKl-6L-gCj"/>
++                                    <constraint firstItem="avT-jO-owu" firstAttribute="top" secondItem="kIh-N4-8Y8" secondAttribute="top" constant="287" id="rU3-7n-kMw"/>
++                                    <constraint firstItem="rhU-DT-jWS" firstAttribute="leading" secondItem="gM9-4D-pLx" secondAttribute="trailing" constant="44" id="slf-ap-Rls"/>
++                                    <constraint firstItem="QLq-Qa-MgK" firstAttribute="leading" secondItem="Iee-nN-d2y" secondAttribute="trailing" constant="14" id="tKD-Pc-6m1"/>
++                                    <constraint firstItem="I57-2i-Plz" firstAttribute="leading" secondItem="3WQ-f8-oHV" secondAttribute="trailing" constant="19" id="w7I-F3-vd8"/>
++                                    <constraint firstItem="TEY-qs-DVV" firstAttribute="top" secondItem="PVB-R6-Tqy" secondAttribute="bottom" constant="8" id="xQ2-0V-ara"/>
++                                    <constraint firstItem="3CC-TI-9eL" firstAttribute="leading" secondItem="6aT-n8-iB0" secondAttribute="trailing" constant="7" id="ygz-P2-X30"/>
++                                    <constraint firstItem="Iee-nN-d2y" firstAttribute="leading" secondItem="hNQ-7I-6Vq" secondAttribute="trailing" constant="14" id="zQi-Ts-Yyg"/>
++                                </constraints>
++                            </view>
++                        </subviews>
++                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
++                        <constraints>
++                            <constraint firstItem="kIh-N4-8Y8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2j1-5Y-83p"/>
++                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kIh-N4-8Y8" secondAttribute="bottom" id="8jr-gn-0HD"/>
++                            <constraint firstAttribute="trailing" secondItem="kIh-N4-8Y8" secondAttribute="trailing" id="HYW-jh-KYm"/>
++                            <constraint firstItem="kIh-N4-8Y8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="efM-54-c2x"/>
++                        </constraints>
++                    </view>
++                    <connections>
++                        <outlet property="mainImage" destination="MsW-Am-sFA" id="bFS-Ua-VG7"/>
++                        <outlet property="mainTemperature" destination="Ebt-Dx-HBg" id="bx7-S7-uq0"/>
++                        <outlet property="mainView" destination="8bC-Xf-vdC" id="h4f-Q3-820"/>
++                        <outlet property="mainWeather" destination="fsb-PL-oMw" id="qM0-vs-Cor"/>
++                        <outlet property="moisture" destination="WkQ-Om-TEk" id="5rE-dm-R3b"/>
++                        <outlet property="rain" destination="ddz-Cg-zJd" id="xyN-ex-til"/>
++                        <outlet property="temperatureMax" destination="QZm-gu-BGV" id="VMl-Tb-Kha"/>
++                        <outlet property="temperatureMin" destination="Asj-FS-aWK" id="gCW-3g-vKb"/>
++                        <outlet property="wind" destination="OPP-iz-g4R" id="Cua-BP-GcA"/>
++                    </connections>
++                </viewController>
++                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
++            </objects>
++            <point key="canvasLocation" x="132" y="168.6656671664168"/>
++        </scene>
++    </scenes>
++    <resources>
++        <image name="clear-day" width="60" height="60"/>
++        <image name="degree" width="122" height="122"/>
++        <image name="heatindex" width="820" height="66"/>
++        <image name="moisture" width="41" height="46"/>
++        <image name="umbrella" width="120" height="110"/>
++        <image name="windbag" width="112" height="108"/>
++    </resources>
++</document>
+diff --git a/HelloWorld-ios/ViewController.m b/HelloWorld-ios/ViewController.m
+deleted file mode 100644
+index 52c358c..0000000
+--- a/HelloWorld-ios/ViewController.m
++++ /dev/null
+@@ -1,29 +0,0 @@
+-//
+-//  ViewController.m
+-//  HelloWorld-ios
+-//
+-//  Created by 殷子欣 on 2017/4/12.
+-//  Copyright © 2017年 yinzixin. All rights reserved.
+-//
+-
+-#import "ViewController.h"
+-
+-@interface ViewController ()
+-
+-@end
+-
+-@implementation ViewController
+-
+-- (void)viewDidLoad {
+-    [super viewDidLoad];
+-    // Do any additional setup after loading the view, typically from a nib.
+-}
+-
+-
+-- (void)didReceiveMemoryWarning {
+-    [super didReceiveMemoryWarning];
+-    // Dispose of any resources that can be recreated.
+-}
+-
+-
+-@end
+diff --git a/HelloWorld-ios/ViewController.h b/HelloWorld-ios/ViewController/HelloViewController.h
+old mode 100644
+new mode 100755
+similarity index 57%
+rename from HelloWorld-ios/ViewController.h
+rename to HelloWorld-ios/ViewController/HelloViewController.h
+index f10d223..c40aa00
+--- a/HelloWorld-ios/ViewController.h
++++ b/HelloWorld-ios/ViewController/HelloViewController.h
+@@ -7,9 +7,9 @@
+ //
+ 
+ #import <UIKit/UIKit.h>
+-
+-@interface ViewController : UIViewController
+-
+-
++#import "WeatherWeekModel.h"
++#import "WeatherCurrentModel.h"
++@interface HelloViewController : UIViewController
++//- (void)fresh;
+ @end
+ 
+diff --git a/HelloWorld-ios/ViewController/HelloViewController.m b/HelloWorld-ios/ViewController/HelloViewController.m
+new file mode 100755
+index 0000000..082d361
+--- /dev/null
++++ b/HelloWorld-ios/ViewController/HelloViewController.m
+@@ -0,0 +1,241 @@
++//
++//  ViewController.m
++//  HelloWorld-ios
++//
++//  Created by 殷子欣 on 2017/4/12.
++//  Copyright © 2017年 yinzixin. All rights reserved.
++//
++
++#import "HelloViewController.h"
++static NSString * const direction = @"https://api.darksky.net/forecast/48ab230da9721facd94485094d904aef/";
++static NSInteger const WeatherImageTag = 500;
++static NSInteger const WeatherTemperatureTag = 1000;
++static NSInteger const WeatherNameTag = 1500;
++
++@interface HelloViewController()
++
++@property (strong, nonatomic) IBOutlet UIView *mainView;
++@property (weak, nonatomic) IBOutlet UILabel *rain;
++@property (weak, nonatomic) IBOutlet UILabel *wind;
++@property (weak, nonatomic) IBOutlet UILabel *moisture;
++@property (weak, nonatomic) IBOutlet UILabel *temperatureMin;
++@property (weak, nonatomic) IBOutlet UILabel *temperatureMax;
++
++@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
++@property (weak, nonatomic) IBOutlet UILabel *mainWeather;
++@property (weak, nonatomic) IBOutlet UILabel *mainTemperature;
++@property (nonatomic, copy)NSDictionary* mainWeatherDictionary;
++@end
++@implementation HelloViewController
++
++#pragma mark -Life Cycle
++
++- (void)viewDidLoad {
++    [super viewDidLoad];
++    [self getWeatherData];
++    // Do any additional setup after loading the view, typically from a mmnib.
++}
++
++- (void)didReceiveMemoryWarning {
++    [super didReceiveMemoryWarning];
++    // Dispose of any resources that can be recreated.
++}
++
++#pragma mark - Public API
++
++- (void)getWeatherData {
++    NSString *direction = [@"https://api.darksky.net/forecast/48ab230da9721facd94485094d904aef/37.8267,-122.4233?exclude=hourly,minutely,alerts,flags" stringByRemovingPercentEncoding];
++    NSURL *URL = [NSURL URLWithString:direction];
++    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: URL];
++    request.HTTPMethod = @"GET";
++    request.timeoutInterval = 10;
++    NSURLSession *session = [NSURLSession sharedSession];
++    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
++    {
++        if (error == nil) {
++            NSError *jsonError;
++            self.mainWeatherDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &jsonError];
++            [self fresh];
++            /*
++            self.mainWeatherDictionary =
++            @{
++              @"currently" : @{
++                    @"apparentTemperature" : @"55.94",
++                    @"humidity" : @"0.9",
++                    @"icon" : @"cloudy",
++                    @"precipProbability" : @"0",
++                    @"temperature" : @"55.94",
++                    @"windSpeed" : @"6.36",
++                },
++              @"daily" : @{
++                  @"data" : @[
++                                @{
++                                    @"icon" : @"partly-cloudy-day",
++                                    @"temperatureMax" : @"64.73999999999999",
++                                    @"temperatureMin" : @"55.94",
++                                    },
++                                @{
++                                    @"icon" : @"partly-cloudy-day",
++                                    @"temperatureMax" : @"68.31999999999999",
++                                    @"temperatureMin" : @"52.86",
++                                    },
++                                @{
++                                    @"icon" : @"partly-cloudy-day",
++                                    @"temperatureMax" : @"71.76000000000001",
++                                    @"temperatureMin" : @"52.07",
++                                },
++                                @{
++                                    @"icon" : @"clear-day",
++                                    @"temperatureMax" : @"72.89",
++                                    @"temperatureMin" : @"56.27",
++                                },
++                                @{
++                                    @"icon" : @"clear-day",
++                                    @"temperatureMax" : @"74.3",
++                                    @"temperatureMin" : @"55.58",
++                                },
++                                @{
++                                    @"icon" : @"partly-cloudy-day",
++                                    @"temperatureMax" : @"71.75",
++                                    @"temperatureMin" : @"56.68",
++                                },
++                                @{
++                                    @"icon" : @"partly-cloudy-day",
++                                    @"temperatureMax" : @"75.87",
++                                    @"temperatureMin" : @"57.84",
++                                },
++                                @{
++                                    @"icon" : @"partly-cloudy-day",
++                                    @"temperatureMax" : @"77.95",
++                                    @"temperatureMin" : @"59.75",
++                                }]
++
++                    }
++
++              };
++             */
++          }
++        
++    }];
++    [dataTask resume];
++    
++}
++
++
++#pragma mark - Private API
++
++#pragma mark - Getter && Setter
++
++- (void)setWeekWeathers {
++    WeatherWeekModel *weekWeather = [[WeatherWeekModel alloc] init];
++    [weekWeather setWeekWeathers: self.mainWeatherDictionary];
++    for (NSInteger count=1; count<7; count++) {
++        UILabel *weatherName = (UILabel *)[self.mainView viewWithTag: count+WeatherNameTag];
++        weatherName.text = [self numberToWeatherName: weekWeather.dayWeathers[count].name];
++       // NSLog(@"%@", weatherName.text);
++        
++        UILabel *weatherTemperature = (UILabel *)[self.mainView viewWithTag: count+WeatherTemperatureTag];
++        NSString *temperatureDayMax = [NSString stringWithFormat: @"%td", [self changeTemperature: weekWeather.dayWeathers[count].temperatureMax]];
++        NSString *temperatureDayMin = [NSString stringWithFormat: @"%td", [self changeTemperature: weekWeather.dayWeathers[count].temperatureMin]];
++        weatherTemperature.text = [NSString stringWithFormat: @"%@/%@", temperatureDayMin, temperatureDayMax];
++       // NSLog(@"%@", weatherTemperature.text);
++        
++        UIImageView *weatherImage = (UIImageView *)[self.mainView viewWithTag: count+WeatherImageTag];
++        [weatherImage setImage: weekWeather.dayWeathers[count].iconimage];
++    }
++    self.temperatureMin.text = [NSString stringWithFormat:@"%td", [self changeTemperature: weekWeather.dayWeathers[0].temperatureMin]];
++    self.temperatureMax.text = [NSString stringWithFormat:@"%td", [self changeTemperature: weekWeather.dayWeathers[0].temperatureMax]];
++}
++
++- (void)setCurrentWeather {
++    WeatherCurrentModel *currentWeather = [[WeatherCurrentModel alloc] init];
++    NSDictionary *currentWeatherDictionary = [currentWeather getCurrentWeather: self.mainWeatherDictionary];
++    self.rain.text = [NSString stringWithFormat: @"%.2f", [currentWeatherDictionary[@"precipProbability"] floatValue]];
++    self.wind.text = [NSString stringWithFormat: @"%.2f", [currentWeatherDictionary[@"windSpeed"] floatValue]];
++    self.moisture.text = [NSString stringWithFormat: @"%.2f", [currentWeatherDictionary[@"humidity"] floatValue]];
++    self.mainTemperature.text = [NSString stringWithFormat: @"%td", [self changeTemperature: [currentWeatherDictionary[@"temperature"] floatValue]]];
++    [self.mainImage setImage: [UIImage imageNamed: currentWeatherDictionary[@"icon"]]];
++    self.mainWeather.text = [self weatherToWeatherName:currentWeatherDictionary[@"icon"]];
++}
++
++- (NSString *)numberToWeatherName: (NSInteger) number {
++    switch (number) {
++        case 1:
++            return @"周一";
++            break;
++        case 2:
++            return @"周二";
++            break;
++        case 3:
++            return @"周三";
++            break;
++        case 4:
++            return @"周四";
++            break;
++        case 5:
++            return @"周五";
++            break;
++        case 6:
++            return @"周六";
++            break;
++        case 7:
++            return @"周日";
++            break;
++        default:
++            return @"未知";
++            break;
++    }
++}
++
++- (NSString *)weatherToWeatherName: (NSString *) weather {
++    if ([weather isEqualToString: @"clear-day"]) {
++        return @"晴天";
++    }
++    else if ([weather isEqualToString: @"clear-day"]) {
++        return @"晴天";
++    }
++    else if ([weather isEqualToString: @"clear-night"]) {
++        return @"晴天";
++    }
++    else if ([weather isEqualToString: @"cloudy"]) {
++        return @"阴天";
++    }
++    else if ([weather isEqualToString: @"fog"]) {
++        return @"雾";
++    }
++    else if ([weather isEqualToString: @"partly-cloudy-day"]) {
++        return @"多云";
++    }
++    else if ([weather isEqualToString: @"partly-cloudy-night"]) {
++        return @"多云";
++    }
++    else if ([weather isEqualToString: @"rain"]) {
++        return @"雨天";
++    }
++    else if ([weather isEqualToString: @"sleet"]) {
++        return @"雨夹雪";
++    }
++    else if ([weather isEqualToString: @"snow"]) {
++        return @"雪天";
++    }
++    else if ([weather isEqualToString: @"wind"]) {
++        return @"大风";
++    }else return @"未知";
++}
++- (void)fresh {
++    [self setWeekWeathers];
++    [self setCurrentWeather];
++}
++
++- (NSInteger) changeTemperature:(NSInteger)oldTemperature {
++    NSInteger newTemperature = (int)((oldTemperature - 34) / 1.8);
++    return newTemperature;
++}
++
++- (IBAction)degreeButtonTouch:(UIButton *)sender {
++    [self setCurrentWeather];
++    [self fresh];
++}
++
++
++@end
+diff --git a/HelloWorld-ios/未命名.rtf b/HelloWorld-ios/未命名.rtf
+new file mode 100755
+index 0000000..ac9d56d
+--- /dev/null
++++ b/HelloWorld-ios/未命名.rtf
+@@ -0,0 +1,1477 @@
++{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf820
++{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Bold;}
++{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
++{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;}
++\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh14500\viewkind0
++\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
++
++\f0\fs24 \cf0 d
++\f1\b\fs22 \cf2 \CocoaLigature0 2017-04-26 16:24:36.971 HelloWorld-ios[20604:4185056] \{\
++\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
++\cf2     currently =     \{\
++        apparentTemperature = "55.94";\
++        cloudCover = "0.99";\
++        dewPoint = "52.89";\
++        humidity = "0.9";\
++        icon = cloudy;\
++        nearestStormBearing = 236;\
++        nearestStormDistance = 6;\
++        ozone = "294.14";\
++        precipIntensity = 0;\
++        precipProbability = 0;\
++        pressure = "1018.96";\
++        summary = Overcast;\
++        temperature = "55.94";\
++        time = 1493195053;\
++        visibility = "6.2";\
++        windBearing = 275;\
++        windSpeed = "6.36";\
++    \};\
++    daily =     \{\
++        data =         (\
++                        \{\
++                apparentTemperatureMax = "64.73999999999999";\
++                apparentTemperatureMaxTime = 1493244000;\
++                apparentTemperatureMin = "55.94";\
++                apparentTemperatureMinTime = 1493193600;\
++                cloudCover = "0.97";\
++                dewPoint = "55.3";\
++                humidity = "0.89";\
++                icon = "partly-cloudy-day";\
++                moonPhase = "0.02";\
++                ozone = "293.33";\
++                precipIntensity = "0.0013";\
++                precipIntensityMax = "0.0157";\
++                precipIntensityMaxTime = 1493233200;\
++                precipProbability = "0.57";\
++                precipType = rain;\
++                pressure = "1018.08";\
++                summary = "Mostly cloudy throughout the day.";\
++                sunriseTime = 1493212833;\
++                sunsetTime = 1493261795;\
++                temperatureMax = "64.73999999999999";\
++                temperatureMaxTime = 1493244000;\
++                temperatureMin = "55.94";\
++                temperatureMinTime = 1493193600;\
++                time = 1493190000;\
++                visibility = "6.56";\
++                windBearing = 282;\
++                windSpeed = "8.9";\
++            \},\
++                        \{\
++                apparentTemperatureMax = "68.31999999999999";\
++                apparentTemperatureMaxTime = 1493330400;\
++                apparentTemperatureMin = "52.86";\
++                apparentTemperatureMinTime = 1493301600;\
++                cloudCover = "0.46";\
++                dewPoint = "50.5";\
++                humidity = "0.76";\
++                icon = "partly-cloudy-day";\
++                moonPhase = "0.05";\
++                ozone = "296.28";\
++                precipIntensity = 0;\
++                precipIntensityMax = 0;\
++                precipProbability = 0;\
++                pressure = "1017.91";\
++                summary = "Partly cloudy until evening.";\
++                sunriseTime = 1493299160;\
++                sunsetTime = 1493348251;\
++                temperatureMax = "68.31999999999999";\
++                temperatureMaxTime = 1493330400;\
++                temperatureMin = "52.86";\
++                temperatureMinTime = 1493301600;\
++                time = 1493276400;\
++                visibility = 10;\
++                windBearing = 313;\
++                windSpeed = "11.72";\
++            \},\
++                        \{\
++                apparentTemperatureMax = "71.76000000000001";\
++                apparentTemperatureMaxTime = 1493420400;\
++                apparentTemperatureMin = "52.07";\
++                apparentTemperatureMinTime = 1493380800;\
++                cloudCover = "0.1";\
++                dewPoint = "45.85";\
++                humidity = "0.6";\
++                icon = "partly-cloudy-day";\
++                moonPhase = "0.09";\
++                ozone = "293.81";\
++                precipIntensity = 0;\
++                precipIntensityMax = 0;\
++                precipProbability = 0;\
++                pressure = "1017.77";\
++                summary = "Partly cloudy until afternoon.";\
++                sunriseTime = 1493385488;\
++                sunsetTime = 1493434707;\
++                temperatureMax = "71.76000000000001";\
++                temperatureMaxTime = 1493420400;\
++                temperatureMin = "52.07";\
++                temperatureMinTime = 1493380800;\
++                time = 1493362800;\
++                visibility = 10;\
++                windBearing = 331;\
++                windSpeed = "10.79";\
++            \},\
++                        \{\
++                apparentTemperatureMax = "72.89";\
++                apparentTemperatureMaxTime = 1493506800;\
++                apparentTemperatureMin = "56.27";\
++                apparentTemperatureMinTime = 1493467200;\
++                cloudCover = "0.03";\
++                dewPoint = "44.59";\
++                humidity = "0.53";\
++                icon = "clear-day";\
++                moonPhase = "0.12";\
++                ozone = "286.47";\
++                precipIntensity = 0;\
++                precipIntensityMax = 0;\
++                precipProbability = 0;\
++                pressure = "1018.78";\
++                summary = "Clear throughout the day.";\
++                sunriseTime = 1493471817;\
++                sunsetTime = 1493521163;\
++                temperatureMax = "72.89";\
++                temperatureMaxTime = 1493506800;\
++                temperatureMin = "56.27";\
++                temperatureMinTime = 1493467200;\
++                time = 1493449200;\
++                visibility = 10;\
++                windBearing = 325;\
++                windSpeed = "4.9";\
++            \},\
++                        \{\
++                apparentTemperatureMax = "74.3";\
++                apparentTemperatureMaxTime = 1493589600;\
++                apparentTemperatureMin = "55.58";\
++                apparentTemperatureMinTime = 1493553600;\
++                cloudCover = 0;\
++                dewPoint = "48.64";\
++                humidity = "0.61";\
++                icon = "clear-day";\
++                moonPhase = "0.16";\
++                ozone = "279.39";\
++                precipIntensity = 0;\
++                precipIntensityMax = 0;\
++                precipProbability = 0;\
++                pressure = "1019.92";\
++                summary = "Clear throughout the day.";\
++                sunriseTime = 1493558147;\
++                sunsetTime = 1493607619;\
++                temperatureMax = "74.3";\
++                temperatureMaxTime = 1493589600;\
++                temperatureMin = "55.58";\
++                temperatureMinTime = 1493553600;\
++                time = 1493535600;\
++                windBearing = 285;\
++                windSpeed = "6.58";\
++            \},\
++                        \{\
++                apparentTemperatureMax = "71.75";\
++                apparentTemperatureMaxTime = 1493672400;\
++                apparentTemperatureMin = "56.68";\
++                apparentTemperatureMinTime = 1493640000;\
++                cloudCover = "0.12";\
++                dewPoint = "46.54";\
++                humidity = "0.5600000000000001";\
++                icon = "partly-cloudy-day";\
++                moonPhase = "0.2";\
++                ozone = "283.4";\
++                precipIntensity = 0;\
++                precipIntensityMax = 0;\
++                precipProbability = 0;\
++                pressure = "1017.13";\
++                summary = "Partly cloudy starting in the afternoon, continuing until evening.";\
++                sunriseTime = 1493644478;\
++                sunsetTime = 1493694075;\
++                temperatureMax = "71.75";\
++                temperatureMaxTime = 1493672400;\
++                temperatureMin = "56.68";\
++                temperatureMinTime = 1493640000;\
++                time = 1493622000;\
++                windBearing = 300;\
++                windSpeed = "10.45";\
++            \},\
++                        \{\
++                apparentTemperatureMax = "75.87";\
++                apparentTemperatureMaxTime = 1493762400;\
++                apparentTemperatureMin = "57.84";\
++                apparentTemperatureMinTime = 1493722800;\
++                cloudCover = "0.44";\
++                dewPoint = "43.96";\
++                humidity = "0.48";\
++                icon = "partly-cloudy-day";\
++                moonPhase = "0.24";\
++                ozone = "294.15";\
++                precipIntensity = 0;\
++                precipIntensityMax = 0;\
++                precipProbability = 0;\
++                pressure = "1013.77";\
++                summary = "Dry and partly cloudy throughout the day.";\
++                sunriseTime = 1493730810;\
++                sunsetTime = 1493780531;\
++                temperatureMax = "75.87";\
++                temperatureMaxTime = 1493762400;\
++                temperatureMin = "57.84";\
++                temperatureMinTime = 1493722800;\
++                time = 1493708400;\
++                windBearing = 334;\
++                windSpeed = "9.539999999999999";\
++            \},\
++                        \{\
++                apparentTemperatureMax = "77.95";\
++                apparentTemperatureMaxTime = 1493856000;\
++                apparentTemperatureMin = "59.75";\
++                apparentTemperatureMinTime = 1493812800;\
++                cloudCover = "0.33";\
++                dewPoint = "43.31";\
++                humidity = "0.4";\
++                icon = "partly-cloudy-day";\
++                moonPhase = "0.27";\
++                ozone = "292.94";\
++                precipIntensity = 0;\
++                precipIntensityMax = 0;\
++                precipProbability = 0;\
++                pressure = "1015.28";\
++                summary = "Partly cloudy until evening.";\
++                sunriseTime = 1493817144;\
++                sunsetTime = 1493866987;\
++                temperatureMax = "77.95";\
++                temperatureMaxTime = 1493856000;\
++                temperatureMin = "59.75";\
++                temperatureMinTime = 1493812800;\
++                time = 1493794800;\
++                windBearing = 29;\
++                windSpeed = "8.42";\
++            \}\
++        );\
++        icon = rain;\
++        summary = "Light rain today, with temperatures rising to 78\\U00b0F on Wednesday.";\
++    \};\
++    flags =     \{\
++        "isd-stations" =         (\
++            "724943-99999",\
++            "745039-99999",\
++            "745045-99999",\
++            "745060-23239",\
++            "745065-99999",\
++            "994016-99999",\
++            "994033-99999",\
++            "994036-99999",\
++            "997734-99999",\
++            "998163-99999",\
++            "998197-99999",\
++            "998476-99999",\
++            "998477-99999",\
++            "998479-99999",\
++            "999999-23239",\
++            "999999-23272"\
++        );\
++        "lamp-stations" =         (\
++            KAPC,\
++            KCCR,\
++            KHWD,\
++            KLVK,\
++            KNUQ,\
++            KOAK,\
++            KPAO,\
++            KSFO,\
++            KSQL\
++        );\
++        "madis-stations" =         (\
++            AU915,\
++            C5988,\
++            C8158,\
++            C9629,\
++            CQ147,\
++            D5422,\
++            E0426,\
++            E9227,\
++            FTPC1,\
++            GGBC1,\
++            OKXC1,\
++            OMHC1,\
++            PPXC1,\
++            PXOC1,\
++            SFOC1,\
++            TIBC1\
++        );\
++        sources =         (\
++            lamp,\
++            gfs,\
++            cmc,\
++            nam,\
++            rap,\
++            rtma,\
++            sref,\
++            fnmoc,\
++            isd,\
++            madis,\
++            "nearest-precip",\
++            nwspa,\
++            darksky\
++        );\
++        units = us;\
++    \};\
++    hourly =     \{\
++        data =         (\
++                        \{\
++                apparentTemperature = "55.94";\
++                cloudCover = "0.99";\
++                dewPoint = "52.82";\
++                humidity = "0.89";\
++                icon = cloudy;\
++                ozone = "294.81";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.98";\
++                summary = Overcast;\
++                temperature = "55.94";\
++                time = 1493193600;\
++                visibility = "6.27";\
++                windBearing = 275;\
++                windSpeed = "6.24";\
++            \},\
++                        \{\
++                apparentTemperature = "56.24";\
++                cloudCover = "0.99";\
++                dewPoint = "53.3";\
++                humidity = "0.9";\
++                icon = cloudy;\
++                ozone = "293.14";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.92";\
++                summary = Overcast;\
++                temperature = "56.24";\
++                time = 1493197200;\
++                visibility = "6.09";\
++                windBearing = 276;\
++                windSpeed = "6.55";\
++            \},\
++                        \{\
++                apparentTemperature = "56.28";\
++                cloudCover = "0.99";\
++                dewPoint = "53.75";\
++                humidity = "0.91";\
++                icon = cloudy;\
++                ozone = "291.86";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.79";\
++                summary = Overcast;\
++                temperature = "56.28";\
++                time = 1493200800;\
++                visibility = "4.45";\
++                windBearing = 276;\
++                windSpeed = "6.9";\
++            \},\
++                        \{\
++                apparentTemperature = "56.42";\
++                cloudCover = "0.99";\
++                dewPoint = "54.1";\
++                humidity = "0.92";\
++                icon = cloudy;\
++                ozone = "290.81";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.55";\
++                summary = Overcast;\
++                temperature = "56.42";\
++                time = 1493204400;\
++                visibility = "3.96";\
++                windBearing = 278;\
++                windSpeed = "7.12";\
++            \},\
++                        \{\
++                apparentTemperature = "56.34";\
++                cloudCover = "0.99";\
++                dewPoint = "54.29";\
++                humidity = "0.93";\
++                icon = cloudy;\
++                ozone = "290.27";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.3";\
++                summary = Overcast;\
++                temperature = "56.34";\
++                time = 1493208000;\
++                visibility = "3.35";\
++                windBearing = 278;\
++                windSpeed = "7.12";\
++            \},\
++                        \{\
++                apparentTemperature = "56.21";\
++                cloudCover = "0.99";\
++                dewPoint = "54.21";\
++                humidity = "0.93";\
++                icon = cloudy;\
++                ozone = "290.54";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.14";\
++                summary = Overcast;\
++                temperature = "56.21";\
++                time = 1493211600;\
++                visibility = "3.94";\
++                windBearing = 273;\
++                windSpeed = "6.98";\
++            \},\
++                        \{\
++                apparentTemperature = "56.04";\
++                cloudCover = 1;\
++                dewPoint = "54.09";\
++                humidity = "0.93";\
++                icon = cloudy;\
++                ozone = "291.33";\
++                precipIntensity = "0.0013";\
++                precipProbability = "0.02";\
++                precipType = rain;\
++                pressure = "1017.91";\
++                summary = Overcast;\
++                temperature = "56.04";\
++                time = 1493215200;\
++                visibility = "4.2";\
++                windBearing = 269;\
++                windSpeed = "7.18";\
++            \},\
++                        \{\
++                apparentTemperature = "56.55";\
++                cloudCover = 1;\
++                dewPoint = "54.34";\
++                humidity = "0.92";\
++                icon = cloudy;\
++                ozone = 292;\
++                precipIntensity = "0.0017";\
++                precipProbability = "0.04";\
++                precipType = rain;\
++                pressure = "1017.96";\
++                summary = Overcast;\
++                temperature = "56.55";\
++                time = 1493218800;\
++                visibility = "4.45";\
++                windBearing = 268;\
++                windSpeed = "7.7";\
++            \},\
++                        \{\
++                apparentTemperature = "57.78";\
++                cloudCover = 1;\
++                dewPoint = "54.95";\
++                humidity = "0.9";\
++                icon = cloudy;\
++                ozone = "292.36";\
++                precipIntensity = "0.0024";\
++                precipProbability = "0.07000000000000001";\
++                precipType = rain;\
++                pressure = "1018.18";\
++                summary = Overcast;\
++                temperature = "57.78";\
++                time = 1493222400;\
++                visibility = "4.71";\
++                windBearing = 267;\
++                windSpeed = "8.140000000000001";\
++            \},\
++                        \{\
++                apparentTemperature = "58.89";\
++                cloudCover = 1;\
++                dewPoint = "55.56";\
++                humidity = "0.89";\
++                icon = cloudy;\
++                ozone = "292.61";\
++                precipIntensity = "0.0025";\
++                precipProbability = "0.07000000000000001";\
++                precipType = rain;\
++                pressure = "1018.54";\
++                summary = Overcast;\
++                temperature = "58.89";\
++                time = 1493226000;\
++                visibility = "5.02";\
++                windBearing = 266;\
++                windSpeed = "8.779999999999999";\
++            \},\
++                        \{\
++                apparentTemperature = "59.9";\
++                cloudCover = 1;\
++                dewPoint = "56.17";\
++                humidity = "0.87";\
++                icon = cloudy;\
++                ozone = "292.76";\
++                precipIntensity = "0.0036";\
++                precipProbability = "0.13";\
++                precipType = rain;\
++                pressure = "1018.78";\
++                summary = Overcast;\
++                temperature = "59.9";\
++                time = 1493229600;\
++                visibility = "5.91";\
++                windBearing = 276;\
++                windSpeed = "8.92";\
++            \},\
++                        \{\
++                apparentTemperature = "60.6";\
++                cloudCover = 1;\
++                dewPoint = "56.47";\
++                humidity = "0.86";\
++                icon = rain;\
++                ozone = "292.73";\
++                precipIntensity = "0.0157";\
++                precipProbability = "0.57";\
++                precipType = rain;\
++                pressure = "1018.75";\
++                summary = "Light Rain";\
++                temperature = "60.6";\
++                time = 1493233200;\
++                visibility = "6.1";\
++                windBearing = 278;\
++                windSpeed = "9.109999999999999";\
++            \},\
++                        \{\
++                apparentTemperature = "62.69";\
++                cloudCover = 1;\
++                dewPoint = "58.11";\
++                humidity = "0.85";\
++                icon = cloudy;\
++                ozone = "292.59";\
++                precipIntensity = "0.0019";\
++                precipProbability = "0.05";\
++                precipType = rain;\
++                pressure = "1018.55";\
++                summary = Overcast;\
++                temperature = "62.69";\
++                time = 1493236800;\
++                visibility = "6.8";\
++                windBearing = 277;\
++                windSpeed = "9.449999999999999";\
++            \},\
++                        \{\
++                apparentTemperature = "63.94";\
++                cloudCover = "0.99";\
++                dewPoint = "59.14";\
++                humidity = "0.84";\
++                icon = cloudy;\
++                ozone = "292.61";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.26";\
++                summary = Overcast;\
++                temperature = "63.94";\
++                time = 1493240400;\
++                visibility = "7.19";\
++                windBearing = 276;\
++                windSpeed = "10.42";\
++            \},\
++                        \{\
++                apparentTemperature = "64.73999999999999";\
++                cloudCover = "0.99";\
++                dewPoint = "59.62";\
++                humidity = "0.84";\
++                icon = cloudy;\
++                ozone = "292.91";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.84";\
++                summary = Overcast;\
++                temperature = "64.73999999999999";\
++                time = 1493244000;\
++                visibility = "7.3";\
++                windBearing = 276;\
++                windSpeed = "10.83";\
++            \},\
++                        \{\
++                apparentTemperature = "63.82";\
++                cloudCover = "0.99";\
++                dewPoint = "58.87";\
++                humidity = "0.84";\
++                icon = cloudy;\
++                ozone = "293.36";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.36";\
++                summary = Overcast;\
++                temperature = "63.82";\
++                time = 1493247600;\
++                visibility = "7.47";\
++                windBearing = 282;\
++                windSpeed = "10.88";\
++            \},\
++                        \{\
++                apparentTemperature = "63.07";\
++                cloudCover = "0.98";\
++                dewPoint = "58.18";\
++                humidity = "0.84";\
++                icon = cloudy;\
++                ozone = "293.85";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.01";\
++                summary = Overcast;\
++                temperature = "63.07";\
++                time = 1493251200;\
++                visibility = "7.51";\
++                windBearing = 288;\
++                windSpeed = "11.12";\
++            \},\
++                        \{\
++                apparentTemperature = "61.42";\
++                cloudCover = "0.98";\
++                dewPoint = "56.98";\
++                humidity = "0.85";\
++                icon = cloudy;\
++                ozone = "294.44";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1016.88";\
++                summary = Overcast;\
++                temperature = "61.42";\
++                time = 1493254800;\
++                visibility = "7.44";\
++                windBearing = 289;\
++                windSpeed = "10.9";\
++            \},\
++                        \{\
++                apparentTemperature = "59.82";\
++                cloudCover = "0.98";\
++                dewPoint = "55.78";\
++                humidity = "0.86";\
++                icon = cloudy;\
++                ozone = "295.05";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1016.87";\
++                summary = Overcast;\
++                temperature = "59.82";\
++                time = 1493258400;\
++                visibility = "8.050000000000001";\
++                windBearing = 289;\
++                windSpeed = 11;\
++            \},\
++                        \{\
++                apparentTemperature = "58.14";\
++                cloudCover = "0.96";\
++                dewPoint = "54.78";\
++                humidity = "0.89";\
++                icon = cloudy;\
++                ozone = "295.34";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1016.97";\
++                summary = Overcast;\
++                temperature = "58.14";\
++                time = 1493262000;\
++                visibility = "8.69";\
++                windBearing = 291;\
++                windSpeed = "11.1";\
++            \},\
++                        \{\
++                apparentTemperature = "57.53";\
++                cloudCover = "0.92";\
++                dewPoint = "54.07";\
++                humidity = "0.88";\
++                icon = "partly-cloudy-night";\
++                ozone = "295.05";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.23";\
++                summary = "Mostly Cloudy";\
++                temperature = "57.53";\
++                time = 1493265600;\
++                visibility = "9.210000000000001";\
++                windBearing = 294;\
++                windSpeed = "11.2";\
++            \},\
++                        \{\
++                apparentTemperature = "56.83";\
++                cloudCover = "0.87";\
++                dewPoint = "53.62";\
++                humidity = "0.89";\
++                icon = "partly-cloudy-night";\
++                ozone = "294.44";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.56";\
++                summary = "Mostly Cloudy";\
++                temperature = "56.83";\
++                time = 1493269200;\
++                visibility = "9.56";\
++                windBearing = 299;\
++                windSpeed = "11.33";\
++            \},\
++                        \{\
++                apparentTemperature = "56.17";\
++                cloudCover = "0.83";\
++                dewPoint = "52.95";\
++                humidity = "0.89";\
++                icon = "partly-cloudy-night";\
++                ozone = "293.86";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.84";\
++                summary = "Mostly Cloudy";\
++                temperature = "56.17";\
++                time = 1493272800;\
++                visibility = 10;\
++                windBearing = 302;\
++                windSpeed = "11.39";\
++            \},\
++                        \{\
++                apparentTemperature = "55.43";\
++                cloudCover = "0.8";\
++                dewPoint = "52.64";\
++                humidity = "0.9";\
++                icon = "partly-cloudy-night";\
++                ozone = "293.34";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.03";\
++                summary = "Mostly Cloudy";\
++                temperature = "55.43";\
++                time = 1493276400;\
++                visibility = 10;\
++                windBearing = 305;\
++                windSpeed = "11.26";\
++            \},\
++                        \{\
++                apparentTemperature = 55;\
++                cloudCover = "0.78";\
++                dewPoint = "52.01";\
++                humidity = "0.9";\
++                icon = "partly-cloudy-night";\
++                ozone = "292.85";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.14";\
++                summary = "Mostly Cloudy";\
++                temperature = 55;\
++                time = 1493280000;\
++                visibility = 10;\
++                windBearing = 307;\
++                windSpeed = "10.87";\
++            \},\
++                        \{\
++                apparentTemperature = "54.74";\
++                cloudCover = "0.7";\
++                dewPoint = "52.25";\
++                humidity = "0.91";\
++                icon = "partly-cloudy-night";\
++                ozone = "292.75";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.14";\
++                summary = "Mostly Cloudy";\
++                temperature = "54.74";\
++                time = 1493283600;\
++                visibility = 10;\
++                windBearing = 310;\
++                windSpeed = "10.47";\
++            \},\
++                        \{\
++                apparentTemperature = "54.37";\
++                cloudCover = "0.65";\
++                dewPoint = "52.19";\
++                humidity = "0.92";\
++                icon = "partly-cloudy-night";\
++                ozone = "293.34";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = 1018;\
++                summary = "Mostly Cloudy";\
++                temperature = "54.37";\
++                time = 1493287200;\
++                visibility = 10;\
++                windBearing = 313;\
++                windSpeed = "10.33";\
++            \},\
++                        \{\
++                apparentTemperature = "53.93";\
++                cloudCover = "0.63";\
++                dewPoint = "51.81";\
++                humidity = "0.93";\
++                icon = "partly-cloudy-night";\
++                ozone = "294.3";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.79";\
++                summary = "Mostly Cloudy";\
++                temperature = "53.93";\
++                time = 1493290800;\
++                visibility = 10;\
++                windBearing = 316;\
++                windSpeed = "10.3";\
++            \},\
++                        \{\
++                apparentTemperature = "53.52";\
++                cloudCover = "0.61";\
++                dewPoint = "51.16";\
++                humidity = "0.92";\
++                icon = "partly-cloudy-night";\
++                ozone = "295.07";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.7";\
++                summary = "Mostly Cloudy";\
++                temperature = "53.52";\
++                time = 1493294400;\
++                visibility = 10;\
++                windBearing = 319;\
++                windSpeed = "10.18";\
++            \},\
++                        \{\
++                apparentTemperature = "53.1";\
++                cloudCover = "0.53";\
++                dewPoint = "50.25";\
++                humidity = "0.9";\
++                icon = "partly-cloudy-night";\
++                ozone = "295.3";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.84";\
++                summary = "Partly Cloudy";\
++                temperature = "53.1";\
++                time = 1493298000;\
++                visibility = 10;\
++                windBearing = 324;\
++                windSpeed = "9.890000000000001";\
++            \},\
++                        \{\
++                apparentTemperature = "52.86";\
++                cloudCover = "0.48";\
++                dewPoint = "49.14";\
++                humidity = "0.87";\
++                icon = "partly-cloudy-day";\
++                ozone = "295.33";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.1";\
++                summary = "Partly Cloudy";\
++                temperature = "52.86";\
++                time = 1493301600;\
++                visibility = 10;\
++                windBearing = 329;\
++                windSpeed = "9.74";\
++            \},\
++                        \{\
++                apparentTemperature = "53.9";\
++                cloudCover = "0.45";\
++                dewPoint = "48.99";\
++                humidity = "0.83";\
++                icon = "partly-cloudy-day";\
++                ozone = "295.59";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.35";\
++                summary = "Partly Cloudy";\
++                temperature = "53.9";\
++                time = 1493305200;\
++                visibility = 10;\
++                windBearing = 332;\
++                windSpeed = "9.69";\
++            \},\
++                        \{\
++                apparentTemperature = "56.09";\
++                cloudCover = "0.44";\
++                dewPoint = "49.42";\
++                humidity = "0.78";\
++                icon = "partly-cloudy-day";\
++                ozone = "296.38";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.53";\
++                summary = "Partly Cloudy";\
++                temperature = "56.09";\
++                time = 1493308800;\
++                visibility = 10;\
++                windBearing = 331;\
++                windSpeed = "9.279999999999999";\
++            \},\
++                        \{\
++                apparentTemperature = "58.48";\
++                cloudCover = "0.43";\
++                dewPoint = "49.62";\
++                humidity = "0.72";\
++                icon = "partly-cloudy-day";\
++                ozone = "297.39";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.68";\
++                summary = "Partly Cloudy";\
++                temperature = "58.48";\
++                time = 1493312400;\
++                visibility = 10;\
++                windBearing = 327;\
++                windSpeed = "8.529999999999999";\
++            \},\
++                        \{\
++                apparentTemperature = "60.5";\
++                cloudCover = "0.43";\
++                dewPoint = "49.68";\
++                humidity = "0.67";\
++                icon = "partly-cloudy-day";\
++                ozone = "298.1";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.72";\
++                summary = "Partly Cloudy";\
++                temperature = "60.5";\
++                time = 1493316000;\
++                visibility = 10;\
++                windBearing = 319;\
++                windSpeed = "8.25";\
++            \},\
++                        \{\
++                apparentTemperature = "62.71";\
++                cloudCover = "0.45";\
++                dewPoint = "50.4";\
++                humidity = "0.64";\
++                icon = "partly-cloudy-day";\
++                ozone = "298.24";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.64";\
++                summary = "Partly Cloudy";\
++                temperature = "62.71";\
++                time = 1493319600;\
++                visibility = 10;\
++                windBearing = 312;\
++                windSpeed = "9.289999999999999";\
++            \},\
++                        \{\
++                apparentTemperature = "65.34";\
++                cloudCover = "0.48";\
++                dewPoint = "51.86";\
++                humidity = "0.62";\
++                icon = "partly-cloudy-day";\
++                ozone = "298.06";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.44";\
++                summary = "Partly Cloudy";\
++                temperature = "65.34";\
++                time = 1493323200;\
++                visibility = 10;\
++                windBearing = 307;\
++                windSpeed = "11.08";\
++            \},\
++                        \{\
++                apparentTemperature = "67.52";\
++                cloudCover = "0.51";\
++                dewPoint = "53.29";\
++                humidity = "0.6";\
++                icon = "partly-cloudy-day";\
++                ozone = "297.8";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.16";\
++                summary = "Partly Cloudy";\
++                temperature = "67.52";\
++                time = 1493326800;\
++                visibility = 10;\
++                windBearing = 305;\
++                windSpeed = "12.83";\
++            \},\
++                        \{\
++                apparentTemperature = "68.31999999999999";\
++                cloudCover = "0.55";\
++                dewPoint = "53.92";\
++                humidity = "0.6";\
++                icon = "partly-cloudy-day";\
++                ozone = "297.43";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.74";\
++                summary = "Partly Cloudy";\
++                temperature = "68.31999999999999";\
++                time = 1493330400;\
++                visibility = 10;\
++                windBearing = 304;\
++                windSpeed = "14.24";\
++            \},\
++                        \{\
++                apparentTemperature = "67.29000000000001";\
++                cloudCover = "0.57";\
++                dewPoint = "53.29";\
++                humidity = "0.61";\
++                icon = "partly-cloudy-day";\
++                ozone = "296.97";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.25";\
++                summary = "Partly Cloudy";\
++                temperature = "67.29000000000001";\
++                time = 1493334000;\
++                visibility = 10;\
++                windBearing = 305;\
++                windSpeed = "15.44";\
++            \},\
++                        \{\
++                apparentTemperature = "65.58";\
++                cloudCover = "0.55";\
++                dewPoint = "52.3";\
++                humidity = "0.62";\
++                icon = "partly-cloudy-day";\
++                ozone = "296.71";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1016.93";\
++                summary = "Partly Cloudy";\
++                temperature = "65.58";\
++                time = 1493337600;\
++                visibility = 10;\
++                windBearing = 305;\
++                windSpeed = "16.07";\
++            \},\
++                        \{\
++                apparentTemperature = "63.11";\
++                cloudCover = "0.45";\
++                dewPoint = "50.95";\
++                humidity = "0.65";\
++                icon = "partly-cloudy-day";\
++                ozone = "296.8";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1016.87";\
++                summary = "Partly Cloudy";\
++                temperature = "63.11";\
++                time = 1493341200;\
++                visibility = 10;\
++                windBearing = 306;\
++                windSpeed = "15.74";\
++            \},\
++                        \{\
++                apparentTemperature = "59.74";\
++                cloudCover = "0.26";\
++                dewPoint = "48.96";\
++                humidity = "0.68";\
++                icon = "partly-cloudy-day";\
++                ozone = "297.08";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1016.97";\
++                summary = "Partly Cloudy";\
++                temperature = "59.74";\
++                time = 1493344800;\
++                visibility = 10;\
++                windBearing = 308;\
++                windSpeed = 15;\
++            \},\
++                        \{\
++                apparentTemperature = "57.51";\
++                cloudCover = "0.11";\
++                dewPoint = "47.83";\
++                humidity = "0.7";\
++                icon = "clear-night";\
++                ozone = "297.4";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.16";\
++                summary = Clear;\
++                temperature = "57.51";\
++                time = 1493348400;\
++                visibility = 10;\
++                windBearing = 310;\
++                windSpeed = "14.4";\
++            \},\
++                        \{\
++                apparentTemperature = "56.1";\
++                cloudCover = "0.08";\
++                dewPoint = "47.11";\
++                humidity = "0.72";\
++                icon = "clear-night";\
++                ozone = "297.8";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.51";\
++                summary = Clear;\
++                temperature = "56.1";\
++                time = 1493352000;\
++                visibility = 10;\
++                windBearing = 313;\
++                windSpeed = "14.1";\
++            \},\
++                        \{\
++                apparentTemperature = "55.18";\
++                cloudCover = "0.08";\
++                dewPoint = "46.64";\
++                humidity = "0.73";\
++                icon = "clear-night";\
++                ozone = "298.24";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.94";\
++                summary = Clear;\
++                temperature = "55.18";\
++                time = 1493355600;\
++                visibility = 10;\
++                windBearing = 316;\
++                windSpeed = "13.89";\
++            \},\
++                        \{\
++                apparentTemperature = "54.59";\
++                cloudCover = "0.08";\
++                dewPoint = "46.34";\
++                humidity = "0.74";\
++                icon = "clear-night";\
++                ozone = "298.38";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.19";\
++                summary = Clear;\
++                temperature = "54.59";\
++                time = 1493359200;\
++                visibility = 10;\
++                windBearing = 319;\
++                windSpeed = "13.59";\
++            \},\
++                        \{\
++                apparentTemperature = "54.21";\
++                cloudCover = "0.06";\
++                dewPoint = "46.09";\
++                humidity = "0.74";\
++                icon = "clear-night";\
++                ozone = "298.01";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1018.15";\
++                summary = Clear;\
++                temperature = "54.21";\
++                time = 1493362800;\
++                visibility = 10;\
++                windBearing = 321;\
++                windSpeed = "13.04";\
++            \},\
++                        \{\
++                apparentTemperature = "53.98";\
++                cloudCover = "0.02";\
++                dewPoint = "45.85";\
++                humidity = "0.74";\
++                icon = "clear-night";\
++                ozone = "297.35";\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                pressure = "1017.98";\
++                summary = Clear;\
++                temperature = "53.98";\
++                time = 1493366400;\
++                visibility = 10;\
++                windBearing = 324;\
++                windSpeed = "12.31";\
++            \}\
++        );\
++        icon = cloudy;\
++        summary = "Overcast throughout the day.";\
++    \};\
++    latitude = "37.8267";\
++    longitude = "-122.4233";\
++    minutely =     \{\
++        data =         (\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195040;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195100;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195160;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195220;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195280;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195340;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195400;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195460;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195520;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195580;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195640;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195700;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195760;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195820;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195880;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493195940;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196000;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196060;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196120;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196180;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196240;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196300;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196360;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196420;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196480;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196540;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196600;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196660;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196720;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196780;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196840;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196900;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493196960;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197020;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197080;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197140;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197200;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197260;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197320;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197380;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197440;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197500;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197560;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197620;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197680;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197740;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197800;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197860;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197920;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493197980;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198040;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198100;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198160;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198220;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198280;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198340;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198400;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198460;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198520;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198580;\
++            \},\
++                        \{\
++                precipIntensity = 0;\
++                precipProbability = 0;\
++                time = 1493198640;\
++            \}\
++        );\
++        icon = cloudy;\
++        summary = "Overcast for the hour.";\
++    \};\
++    offset = "-7";\
++    timezone = "America/Los_Angeles";\
++\}\
++}
+\ No newline at end of file
+diff --git a/README.md.rtf b/README.md.rtf
+new file mode 100644
+index 0000000..e360e56
+--- /dev/null
++++ b/README.md.rtf
+@@ -0,0 +1 @@
++这是一个README文件

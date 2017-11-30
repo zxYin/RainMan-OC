@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LKInputToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HN-kB-37P">
+                    <rect key="frame" x="0.0" y="304" width="375" height="66"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-zM-QdS" customClass="LKTextView">
+                            <rect key="frame" x="10" y="26" width="355" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="IXj-57-10B"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="评论"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOz-a0-MN0">
+                            <rect key="frame" x="309" y="5" width="56" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="rBn-ql-Hca"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title=" 悄悄话" image="wall_uncheck">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickSecretWordsCheckButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="x2e-cH-mrQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96854275465011597" green="0.96868163347244263" blue="0.96851247549057007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="AOz-a0-MN0" firstAttribute="top" secondItem="9HN-kB-37P" secondAttribute="top" constant="5" id="GVM-zK-ADi"/>
+                        <constraint firstAttribute="bottom" secondItem="fOt-zM-QdS" secondAttribute="bottom" constant="10" id="NHJ-BD-oHs"/>
+                        <constraint firstItem="fOt-zM-QdS" firstAttribute="top" secondItem="AOz-a0-MN0" secondAttribute="bottom" constant="5" id="SaM-Cd-GGQ"/>
+                        <constraint firstAttribute="trailing" secondItem="fOt-zM-QdS" secondAttribute="trailing" constant="10" id="YLe-fQ-6nQ"/>
+                        <constraint firstItem="AOz-a0-MN0" firstAttribute="trailing" secondItem="fOt-zM-QdS" secondAttribute="trailing" id="huD-ze-AZ4"/>
+                        <constraint firstItem="fOt-zM-QdS" firstAttribute="leading" secondItem="9HN-kB-37P" secondAttribute="leading" constant="10" id="zUt-GZ-KTJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9HN-kB-37P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Ld-7j-ve0"/>
+                <constraint firstAttribute="trailing" secondItem="9HN-kB-37P" secondAttribute="trailing" id="D81-OA-wDp"/>
+                <constraint firstAttribute="bottom" secondItem="9HN-kB-37P" secondAttribute="bottom" id="Gj8-xM-2dg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="barBottomCons" destination="Gj8-xM-2dg" id="EIy-HD-BZS"/>
+                <outlet property="inputTextView" destination="fOt-zM-QdS" id="NrF-rA-UsI"/>
+                <outlet property="inputTextViewHeightCons" destination="IXj-57-10B" id="Typ-ro-khX"/>
+                <outlet property="rightCheckButton" destination="AOz-a0-MN0" id="PvN-PE-gyE"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="-327"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wall_uncheck" width="12" height="13"/>
+    </resources>
+</document>

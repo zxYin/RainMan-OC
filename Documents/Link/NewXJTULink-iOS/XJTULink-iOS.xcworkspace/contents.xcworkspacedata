@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:XJTULink-iOS/LKActivityModule/LKActivityModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKBaseModule/LKBaseModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKCardModule/LKCardModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKClassroomModule/LKClassroomModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKCourseModule/LKCourseModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKDiscoverModule/LKDiscoverModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKFlowModule/LKFlowModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKLibraryModule/LKLibraryModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKLoginModule/LKLoginModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKMediator/LKMediator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKNewsModule/LKNewsModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKRecruitmentModule/LKRecruitmentModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS/LKSettingModule/LKSettingModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XJTULink-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

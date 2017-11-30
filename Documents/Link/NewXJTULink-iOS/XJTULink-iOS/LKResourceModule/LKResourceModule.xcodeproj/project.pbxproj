@@ -1,0 +1,102 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		F29DD9451D7C65F600380B92 /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
+		F29DD9461D7C65F600380B92 /* public_key.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = public_key.pem; sourceTree = "<group>"; };
+		F29DD9481D7C65F600380B92 /* nonetwork.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = nonetwork.html; sourceTree = "<group>"; };
+		F29DD9491D7C65F600380B92 /* transfer_time_info.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = transfer_time_info.html; sourceTree = "<group>"; };
+		F29DD94A1D7C65F600380B92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F29DD94C1D7C65F600380B92 /* link.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = link.plist; sourceTree = "<group>"; };
+		F2C593C91E1157520019BD51 /* loading_rubik.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_rubik.gif; sourceTree = "<group>"; };
+		F2C593D41E117B940019BD51 /* AdCleanerJS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AdCleanerJS.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		F29DD9321D7C61AC00380B92 = {
+			isa = PBXGroup;
+			children = (
+				F2C593D41E117B940019BD51 /* AdCleanerJS.plist */,
+				F29DD9441D7C65F600380B92 /* Certificate */,
+				F29DD9471D7C65F600380B92 /* HTML */,
+				F29DD94A1D7C65F600380B92 /* Images.xcassets */,
+				F2C593C91E1157520019BD51 /* loading_rubik.gif */,
+				F29DD94C1D7C65F600380B92 /* link.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		F29DD9441D7C65F600380B92 /* Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				F29DD9451D7C65F600380B92 /* private_key.p12 */,
+				F29DD9461D7C65F600380B92 /* public_key.pem */,
+			);
+			path = Certificate;
+			sourceTree = "<group>";
+		};
+		F29DD9471D7C65F600380B92 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				F29DD9481D7C65F600380B92 /* nonetwork.html */,
+				F29DD9491D7C65F600380B92 /* transfer_time_info.html */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		F29DD9331D7C61AC00380B92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = F29DD9361D7C61AC00380B92 /* Build configuration list for PBXProject "LKResourceModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F29DD9321D7C61AC00380B92;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		F29DD9371D7C61AC00380B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F29DD9381D7C61AC00380B92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F29DD9361D7C61AC00380B92 /* Build configuration list for PBXProject "LKResourceModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29DD9371D7C61AC00380B92 /* Debug */,
+				F29DD9381D7C61AC00380B92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F29DD9331D7C61AC00380B92 /* Project object */;
+}

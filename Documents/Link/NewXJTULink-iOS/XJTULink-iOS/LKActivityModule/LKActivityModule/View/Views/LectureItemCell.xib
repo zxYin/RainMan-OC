@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LectureItemCell" rowHeight="84" id="QRB-7B-cnJ" customClass="LectureItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QRB-7B-cnJ" id="htG-uC-AVd">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Low charge refrigeration systems and Heat transfer in evaporation in narrow channels and compact heat exchangers" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="40j-eN-AKz">
+                        <rect key="frame" x="64" y="12" width="238" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="J9s-XB-TG1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LecturesNoticeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zZs-fb-NLf">
+                        <rect key="frame" x="25" y="15" width="24" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="2fS-SD-F4l"/>
+                            <constraint firstAttribute="width" constant="24" id="fT0-E8-JBn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LecturesNoticeTime" translatesAutoresizingMaskIntoConstraints="NO" id="ejq-v3-9J5">
+                        <rect key="frame" x="188.5" y="63" width="14" height="14"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10月20日 09:30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJS-1G-OGE">
+                        <rect key="frame" x="207.5" y="62" width="96.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.46509598610000003" green="0.46509598610000003" blue="0.46509598610000003" alpha="0.83305629430000006" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZJS-1G-OGE" secondAttribute="trailing" constant="8" id="2Ta-TZ-Z91"/>
+                    <constraint firstItem="ejq-v3-9J5" firstAttribute="centerY" secondItem="ZJS-1G-OGE" secondAttribute="centerY" id="3Zo-xv-1Yd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="40j-eN-AKz" secondAttribute="trailing" constant="10" id="4B7-qP-Hgp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZJS-1G-OGE" secondAttribute="bottom" constant="-2.5" id="4JK-XF-2WT"/>
+                    <constraint firstItem="40j-eN-AKz" firstAttribute="leading" secondItem="zZs-fb-NLf" secondAttribute="trailing" constant="15" id="7lu-VD-Zjp"/>
+                    <constraint firstItem="zZs-fb-NLf" firstAttribute="leading" secondItem="htG-uC-AVd" secondAttribute="leadingMargin" constant="17" id="GJg-h6-baM"/>
+                    <constraint firstItem="40j-eN-AKz" firstAttribute="centerY" secondItem="zZs-fb-NLf" secondAttribute="centerY" id="f20-W3-kxR"/>
+                    <constraint firstItem="ZJS-1G-OGE" firstAttribute="leading" secondItem="ejq-v3-9J5" secondAttribute="trailing" constant="5" id="frT-fA-i1v"/>
+                    <constraint firstItem="zZs-fb-NLf" firstAttribute="top" secondItem="htG-uC-AVd" secondAttribute="topMargin" constant="7" id="g1i-g7-TQK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="timeLabel" destination="ZJS-1G-OGE" id="6R8-7X-zM9"/>
+                <outlet property="titleLabel" destination="40j-eN-AKz" id="maX-4z-5Wv"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="215"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="LecturesNoticeLogo" width="24" height="35"/>
+        <image name="LecturesNoticeTime" width="14" height="14"/>
+    </resources>
+</document>

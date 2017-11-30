@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoticeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是一条通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bs-jH-w2f">
+                    <rect key="frame" x="26" y="7" width="86" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_header_icon" translatesAutoresizingMaskIntoConstraints="NO" id="d95-sc-IUg">
+                    <rect key="frame" x="6" y="8" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="oFS-sp-2nq"/>
+                        <constraint firstAttribute="height" constant="15" id="yPl-iD-61d"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_header_more_icon" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-at-jUw">
+                    <rect key="frame" x="354" y="10" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="NdN-pk-Daf"/>
+                        <constraint firstAttribute="width" constant="10" id="Z62-tP-fyy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="G8j-at-jUw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0bs-jH-w2f" secondAttribute="trailing" priority="750" constant="10" id="Guj-0b-a8o"/>
+                <constraint firstItem="d95-sc-IUg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="Kib-C0-M4C"/>
+                <constraint firstItem="0bs-jH-w2f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RvM-l6-RLd"/>
+                <constraint firstItem="G8j-at-jUw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="k1s-CK-lX2"/>
+                <constraint firstAttribute="trailing" secondItem="G8j-at-jUw" secondAttribute="trailing" constant="11" id="qhq-m6-i4G"/>
+                <constraint firstItem="d95-sc-IUg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="u3t-cR-xkV"/>
+                <constraint firstItem="0bs-jH-w2f" firstAttribute="leading" secondItem="d95-sc-IUg" secondAttribute="trailing" constant="5" id="uLl-ET-l2g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textLabel" destination="0bs-jH-w2f" id="LQW-aM-Rj7"/>
+            </connections>
+            <point key="canvasLocation" x="158.5" y="18"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="notice_header_icon" width="16" height="14"/>
+        <image name="notice_header_more_icon" width="5" height="10"/>
+    </resources>
+</document>

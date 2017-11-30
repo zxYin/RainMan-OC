@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>jinshuju.net</key>
+	<string>var node = document.getElementsByClassName(&quot;published text-center&quot;)[0]; node.parentNode.removeChild(node);node = document.getElementsByClassName(&quot;report-form-link gd-form-control-line-height&quot;)[0]; node.parentNode.removeChild(node);</string>
+	<key>e.xiumi.us</key>
+	<string>var node = document.getElementsByClassName(&quot;col-xs-6 text-center no-padding&quot;)[0]; node.parentNode.removeChild(node); node = document.getElementsByClassName(&quot;col-xs-3 text-right no-padding&quot;)[0]; node.parentNode.removeChild(node);</string>
+	<key>form.mikecrm.com</key>
+	<string>var node = document.getElementById(&quot;fCopyright&quot;);node.removeChild(node.firstChild);</string>
+	<key>www.diaochapai.com</key>
+	<string>var footers = document.getElementsByClassName(&quot;footer&quot;);for(var i=0;i&lt;=footers.length;i++) { footers[0].parentNode.removeChild(footers[0]); }</string>
+</dict>
+</plist>

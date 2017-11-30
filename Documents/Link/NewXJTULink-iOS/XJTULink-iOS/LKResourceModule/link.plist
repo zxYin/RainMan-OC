@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>startPoints</key>
+	<array>
+		<string>{0.33, 0.86}</string>
+		<string>{0.33, 13}</string>
+		<string>{8.37, 13}</string>
+		<string>{8.37, 11.64}</string>
+		<string>{1.94, 11.64}</string>
+		<string>{1.94, 0.86}</string>
+		<string>{0.33, 0.86}</string>
+		<string>{9.85, 0.86}</string>
+		<string>{9.85, 13}</string>
+		<string>{11.46, 13}</string>
+		<string>{11.46, 0.86}</string>
+		<string>{9.85, 0.86}</string>
+		<string>{14.16, 0.86}</string>
+		<string>{14.16, 13}</string>
+		<string>{15.69, 13}</string>
+		<string>{15.69, 3.26}</string>
+		<string>{15.73, 3.26}</string>
+		<string>{22.07, 13}</string>
+		<string>{23.84, 13}</string>
+		<string>{23.84, 0.86}</string>
+		<string>{22.31, 0.86}</string>
+		<string>{22.31, 10.7}</string>
+		<string>{22.27, 10.7}</string>
+		<string>{15.88, 0.86}</string>
+		<string>{14.16, 0.86}</string>
+		<string>{26.46, 0.86}</string>
+		<string>{26.46, 13}</string>
+		<string>{28.07, 13}</string>
+		<string>{28.07, 8.75}</string>
+		<string>{30.09, 6.86}</string>
+		<string>{34.48, 13}</string>
+		<string>{36.52, 13}</string>
+		<string>{31.2, 5.76}</string>
+		<string>{36.31, 0.86}</string>
+		<string>{34.22, 0.86}</string>
+		<string>{28.07, 6.91}</string>
+		<string>{28.07, 0.86}</string>
+	</array>
+	<key>endPoints</key>
+	<array>
+		<string>{0.33, 13}</string>
+		<string>{8.37, 13}</string>
+		<string>{8.37, 11.64}</string>
+		<string>{1.94, 11.64}</string>
+		<string>{1.94, 0.86}</string>
+		<string>{0.33, 0.86}</string>
+		<string>{0.33, 0.86}</string>
+		<string>{9.85, 13}</string>
+		<string>{11.46, 13}</string>
+		<string>{11.46, 0.86}</string>
+		<string>{9.85, 0.86}</string>
+		<string>{14.16, 0.86}</string>
+		<string>{14.16, 13}</string>
+		<string>{15.69, 13}</string>
+		<string>{15.69, 3.26}</string>
+		<string>{15.73, 3.26}</string>
+		<string>{22.07, 13}</string>
+		<string>{23.84, 13}</string>
+		<string>{23.84, 0.86}</string>
+		<string>{22.31, 0.86}</string>
+		<string>{22.31, 10.7}</string>
+		<string>{22.27, 10.7}</string>
+		<string>{15.88, 0.86}</string>
+		<string>{14.16, 0.86}</string>
+		<string>{26.46, 0.86}</string>
+		<string>{26.46, 13}</string>
+		<string>{28.07, 13}</string>
+		<string>{28.07, 8.75}</string>
+		<string>{30.09, 6.86}</string>
+		<string>{34.48, 13}</string>
+		<string>{36.52, 13}</string>
+		<string>{31.2, 5.76}</string>
+		<string>{36.31, 0.86}</string>
+		<string>{34.22, 0.86}</string>
+		<string>{28.07, 6.91}</string>
+		<string>{28.07, 0.86}</string>
+		<string>{26.46, 0.86}</string>
+	</array>
+</dict>
+</plist>

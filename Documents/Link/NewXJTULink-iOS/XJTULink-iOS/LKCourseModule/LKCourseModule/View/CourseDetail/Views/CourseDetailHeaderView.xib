@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CourseDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="course_header_image" translatesAutoresizingMaskIntoConstraints="NO" id="50p-lw-6cO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="50p-lw-6cO" secondAttribute="height" multiplier="125:74" id="frX-du-pWJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课程名称" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="Tos-xd-AZm">
+                    <rect key="frame" x="150" y="142.5" width="202" height="39.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="33"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="50p-lw-6cO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EIO-KV-8E0"/>
+                <constraint firstItem="50p-lw-6cO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Uy7-W8-reI"/>
+                <constraint firstAttribute="bottom" secondItem="50p-lw-6cO" secondAttribute="bottom" id="WOb-61-qHJ"/>
+                <constraint firstItem="Tos-xd-AZm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="53" id="Xi2-oV-RYy"/>
+                <constraint firstAttribute="trailing" secondItem="Tos-xd-AZm" secondAttribute="trailing" constant="23" id="b1Q-rN-rqQ"/>
+                <constraint firstAttribute="bottom" secondItem="Tos-xd-AZm" secondAttribute="bottom" constant="40" id="g6s-GL-Cim"/>
+                <constraint firstItem="Tos-xd-AZm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="150" id="lmO-wc-xqm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="Tos-xd-AZm" id="pff-kl-ccl"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-167"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="course_header_image" width="375" height="222"/>
+    </resources>
+</document>

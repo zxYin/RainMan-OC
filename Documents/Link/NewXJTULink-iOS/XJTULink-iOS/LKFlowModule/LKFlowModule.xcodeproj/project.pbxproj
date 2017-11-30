@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACB2EC3F5497D50C0758FD3C /* libPods-LKFlowModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 974371889731BCA30D8A03D5 /* libPods-LKFlowModule.a */; };
+		F20356D41DFC8A3200A168D6 /* FlowItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F20356D11DFC8A3200A168D6 /* FlowItemCell.h */; };
+		F20356D51DFC8A3200A168D6 /* FlowItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20356D21DFC8A3200A168D6 /* FlowItemCell.m */; };
+		F20356D61DFC8A3200A168D6 /* FlowItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20356D31DFC8A3200A168D6 /* FlowItemCell.xib */; };
+		F218AF0F1D7F060C00911194 /* LKFlowModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F218AF0D1D7F060C00911194 /* LKFlowModule.h */; };
+		F218AF101D7F060C00911194 /* LKFlowModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F218AF0E1D7F060C00911194 /* LKFlowModule.m */; };
+		F218AF141D7F09B300911194 /* Foundation+LKFlowExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = F218AF121D7F09B300911194 /* Foundation+LKFlowExtension.h */; };
+		F218AF151D7F09B300911194 /* Foundation+LKFlowExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F218AF131D7F09B300911194 /* Foundation+LKFlowExtension.m */; };
+		F269C7891DFC897E005B4B80 /* NetChargeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F269C7871DFC897E005B4B80 /* NetChargeViewController.h */; };
+		F269C78A1DFC897E005B4B80 /* NetChargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F269C7881DFC897E005B4B80 /* NetChargeViewController.m */; };
+		F274474D1D7FE72C00744BF5 /* FlowViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F274474B1D7FE72C00744BF5 /* FlowViewModel.h */; };
+		F274474E1D7FE72C00744BF5 /* FlowViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F274474C1D7FE72C00744BF5 /* FlowViewModel.m */; };
+		F27DBB451D7EA9DA00CCDC97 /* LKFlowModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27DBB3A1D7EA9DA00CCDC97 /* LKFlowModule.framework */; };
+		F27DBB4A1D7EA9DA00CCDC97 /* LKFlowModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F27DBB491D7EA9DA00CCDC97 /* LKFlowModuleTests.m */; };
+		F27DBB5F1D7EAB3400CCDC97 /* FlowModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F27DBB551D7EAB3400CCDC97 /* FlowModel.h */; };
+		F27DBB601D7EAB3400CCDC97 /* FlowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F27DBB561D7EAB3400CCDC97 /* FlowModel.m */; };
+		F27DBB611D7EAB3400CCDC97 /* FlowAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F27DBB581D7EAB3400CCDC97 /* FlowAPIManager.h */; };
+		F27DBB621D7EAB3400CCDC97 /* FlowAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F27DBB591D7EAB3400CCDC97 /* FlowAPIManager.m */; };
+		F2C9C2571D7FACC600657392 /* FlowViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C9C2551D7FACC600657392 /* FlowViewController.h */; };
+		F2C9C2581D7FACC600657392 /* FlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C9C2561D7FACC600657392 /* FlowViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F27DBB461D7EA9DA00CCDC97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F27DBB311D7EA9DA00CCDC97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F27DBB391D7EA9DA00CCDC97;
+			remoteInfo = LKFlowModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		60E34CFAC4011693726D8482 /* Pods-LKFlowModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKFlowModule.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-LKFlowModule/Pods-LKFlowModule.debug.xcconfig"; sourceTree = "<group>"; };
+		974371889731BCA30D8A03D5 /* libPods-LKFlowModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKFlowModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5C542459EAEB63A6B227E5 /* Pods-LKFlowModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKFlowModule.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-LKFlowModule/Pods-LKFlowModule.release.xcconfig"; sourceTree = "<group>"; };
+		F20356D11DFC8A3200A168D6 /* FlowItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowItemCell.h; sourceTree = "<group>"; };
+		F20356D21DFC8A3200A168D6 /* FlowItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowItemCell.m; sourceTree = "<group>"; };
+		F20356D31DFC8A3200A168D6 /* FlowItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowItemCell.xib; sourceTree = "<group>"; };
+		F218AF0D1D7F060C00911194 /* LKFlowModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKFlowModule.h; sourceTree = "<group>"; };
+		F218AF0E1D7F060C00911194 /* LKFlowModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKFlowModule.m; sourceTree = "<group>"; };
+		F218AF121D7F09B300911194 /* Foundation+LKFlowExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Foundation+LKFlowExtension.h"; path = "Category/Foundation+LKFlowExtension.h"; sourceTree = "<group>"; };
+		F218AF131D7F09B300911194 /* Foundation+LKFlowExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Foundation+LKFlowExtension.m"; path = "Category/Foundation+LKFlowExtension.m"; sourceTree = "<group>"; };
+		F269C7871DFC897E005B4B80 /* NetChargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetChargeViewController.h; sourceTree = "<group>"; };
+		F269C7881DFC897E005B4B80 /* NetChargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetChargeViewController.m; sourceTree = "<group>"; };
+		F274474B1D7FE72C00744BF5 /* FlowViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowViewModel.h; sourceTree = "<group>"; };
+		F274474C1D7FE72C00744BF5 /* FlowViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowViewModel.m; sourceTree = "<group>"; };
+		F27DBB3A1D7EA9DA00CCDC97 /* LKFlowModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LKFlowModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27DBB3F1D7EA9DA00CCDC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27DBB441D7EA9DA00CCDC97 /* LKFlowModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKFlowModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27DBB491D7EA9DA00CCDC97 /* LKFlowModuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFlowModuleTests.m; sourceTree = "<group>"; };
+		F27DBB4B1D7EA9DA00CCDC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27DBB551D7EAB3400CCDC97 /* FlowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowModel.h; sourceTree = "<group>"; };
+		F27DBB561D7EAB3400CCDC97 /* FlowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowModel.m; sourceTree = "<group>"; };
+		F27DBB581D7EAB3400CCDC97 /* FlowAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowAPIManager.h; sourceTree = "<group>"; };
+		F27DBB591D7EAB3400CCDC97 /* FlowAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowAPIManager.m; sourceTree = "<group>"; };
+		F2C9C2551D7FACC600657392 /* FlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowViewController.h; sourceTree = "<group>"; };
+		F2C9C2561D7FACC600657392 /* FlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F27DBB361D7EA9DA00CCDC97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB2EC3F5497D50C0758FD3C /* libPods-LKFlowModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27DBB411D7EA9DA00CCDC97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27DBB451D7EA9DA00CCDC97 /* LKFlowModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BDD248A902193D85856A9A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60E34CFAC4011693726D8482 /* Pods-LKFlowModule.debug.xcconfig */,
+				EC5C542459EAEB63A6B227E5 /* Pods-LKFlowModule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E2880057F37041AF51AB774 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				974371889731BCA30D8A03D5 /* libPods-LKFlowModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F20356D01DFC8A3200A168D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F20356D11DFC8A3200A168D6 /* FlowItemCell.h */,
+				F20356D21DFC8A3200A168D6 /* FlowItemCell.m */,
+				F20356D31DFC8A3200A168D6 /* FlowItemCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F218AF111D7F098B00911194 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F218AF121D7F09B300911194 /* Foundation+LKFlowExtension.h */,
+				F218AF131D7F09B300911194 /* Foundation+LKFlowExtension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		F27DBB301D7EA9DA00CCDC97 = {
+			isa = PBXGroup;
+			children = (
+				F27DBB3C1D7EA9DA00CCDC97 /* LKFlowModule */,
+				F27DBB481D7EA9DA00CCDC97 /* LKFlowModuleTests */,
+				F27DBB3B1D7EA9DA00CCDC97 /* Products */,
+				4BDD248A902193D85856A9A4 /* Pods */,
+				4E2880057F37041AF51AB774 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F27DBB3B1D7EA9DA00CCDC97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F27DBB3A1D7EA9DA00CCDC97 /* LKFlowModule.framework */,
+				F27DBB441D7EA9DA00CCDC97 /* LKFlowModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F27DBB3C1D7EA9DA00CCDC97 /* LKFlowModule */ = {
+			isa = PBXGroup;
+			children = (
+				F218AF111D7F098B00911194 /* Category */,
+				F27DBB541D7EAB3400CCDC97 /* Model */,
+				F27DBB571D7EAB3400CCDC97 /* Networking */,
+				F27DBB5A1D7EAB3400CCDC97 /* Public */,
+				F27DBB5B1D7EAB3400CCDC97 /* View */,
+				F27DBB5E1D7EAB3400CCDC97 /* ViewModel */,
+				F27DBB3F1D7EA9DA00CCDC97 /* Info.plist */,
+			);
+			path = LKFlowModule;
+			sourceTree = "<group>";
+		};
+		F27DBB481D7EA9DA00CCDC97 /* LKFlowModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F27DBB491D7EA9DA00CCDC97 /* LKFlowModuleTests.m */,
+				F27DBB4B1D7EA9DA00CCDC97 /* Info.plist */,
+			);
+			path = LKFlowModuleTests;
+			sourceTree = "<group>";
+		};
+		F27DBB541D7EAB3400CCDC97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F27DBB551D7EAB3400CCDC97 /* FlowModel.h */,
+				F27DBB561D7EAB3400CCDC97 /* FlowModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F27DBB571D7EAB3400CCDC97 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F27DBB581D7EAB3400CCDC97 /* FlowAPIManager.h */,
+				F27DBB591D7EAB3400CCDC97 /* FlowAPIManager.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F27DBB5A1D7EAB3400CCDC97 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				F218AF0D1D7F060C00911194 /* LKFlowModule.h */,
+				F218AF0E1D7F060C00911194 /* LKFlowModule.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		F27DBB5B1D7EAB3400CCDC97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F20356D01DFC8A3200A168D6 /* Views */,
+				F2C9C2551D7FACC600657392 /* FlowViewController.h */,
+				F2C9C2561D7FACC600657392 /* FlowViewController.m */,
+				F269C7871DFC897E005B4B80 /* NetChargeViewController.h */,
+				F269C7881DFC897E005B4B80 /* NetChargeViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F27DBB5E1D7EAB3400CCDC97 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F274474B1D7FE72C00744BF5 /* FlowViewModel.h */,
+				F274474C1D7FE72C00744BF5 /* FlowViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F27DBB371D7EA9DA00CCDC97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F218AF141D7F09B300911194 /* Foundation+LKFlowExtension.h in Headers */,
+				F27DBB611D7EAB3400CCDC97 /* FlowAPIManager.h in Headers */,
+				F2C9C2571D7FACC600657392 /* FlowViewController.h in Headers */,
+				F20356D41DFC8A3200A168D6 /* FlowItemCell.h in Headers */,
+				F218AF0F1D7F060C00911194 /* LKFlowModule.h in Headers */,
+				F27DBB5F1D7EAB3400CCDC97 /* FlowModel.h in Headers */,
+				F274474D1D7FE72C00744BF5 /* FlowViewModel.h in Headers */,
+				F269C7891DFC897E005B4B80 /* NetChargeViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F27DBB391D7EA9DA00CCDC97 /* LKFlowModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27DBB4E1D7EA9DA00CCDC97 /* Build configuration list for PBXNativeTarget "LKFlowModule" */;
+			buildPhases = (
+				0EC7D67081730A14B0174636 /* [CP] Check Pods Manifest.lock */,
+				F27DBB351D7EA9DA00CCDC97 /* Sources */,
+				F27DBB361D7EA9DA00CCDC97 /* Frameworks */,
+				F27DBB371D7EA9DA00CCDC97 /* Headers */,
+				F27DBB381D7EA9DA00CCDC97 /* Resources */,
+				E3CD1D1C7ED11457C3694254 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LKFlowModule;
+			productName = LKFlowModule;
+			productReference = F27DBB3A1D7EA9DA00CCDC97 /* LKFlowModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F27DBB431D7EA9DA00CCDC97 /* LKFlowModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27DBB511D7EA9DA00CCDC97 /* Build configuration list for PBXNativeTarget "LKFlowModuleTests" */;
+			buildPhases = (
+				F27DBB401D7EA9DA00CCDC97 /* Sources */,
+				F27DBB411D7EA9DA00CCDC97 /* Frameworks */,
+				F27DBB421D7EA9DA00CCDC97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F27DBB471D7EA9DA00CCDC97 /* PBXTargetDependency */,
+			);
+			name = LKFlowModuleTests;
+			productName = LKFlowModuleTests;
+			productReference = F27DBB441D7EA9DA00CCDC97 /* LKFlowModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F27DBB311D7EA9DA00CCDC97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Yunpeng;
+				TargetAttributes = {
+					F27DBB391D7EA9DA00CCDC97 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F27DBB431D7EA9DA00CCDC97 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F27DBB341D7EA9DA00CCDC97 /* Build configuration list for PBXProject "LKFlowModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F27DBB301D7EA9DA00CCDC97;
+			productRefGroup = F27DBB3B1D7EA9DA00CCDC97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F27DBB391D7EA9DA00CCDC97 /* LKFlowModule */,
+				F27DBB431D7EA9DA00CCDC97 /* LKFlowModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F27DBB381D7EA9DA00CCDC97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20356D61DFC8A3200A168D6 /* FlowItemCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27DBB421D7EA9DA00CCDC97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EC7D67081730A14B0174636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3CD1D1C7ED11457C3694254 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-LKFlowModule/Pods-LKFlowModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F27DBB351D7EA9DA00CCDC97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20356D51DFC8A3200A168D6 /* FlowItemCell.m in Sources */,
+				F218AF101D7F060C00911194 /* LKFlowModule.m in Sources */,
+				F218AF151D7F09B300911194 /* Foundation+LKFlowExtension.m in Sources */,
+				F274474E1D7FE72C00744BF5 /* FlowViewModel.m in Sources */,
+				F269C78A1DFC897E005B4B80 /* NetChargeViewController.m in Sources */,
+				F2C9C2581D7FACC600657392 /* FlowViewController.m in Sources */,
+				F27DBB621D7EAB3400CCDC97 /* FlowAPIManager.m in Sources */,
+				F27DBB601D7EAB3400CCDC97 /* FlowModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27DBB401D7EA9DA00CCDC97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27DBB4A1D7EA9DA00CCDC97 /* LKFlowModuleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F27DBB471D7EA9DA00CCDC97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F27DBB391D7EA9DA00CCDC97 /* LKFlowModule */;
+			targetProxy = F27DBB461D7EA9DA00CCDC97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F27DBB4C1D7EA9DA00CCDC97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F27DBB4D1D7EA9DA00CCDC97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F27DBB4F1D7EA9DA00CCDC97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E34CFAC4011693726D8482 /* Pods-LKFlowModule.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LKFlowModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKFlowModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F27DBB501D7EA9DA00CCDC97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC5C542459EAEB63A6B227E5 /* Pods-LKFlowModule.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LKFlowModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKFlowModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F27DBB521D7EA9DA00CCDC97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LKFlowModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKFlowModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F27DBB531D7EA9DA00CCDC97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LKFlowModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKFlowModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F27DBB341D7EA9DA00CCDC97 /* Build configuration list for PBXProject "LKFlowModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27DBB4C1D7EA9DA00CCDC97 /* Debug */,
+				F27DBB4D1D7EA9DA00CCDC97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F27DBB4E1D7EA9DA00CCDC97 /* Build configuration list for PBXNativeTarget "LKFlowModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27DBB4F1D7EA9DA00CCDC97 /* Debug */,
+				F27DBB501D7EA9DA00CCDC97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F27DBB511D7EA9DA00CCDC97 /* Build configuration list for PBXNativeTarget "LKFlowModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27DBB521D7EA9DA00CCDC97 /* Debug */,
+				F27DBB531D7EA9DA00CCDC97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F27DBB311D7EA9DA00CCDC97 /* Project object */;
+}

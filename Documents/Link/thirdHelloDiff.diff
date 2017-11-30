@@ -1,0 +1,385 @@
+diff --git a/HelloWorld-ios.xcodeproj/project.pbxproj b/HelloWorld-ios.xcodeproj/project.pbxproj
+index 21cfdae..e6beb71 100644
+--- a/HelloWorld-ios.xcodeproj/project.pbxproj
++++ b/HelloWorld-ios.xcodeproj/project.pbxproj
+@@ -8,7 +8,6 @@
+ 
+ /* Begin PBXBuildFile section */
+ 		6502A37F1EB4E0C900774F62 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6502A37E1EB4E0C900774F62 /* Info.plist */; };
+-		6502A3871EB4E0D000774F62 /* WeatherCurrentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502A3821EB4E0D000774F62 /* WeatherCurrentModel.m */; };
+ 		6502A3881EB4E0D000774F62 /* WeatherDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502A3841EB4E0D000774F62 /* WeatherDayModel.m */; };
+ 		6502A3891EB4E0D000774F62 /* WeatherWeekModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502A3861EB4E0D000774F62 /* WeatherWeekModel.m */; };
+ 		6502A38D1EB4E0D700774F62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6502A38B1EB4E0D700774F62 /* Assets.xcassets */; };
+@@ -41,8 +40,6 @@
+ 
+ /* Begin PBXFileReference section */
+ 		6502A37E1EB4E0C900774F62 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+-		6502A3811EB4E0D000774F62 /* WeatherCurrentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCurrentModel.h; sourceTree = "<group>"; };
+-		6502A3821EB4E0D000774F62 /* WeatherCurrentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCurrentModel.m; sourceTree = "<group>"; };
+ 		6502A3831EB4E0D000774F62 /* WeatherDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDayModel.h; sourceTree = "<group>"; };
+ 		6502A3841EB4E0D000774F62 /* WeatherDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDayModel.m; sourceTree = "<group>"; };
+ 		6502A3851EB4E0D000774F62 /* WeatherWeekModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherWeekModel.h; sourceTree = "<group>"; };
+@@ -103,8 +100,6 @@
+ 		6502A3801EB4E0D000774F62 /* Model */ = {
+ 			isa = PBXGroup;
+ 			children = (
+-				6502A3811EB4E0D000774F62 /* WeatherCurrentModel.h */,
+-				6502A3821EB4E0D000774F62 /* WeatherCurrentModel.m */,
+ 				6502A3831EB4E0D000774F62 /* WeatherDayModel.h */,
+ 				6502A3841EB4E0D000774F62 /* WeatherDayModel.m */,
+ 				6502A3851EB4E0D000774F62 /* WeatherWeekModel.h */,
+@@ -344,7 +339,6 @@
+ 			files = (
+ 				6502A3941EB4E0DD00774F62 /* main.m in Sources */,
+ 				6502A3931EB4E0DD00774F62 /* AppDelegate.m in Sources */,
+-				6502A3871EB4E0D000774F62 /* WeatherCurrentModel.m in Sources */,
+ 				6502A39B1EB4E0EA00774F62 /* HelloViewController.m in Sources */,
+ 				6502A3891EB4E0D000774F62 /* WeatherWeekModel.m in Sources */,
+ 				656ADFD91EB643C8002772D7 /* NSString+weatherName.m in Sources */,
+diff --git a/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist b/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+index 5b91c16..876e514 100644
+--- a/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
++++ b/HelloWorld-ios.xcodeproj/xcuserdata/yinzixin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+@@ -581,47 +581,15 @@
+             shouldBeEnabled = "No"
+             ignoreCount = "0"
+             continueAfterRunningActions = "No"
+-            filePath = "HelloWorld-ios/ViewController/HelloViewController.m"
+-            timestampString = "515340933.183612"
+-            startingColumnNumber = "9223372036854775807"
+-            endingColumnNumber = "9223372036854775807"
+-            startingLineNumber = "162"
+-            endingLineNumber = "162"
+-            landmarkName = "-setCurrentWeather"
+-            landmarkType = "7">
+-         </BreakpointContent>
+-      </BreakpointProxy>
+-      <BreakpointProxy
+-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+-         <BreakpointContent
+-            shouldBeEnabled = "No"
+-            ignoreCount = "0"
+-            continueAfterRunningActions = "No"
+             filePath = "HelloWorld-ios/ViewController/HelloViewController.h"
+-            timestampString = "515309407.588176"
++            timestampString = "515402375.109108"
+             startingColumnNumber = "9223372036854775807"
+             endingColumnNumber = "9223372036854775807"
+-            startingLineNumber = "13"
+-            endingLineNumber = "13"
++            startingLineNumber = "12"
++            endingLineNumber = "12"
+             landmarkName = "@interface HelloViewController"
+             landmarkType = "2">
+          </BreakpointContent>
+       </BreakpointProxy>
+-      <BreakpointProxy
+-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+-         <BreakpointContent
+-            shouldBeEnabled = "Yes"
+-            ignoreCount = "0"
+-            continueAfterRunningActions = "No"
+-            filePath = "HelloWorld-ios/ViewController/HelloViewController.m"
+-            timestampString = "515340914.905457"
+-            startingColumnNumber = "9223372036854775807"
+-            endingColumnNumber = "9223372036854775807"
+-            startingLineNumber = "138"
+-            endingLineNumber = "138"
+-            landmarkName = "-setWeekWeathers"
+-            landmarkType = "7">
+-         </BreakpointContent>
+-      </BreakpointProxy>
+    </Breakpoints>
+ </Bucket>
+diff --git a/HelloWorld-ios/Category/NSString+weatherName.h b/HelloWorld-ios/Category/NSString+weatherName.h
+index 50a123b..b5ea76f 100644
+--- a/HelloWorld-ios/Category/NSString+weatherName.h
++++ b/HelloWorld-ios/Category/NSString+weatherName.h
+@@ -8,6 +8,6 @@
+ 
+ #import <Foundation/Foundation.h>
+ 
+-@interface NSString (weatherName)
++@interface NSString (WeatherName)
+ - (NSString *)weatherName;
+ @end
+diff --git a/HelloWorld-ios/Category/NSString+weatherName.m b/HelloWorld-ios/Category/NSString+weatherName.m
+index f5c8e09..307603f 100644
+--- a/HelloWorld-ios/Category/NSString+weatherName.m
++++ b/HelloWorld-ios/Category/NSString+weatherName.m
+@@ -8,7 +8,7 @@
+ 
+ #import "NSString+weatherName.h"
+ 
+-@implementation NSString (weatherName)
++@implementation NSString (WeatherName)
+ - (NSString *)weatherName {
+     if ([self isEqualToString:@"clear-day"]) {
+         return @"晴天";
+diff --git a/HelloWorld-ios/Model/WeatherCurrentModel.h b/HelloWorld-ios/Model/WeatherCurrentModel.h
+deleted file mode 100644
+index b46d673..0000000
+--- a/HelloWorld-ios/Model/WeatherCurrentModel.h
++++ /dev/null
+@@ -1,14 +0,0 @@
+-//
+-//  NSObject+currently.h
+-//  HelloWorld-ios
+-//
+-//  Created by 殷子欣 on 2017/4/27.
+-//  Copyright © 2017年 yinzixin. All rights reserved.
+-//
+-
+-#import <Foundation/Foundation.h>
+-#import <UIKit/UIKit.h>
+-@interface WeatherCurrentModel : NSObject
+-@property (nonatomic, copy) NSMutableDictionary *currentWeatherDic;
+--(NSDictionary *)getCurrentWeather:(NSDictionary*)mainWeatherDic;
+-@end
+diff --git a/HelloWorld-ios/Model/WeatherCurrentModel.m b/HelloWorld-ios/Model/WeatherCurrentModel.m
+deleted file mode 100644
+index e3ac59e..0000000
+--- a/HelloWorld-ios/Model/WeatherCurrentModel.m
++++ /dev/null
+@@ -1,19 +0,0 @@
+-//
+-//  NSObject+currently.m
+-//  HelloWorld-ios
+-//
+-//  Created by 殷子欣 on 2017/4/27.
+-//  Copyright © 2017年 yinzixin. All rights reserved.
+-//
+-
+-#import "WeatherCurrentModel.h"
+-
+-@implementation WeatherCurrentModel
+-//更新当前的天气
+--(NSDictionary *)getCurrentWeather:(NSDictionary *)mainWeatherDic {
+-    if ([mainWeatherDic[@"currently"] isKindOfClass:[NSDictionary class]]) {
+-        return mainWeatherDic[@"currently"];
+-    }
+-    return NULL;
+-}
+-@end
+diff --git a/HelloWorld-ios/Model/WeatherWeekModel.h b/HelloWorld-ios/Model/WeatherWeekModel.h
+index beba338..6eb8b50 100644
+--- a/HelloWorld-ios/Model/WeatherWeekModel.h
++++ b/HelloWorld-ios/Model/WeatherWeekModel.h
+@@ -10,6 +10,5 @@
+ #import <Foundation/Foundation.h>
+ @interface WeatherWeekModel : NSObject
+ @property (nonatomic, strong) NSMutableArray<WeatherDayModel *> *dayWeathers;
+-- (void)setWeekWeathers:(NSDictionary*)mainWeatherDictionary;
+-- (NSInteger)getWeekdayInteger;
++- (void)weekWeatherModel:(NSDictionary*)mainWeatherDict;
+ @end
+diff --git a/HelloWorld-ios/Model/WeatherWeekModel.m b/HelloWorld-ios/Model/WeatherWeekModel.m
+index 1dd453c..4f9aa4e 100644
+--- a/HelloWorld-ios/Model/WeatherWeekModel.m
++++ b/HelloWorld-ios/Model/WeatherWeekModel.m
+@@ -14,8 +14,8 @@
+     if (self = [super init]) {
+         self.dayWeathers = [[NSMutableArray alloc] init];
+         for (NSInteger count=0; count<7; count++) {
+-            WeatherDayModel *objc = [[WeatherDayModel alloc] init];
+-            [self.dayWeathers addObject:objc];
++            WeatherDayModel *weekDayModel = [[WeatherDayModel alloc] init];
++            [self.dayWeathers addObject:weekDayModel];
+         }
+     }
+     return self;
+@@ -27,7 +27,7 @@
+ 
+ #pragma mark - Getter && Setter
+ //获取今天是星期几
+-- (NSInteger)getWeekdayInteger {
++- (NSInteger)weekdayInteger {
+     NSDate *weatherDate = [NSDate date];
+     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+     NSDateComponents *comps = [[NSDateComponents alloc] init];
+@@ -38,15 +38,15 @@
+ }
+ 
+ 
+-- (void)setWeekWeathers:(NSDictionary *)mainWeatherDictionary {
++- (void)weekWeatherModel:(NSDictionary *)mainWeatherDict {
+     //星期几更新完毕
+-    NSInteger todayWeekDay = [self getWeekdayInteger] - 1;
++    NSInteger todayWeekDay = [self weekdayInteger] - 1;
+     for (NSInteger count=0; count<7; count++) {
+         self.dayWeathers[count].name = (todayWeekDay+count <= 7) ? (todayWeekDay + count) : (todayWeekDay + count - 7);
+     }
+     //更新最高气温最低气温
+-    if ([mainWeatherDictionary[@"daily"] isKindOfClass:[NSDictionary class]]) {
+-        NSDictionary *dailyDictionary = mainWeatherDictionary[@"daily"];
++    if ([mainWeatherDict[@"daily"] isKindOfClass:[NSDictionary class]]) {
++        NSDictionary *dailyDictionary = mainWeatherDict[@"daily"];
+         if ([dailyDictionary[@"data"] isKindOfClass:[NSArray class]]) {
+             NSArray *weathers = dailyDictionary[@"data"];
+             for (NSInteger count = 0; count <7; count++) {
+diff --git a/HelloWorld-ios/View/Main.storyboard b/HelloWorld-ios/View/Main.storyboard
+index 27a0c17..3a180d9 100755
+--- a/HelloWorld-ios/View/Main.storyboard
++++ b/HelloWorld-ios/View/Main.storyboard
+@@ -336,7 +336,7 @@
+                                             <color key="titleShadowColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                         </state>
+                                         <connections>
+-                                            <action selector="degreeButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51k-tc-kat"/>
++                                            <action selector="degreeButtonDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIM-6o-feM"/>
+                                         </connections>
+                                     </button>
+                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebt-Dx-HBg">
+@@ -430,12 +430,12 @@
+                     </view>
+                     <connections>
+                         <outlet property="mainImage" destination="MsW-Am-sFA" id="bFS-Ua-VG7"/>
+-                        <outlet property="mainTemperature" destination="Ebt-Dx-HBg" id="bx7-S7-uq0"/>
+-                        <outlet property="mainWeather" destination="fsb-PL-oMw" id="qM0-vs-Cor"/>
++                        <outlet property="mainTemperatureLabel" destination="Ebt-Dx-HBg" id="p7y-7W-RDw"/>
++                        <outlet property="mainWeatherLabel" destination="fsb-PL-oMw" id="RPi-Fp-5EC"/>
+                         <outlet property="moistureLabel" destination="WkQ-Om-TEk" id="imZ-Ou-VzS"/>
+                         <outlet property="rainLabel" destination="ddz-Cg-zJd" id="Dg8-sX-L6e"/>
+-                        <outlet property="temperatureMax" destination="QZm-gu-BGV" id="VMl-Tb-Kha"/>
+-                        <outlet property="temperatureMin" destination="Asj-FS-aWK" id="gCW-3g-vKb"/>
++                        <outlet property="temperatureMaxLabel" destination="QZm-gu-BGV" id="8Mf-Cx-gOz"/>
++                        <outlet property="temperatureMinLabel" destination="Asj-FS-aWK" id="goN-sC-r1X"/>
+                         <outlet property="weatherView" destination="8bC-Xf-vdC" id="bY4-SS-VX1"/>
+                         <outlet property="windLabel" destination="OPP-iz-g4R" id="OSr-DM-DlS"/>
+                     </connections>
+diff --git a/HelloWorld-ios/ViewController/HelloViewController.h b/HelloWorld-ios/ViewController/HelloViewController.h
+index 6547bc9..631cee2 100755
+--- a/HelloWorld-ios/ViewController/HelloViewController.h
++++ b/HelloWorld-ios/ViewController/HelloViewController.h
+@@ -8,7 +8,6 @@
+ 
+ #import <UIKit/UIKit.h>
+ #import "WeatherWeekModel.h"
+-#import "WeatherCurrentModel.h"
+ #import "NSString+weatherName.h"
+ @interface HelloViewController : UIViewController
+ @end
+diff --git a/HelloWorld-ios/ViewController/HelloViewController.m b/HelloWorld-ios/ViewController/HelloViewController.m
+index 0c1b5f2..a31495f 100755
+--- a/HelloWorld-ios/ViewController/HelloViewController.m
++++ b/HelloWorld-ios/ViewController/HelloViewController.m
+@@ -18,13 +18,14 @@ static NSInteger const WeatherNameTag = 1500;
+ @property (weak, nonatomic) IBOutlet UILabel *windLabel;
+ @property (weak, nonatomic) IBOutlet UILabel *moistureLabel;
+ @property (weak, nonatomic) IBOutlet UILabel *rainLabel;
+-@property (weak, nonatomic) IBOutlet UILabel *temperatureMin;
+-@property (weak, nonatomic) IBOutlet UILabel *temperatureMax;
++@property (weak, nonatomic) IBOutlet UILabel *temperatureMinLabel;
++@property (weak, nonatomic) IBOutlet UILabel *temperatureMaxLabel;
+ 
+ @property (weak, nonatomic) IBOutlet UIImageView *mainImage;
+-@property (weak, nonatomic) IBOutlet UILabel *mainWeather;
+-@property (weak, nonatomic) IBOutlet UILabel *mainTemperature;
+-@property (nonatomic, copy) NSDictionary* taskWeatherDic;
++@property (weak, nonatomic) IBOutlet UILabel *mainWeatherLabel;
++@property (weak, nonatomic) IBOutlet UILabel *mainTemperatureLabel;
++
++@property (nonatomic, copy) NSDictionary* taskWeatherDict;
+ @end
+ @implementation HelloViewController
+ 
+@@ -53,10 +54,10 @@ static NSInteger const WeatherNameTag = 1500;
+     {
+         if (error == nil) {
+             NSError *jsonError;
+-            self.taskWeatherDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &jsonError];
++            self.taskWeatherDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &jsonError];
+             [self refreshWeatherView];
+             /*
+-            self.taskWeatherDic =
++            self.taskWeatherDict =
+             @{
+               @"currently" : @{
+                     @"apparentTemperature" : @"55.94",
+@@ -112,7 +113,8 @@ static NSInteger const WeatherNameTag = 1500;
+                     }
+ 
+               };
+-             */
++            */
++            
+           }
+         
+     }];
+@@ -125,18 +127,19 @@ static NSInteger const WeatherNameTag = 1500;
+ 
+ #pragma mark - Getter && Setter
+ 
+-- (void)setWeekWeathers {
+-    NSArray *dateName = [NSArray arrayWithObjects:@"未知",@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日", nil];
++- (void)showWeekWeathers {
++    NSArray *dateName = @[@"未知",@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日"];
+     WeatherWeekModel *weekWeather = [[WeatherWeekModel alloc] init];
+-    [weekWeather setWeekWeathers: self.taskWeatherDic];
++    [weekWeather weekWeatherModel:self.taskWeatherDict];
+     for (NSInteger count=1; count<7; count++) {
+         UILabel *weatherName = (UILabel *)[self.weatherView viewWithTag:count+WeatherNameTag];
+-        @try {
+-            weatherName.text = dateName[weekWeather.dayWeathers[count].name];
++        NSInteger dateNumber = weekWeather.dayWeathers[count].name;
++        if (dateNumber>7 || dateNumber<1) {
++            weatherName.text = dateName[dateNumber];
++        }else{
++            weatherName.text = dateName[dateNumber];
+             //NSLog(@"%td", weekWeather.dayWeathers[count].name);
+             //NSLog(@"%@", dateName[weekWeather.dayWeathers[count].name]);
+-        } @catch (NSException *exception) {
+-            weatherName.text = dateName[0];
+         }
+         // NSLog(@"%@", weatherName.text);
+         
+@@ -149,30 +152,33 @@ static NSInteger const WeatherNameTag = 1500;
+         UIImageView *weatherImage = (UIImageView *)[self.weatherView viewWithTag:count+WeatherImageTag];
+         [weatherImage setImage:weekWeather.dayWeathers[count].iconImage];
+     }
+-    self.temperatureMin.text = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[0].temperatureMin)];
+-    self.temperatureMax.text = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[0].temperatureMax)];
++    self.temperatureMinLabel.text = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[0].temperatureMin)];
++    self.temperatureMaxLabel.text = [NSString stringWithFormat:@"%d", ChangeTemperature(weekWeather.dayWeathers[0].temperatureMax)];
+ }
+ 
+-- (void)setCurrentWeather {
+-    WeatherCurrentModel *currentWeather = [[WeatherCurrentModel alloc] init];
+-    NSDictionary *currentWeatherDic = [currentWeather getCurrentWeather:self.taskWeatherDic];
+-    self.rainLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDic[@"precipProbability"] floatValue]];
+-    self.windLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDic[@"windSpeed"] floatValue]];
+-    self.moistureLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDic[@"humidity"] floatValue]];
+-    self.mainTemperature.text = [NSString stringWithFormat:@"%d", ChangeTemperature([currentWeatherDic[@"temperature"] floatValue])];
+-    [self.mainImage setImage:[UIImage imageNamed:currentWeatherDic[@"icon"]]];
+-    self.mainWeather.text = [currentWeatherDic[@"icon"] weatherName];
++- (void)showCurrentWeather {
++    NSDictionary *currentWeatherDict = [self fetchCurrentWeather:self.taskWeatherDict];
++    self.rainLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDict[@"precipProbability"] floatValue]];
++    self.windLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDict[@"windSpeed"] floatValue]];
++    self.moistureLabel.text = [NSString stringWithFormat:@"%.2f", [currentWeatherDict[@"humidity"] floatValue]];
++    self.mainTemperatureLabel.text = [NSString stringWithFormat:@"%d", ChangeTemperature([currentWeatherDict[@"temperature"] floatValue])];
++    [self.mainImage setImage:[UIImage imageNamed:currentWeatherDict[@"icon"]]];
++    self.mainWeatherLabel.text = [currentWeatherDict[@"icon"] weatherName];
+ }
+ 
+ - (void)refreshWeatherView {
+-    [self setWeekWeathers];
+-    [self setCurrentWeather];
++    [self showWeekWeathers];
++    [self showCurrentWeather];
+ }
+ 
+-- (IBAction)degreeButtonTouch:(UIButton *)sender {
+-    [self setCurrentWeather];
++- (NSDictionary *)fetchCurrentWeather:(NSDictionary *)mainWeatherDict {
++    if ([mainWeatherDict[@"currently"] isKindOfClass:[NSDictionary class]]) {
++        return mainWeatherDict[@"currently"];
++    }
++    return NULL;
++}
++- (IBAction)degreeButtonDidClick:(id)sender {
+     [self refreshWeatherView];
+ }
+ 
+-
+ @end

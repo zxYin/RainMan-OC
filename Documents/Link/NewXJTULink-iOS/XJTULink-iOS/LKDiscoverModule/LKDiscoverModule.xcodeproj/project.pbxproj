@@ -1,0 +1,1240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2E660105B983F60DECEC9D2 /* libPods-LKDiscoverModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F32850E0463E237A2BE5672F /* libPods-LKDiscoverModule.a */; };
+		F22418C81E1B9C160057953C /* DiscoverHeadlineCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F22418C61E1B9C160057953C /* DiscoverHeadlineCell.h */; };
+		F22418C91E1B9C160057953C /* DiscoverHeadlineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F22418C71E1B9C160057953C /* DiscoverHeadlineCell.m */; };
+		F22A099F1EA6B94700D3ADE2 /* AcademyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F22A099D1EA6B94700D3ADE2 /* AcademyManager.h */; };
+		F22A09A01EA6B94700D3ADE2 /* AcademyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A099E1EA6B94700D3ADE2 /* AcademyManager.m */; };
+		F23104BC1EB65F2E005153C4 /* AcademyAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104B21EB65F2E005153C4 /* AcademyAPIManager.h */; };
+		F23104BD1EB65F2E005153C4 /* AcademyAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104B31EB65F2E005153C4 /* AcademyAPIManager.m */; };
+		F23104BE1EB65F2E005153C4 /* LKCommentAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104B41EB65F2E005153C4 /* LKCommentAPIManager.h */; };
+		F23104BF1EB65F2E005153C4 /* LKCommentAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104B51EB65F2E005153C4 /* LKCommentAPIManager.m */; };
+		F23104C01EB65F2E005153C4 /* LKCommentListAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104B61EB65F2E005153C4 /* LKCommentListAPIManager.h */; };
+		F23104C11EB65F2E005153C4 /* LKCommentListAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104B71EB65F2E005153C4 /* LKCommentListAPIManager.m */; };
+		F23104C21EB65F2E005153C4 /* LKPostAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104B81EB65F2E005153C4 /* LKPostAPIManager.h */; };
+		F23104C31EB65F2E005153C4 /* LKPostAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104B91EB65F2E005153C4 /* LKPostAPIManager.m */; };
+		F23104C41EB65F2E005153C4 /* LKPostListAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104BA1EB65F2E005153C4 /* LKPostListAPIManager.h */; };
+		F23104C51EB65F2E005153C4 /* LKPostListAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104BB1EB65F2E005153C4 /* LKPostListAPIManager.m */; };
+		F23104EF1EB65F3D005153C4 /* CommunityViewContoller.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104C71EB65F3D005153C4 /* CommunityViewContoller.h */; };
+		F23104F01EB65F3D005153C4 /* CommunityViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104C81EB65F3D005153C4 /* CommunityViewContoller.m */; };
+		F23104F11EB65F3D005153C4 /* LKPostEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104CA1EB65F3D005153C4 /* LKPostEditViewController.h */; };
+		F23104F21EB65F3D005153C4 /* LKPostEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104CB1EB65F3D005153C4 /* LKPostEditViewController.m */; };
+		F23104F31EB65F3D005153C4 /* ReferEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104CC1EB65F3D005153C4 /* ReferEditViewController.h */; };
+		F23104F41EB65F3D005153C4 /* ReferEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104CD1EB65F3D005153C4 /* ReferEditViewController.m */; };
+		F23104F51EB65F3D005153C4 /* AcademyPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104CF1EB65F3D005153C4 /* AcademyPickerCell.h */; };
+		F23104F61EB65F3D005153C4 /* AcademyPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104D01EB65F3D005153C4 /* AcademyPickerCell.m */; };
+		F23104F71EB65F3D005153C4 /* AcademyPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23104D11EB65F3D005153C4 /* AcademyPickerCell.xib */; };
+		F23104F81EB65F3D005153C4 /* LKPostDetailViewContoller.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104D21EB65F3D005153C4 /* LKPostDetailViewContoller.h */; };
+		F23104F91EB65F3D005153C4 /* LKPostDetailViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104D31EB65F3D005153C4 /* LKPostDetailViewContoller.m */; };
+		F23104FA1EB65F3D005153C4 /* LKPostMessageHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104D51EB65F3D005153C4 /* LKPostMessageHeader.h */; };
+		F23104FB1EB65F3D005153C4 /* LKPostMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104D61EB65F3D005153C4 /* LKPostMessageHeader.m */; };
+		F23104FC1EB65F3D005153C4 /* LKPostMessageHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23104D71EB65F3D005153C4 /* LKPostMessageHeader.xib */; };
+		F23104FD1EB65F3D005153C4 /* LKAnonymousPostCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104D81EB65F3D005153C4 /* LKAnonymousPostCell.h */; };
+		F23104FE1EB65F3D005153C4 /* LKAnonymousPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104D91EB65F3D005153C4 /* LKAnonymousPostCell.m */; };
+		F23104FF1EB65F3D005153C4 /* LKAnonymousPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23104DA1EB65F3D005153C4 /* LKAnonymousPostCell.xib */; };
+		F23105001EB65F3D005153C4 /* LKAnonymousPostDetailCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104DB1EB65F3D005153C4 /* LKAnonymousPostDetailCell.h */; };
+		F23105011EB65F3D005153C4 /* LKAnonymousPostDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104DC1EB65F3D005153C4 /* LKAnonymousPostDetailCell.m */; };
+		F23105021EB65F3D005153C4 /* LKAnonymousPostDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23104DD1EB65F3D005153C4 /* LKAnonymousPostDetailCell.xib */; };
+		F23105031EB65F3D005153C4 /* LKAvatarsView.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104DE1EB65F3D005153C4 /* LKAvatarsView.h */; };
+		F23105041EB65F3D005153C4 /* LKAvatarsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104DF1EB65F3D005153C4 /* LKAvatarsView.m */; };
+		F23105051EB65F3D005153C4 /* LKCommentCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104E01EB65F3D005153C4 /* LKCommentCell.h */; };
+		F23105061EB65F3D005153C4 /* LKCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104E11EB65F3D005153C4 /* LKCommentCell.m */; };
+		F23105071EB65F3D005153C4 /* LKCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23104E21EB65F3D005153C4 /* LKCommentCell.xib */; };
+		F23105081EB65F3D005153C4 /* LKCommentMosaicCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104E31EB65F3D005153C4 /* LKCommentMosaicCell.h */; };
+		F23105091EB65F3D005153C4 /* LKCommentMosaicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104E41EB65F3D005153C4 /* LKCommentMosaicCell.m */; };
+		F231050A1EB65F3D005153C4 /* LKCommentMosaicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23104E51EB65F3D005153C4 /* LKCommentMosaicCell.xib */; };
+		F231050B1EB65F3D005153C4 /* LKCommunityEntryCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104E61EB65F3D005153C4 /* LKCommunityEntryCell.h */; };
+		F231050C1EB65F3D005153C4 /* LKCommunityEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104E71EB65F3D005153C4 /* LKCommunityEntryCell.m */; };
+		F231050D1EB65F3D005153C4 /* LKCommunityEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23104E81EB65F3D005153C4 /* LKCommunityEntryCell.xib */; };
+		F231050E1EB65F3D005153C4 /* LKPostCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104E91EB65F3D005153C4 /* LKPostCell.h */; };
+		F231050F1EB65F3D005153C4 /* LKPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104EA1EB65F3D005153C4 /* LKPostCell.m */; };
+		F23105101EB65F3D005153C4 /* LKPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23104EB1EB65F3D005153C4 /* LKPostCell.xib */; };
+		F23105111EB65F3D005153C4 /* LKPostDetailCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F23104EC1EB65F3D005153C4 /* LKPostDetailCell.h */; };
+		F23105121EB65F3D005153C4 /* LKPostDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23104ED1EB65F3D005153C4 /* LKPostDetailCell.m */; };
+		F23105131EB65F3D005153C4 /* LKPostDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23104EE1EB65F3D005153C4 /* LKPostDetailCell.xib */; };
+		F231051D1EB65F4E005153C4 /* LKCommentListViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F23105151EB65F4E005153C4 /* LKCommentListViewModel.h */; };
+		F231051E1EB65F4E005153C4 /* LKCommentListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F23105161EB65F4E005153C4 /* LKCommentListViewModel.m */; };
+		F231051F1EB65F4E005153C4 /* LKCommentViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F23105171EB65F4E005153C4 /* LKCommentViewModel.h */; };
+		F23105201EB65F4E005153C4 /* LKCommentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F23105181EB65F4E005153C4 /* LKCommentViewModel.m */; };
+		F23105211EB65F4E005153C4 /* LKPostListViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F23105191EB65F4E005153C4 /* LKPostListViewModel.h */; };
+		F23105221EB65F4E005153C4 /* LKPostListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F231051A1EB65F4E005153C4 /* LKPostListViewModel.m */; };
+		F23105231EB65F4E005153C4 /* LKPostViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F231051B1EB65F4E005153C4 /* LKPostViewModel.h */; };
+		F23105241EB65F4E005153C4 /* LKPostViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F231051C1EB65F4E005153C4 /* LKPostViewModel.m */; };
+		F231052E1EB65F64005153C4 /* CommunityContext.h in Headers */ = {isa = PBXBuildFile; fileRef = F23105261EB65F64005153C4 /* CommunityContext.h */; };
+		F231052F1EB65F64005153C4 /* CommunityContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F23105271EB65F64005153C4 /* CommunityContext.m */; };
+		F23105301EB65F64005153C4 /* LKCommentModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F23105281EB65F64005153C4 /* LKCommentModel.h */; };
+		F23105311EB65F64005153C4 /* LKCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F23105291EB65F64005153C4 /* LKCommentModel.m */; };
+		F23105321EB65F64005153C4 /* LKPostModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F231052A1EB65F64005153C4 /* LKPostModel.h */; };
+		F23105331EB65F64005153C4 /* LKPostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F231052B1EB65F64005153C4 /* LKPostModel.m */; };
+		F23105341EB65F64005153C4 /* MTLValueTransformer+Community.h in Headers */ = {isa = PBXBuildFile; fileRef = F231052C1EB65F64005153C4 /* MTLValueTransformer+Community.h */; };
+		F23105351EB65F64005153C4 /* MTLValueTransformer+Community.m in Sources */ = {isa = PBXBuildFile; fileRef = F231052D1EB65F64005153C4 /* MTLValueTransformer+Community.m */; };
+		F26B8A3E1E7EA3B300A6DDAD /* ActivityListAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A381E7EA3B300A6DDAD /* ActivityListAPIManager.h */; };
+		F26B8A3F1E7EA3B300A6DDAD /* ActivityListAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A391E7EA3B300A6DDAD /* ActivityListAPIManager.m */; };
+		F26B8A401E7EA3B300A6DDAD /* ClubDetailAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A3A1E7EA3B300A6DDAD /* ClubDetailAPIManager.h */; };
+		F26B8A411E7EA3B300A6DDAD /* ClubDetailAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A3B1E7EA3B300A6DDAD /* ClubDetailAPIManager.m */; };
+		F26B8A421E7EA3B300A6DDAD /* ClubListAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A3C1E7EA3B300A6DDAD /* ClubListAPIManager.h */; };
+		F26B8A431E7EA3B300A6DDAD /* ClubListAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A3D1E7EA3B300A6DDAD /* ClubListAPIManager.m */; };
+		F26B8A5A1E7EA3C600A6DDAD /* ActivityListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A451E7EA3C600A6DDAD /* ActivityListViewController.h */; };
+		F26B8A5B1E7EA3C600A6DDAD /* ActivityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A461E7EA3C600A6DDAD /* ActivityListViewController.m */; };
+		F26B8A5C1E7EA3C600A6DDAD /* ClubListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A471E7EA3C600A6DDAD /* ClubListViewController.h */; };
+		F26B8A5D1E7EA3C600A6DDAD /* ClubListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A481E7EA3C600A6DDAD /* ClubListViewController.m */; };
+		F26B8A5E1E7EA3C600A6DDAD /* ClubViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A491E7EA3C600A6DDAD /* ClubViewController.h */; };
+		F26B8A5F1E7EA3C600A6DDAD /* ClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A4A1E7EA3C600A6DDAD /* ClubViewController.m */; };
+		F26B8A601E7EA3C600A6DDAD /* ClubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26B8A4B1E7EA3C600A6DDAD /* ClubViewController.xib */; };
+		F26B8A611E7EA3C600A6DDAD /* DepartmentsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A4C1E7EA3C600A6DDAD /* DepartmentsViewController.h */; };
+		F26B8A621E7EA3C600A6DDAD /* DepartmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A4D1E7EA3C600A6DDAD /* DepartmentsViewController.m */; };
+		F26B8A631E7EA3C600A6DDAD /* ActivityCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A501E7EA3C600A6DDAD /* ActivityCell.h */; };
+		F26B8A641E7EA3C600A6DDAD /* ActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A511E7EA3C600A6DDAD /* ActivityCell.m */; };
+		F26B8A651E7EA3C600A6DDAD /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26B8A521E7EA3C600A6DDAD /* ActivityCell.xib */; };
+		F26B8A661E7EA3C600A6DDAD /* ClubClassifyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A531E7EA3C600A6DDAD /* ClubClassifyHeader.h */; };
+		F26B8A671E7EA3C600A6DDAD /* ClubClassifyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A541E7EA3C600A6DDAD /* ClubClassifyHeader.m */; };
+		F26B8A681E7EA3C600A6DDAD /* ClubItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A551E7EA3C600A6DDAD /* ClubItemCell.h */; };
+		F26B8A691E7EA3C600A6DDAD /* ClubItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A561E7EA3C600A6DDAD /* ClubItemCell.m */; };
+		F26B8A6A1E7EA3C600A6DDAD /* ClubItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26B8A571E7EA3C600A6DDAD /* ClubItemCell.xib */; };
+		F26B8A6B1E7EA3C600A6DDAD /* DepartmentPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A581E7EA3C600A6DDAD /* DepartmentPageView.h */; };
+		F26B8A6C1E7EA3C600A6DDAD /* DepartmentPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A591E7EA3C600A6DDAD /* DepartmentPageView.m */; };
+		F26B8A791E7EA3ED00A6DDAD /* ActivityListViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A6F1E7EA3ED00A6DDAD /* ActivityListViewModel.h */; };
+		F26B8A7A1E7EA3ED00A6DDAD /* ActivityListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A701E7EA3ED00A6DDAD /* ActivityListViewModel.m */; };
+		F26B8A7B1E7EA3ED00A6DDAD /* ClubListViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A711E7EA3ED00A6DDAD /* ClubListViewModel.h */; };
+		F26B8A7C1E7EA3ED00A6DDAD /* ClubListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A721E7EA3ED00A6DDAD /* ClubListViewModel.m */; };
+		F26B8A7D1E7EA3ED00A6DDAD /* ClubTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = F26B8A731E7EA3ED00A6DDAD /* ClubTypes.plist */; };
+		F26B8A7E1E7EA3ED00A6DDAD /* ClubViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A741E7EA3ED00A6DDAD /* ClubViewModel.h */; };
+		F26B8A7F1E7EA3ED00A6DDAD /* ClubViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A751E7EA3ED00A6DDAD /* ClubViewModel.m */; };
+		F26B8A801E7EA3ED00A6DDAD /* DepartmentsViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A761E7EA3ED00A6DDAD /* DepartmentsViewModel.h */; };
+		F26B8A811E7EA3ED00A6DDAD /* DepartmentsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A771E7EA3ED00A6DDAD /* DepartmentsViewModel.m */; };
+		F26B8A8A1E7EA42E00A6DDAD /* ActivityModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A841E7EA42E00A6DDAD /* ActivityModel.h */; };
+		F26B8A8B1E7EA42E00A6DDAD /* ActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A851E7EA42E00A6DDAD /* ActivityModel.m */; };
+		F26B8A8C1E7EA42E00A6DDAD /* ClubModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A861E7EA42E00A6DDAD /* ClubModel.h */; };
+		F26B8A8D1E7EA42E00A6DDAD /* ClubModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A871E7EA42E00A6DDAD /* ClubModel.m */; };
+		F26B8A8E1E7EA42E00A6DDAD /* DepartmentModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F26B8A881E7EA42E00A6DDAD /* DepartmentModel.h */; };
+		F26B8A8F1E7EA42E00A6DDAD /* DepartmentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26B8A891E7EA42E00A6DDAD /* DepartmentModel.m */; };
+		F29402541E86BFA800B401A5 /* LKLikeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F29402521E86BFA800B401A5 /* LKLikeManager.h */; };
+		F29402551E86BFA800B401A5 /* LKLikeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F29402531E86BFA800B401A5 /* LKLikeManager.m */; };
+		F2AD63931E858C2A0041CC3E /* LikeAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F2AD63911E858C2A0041CC3E /* LikeAPIManager.h */; };
+		F2AD63941E858C2A0041CC3E /* LikeAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AD63921E858C2A0041CC3E /* LikeAPIManager.m */; };
+		F2E2335D1D7C886D009C21CA /* LKDiscoverModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E233521D7C886C009C21CA /* LKDiscoverModule.framework */; };
+		F2E233621D7C886D009C21CA /* LKDiscoverModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233611D7C886D009C21CA /* LKDiscoverModuleTests.m */; };
+		F2E233D01D7C88A1009C21CA /* FeedViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233761D7C88A1009C21CA /* FeedViewModel.h */; };
+		F2E233D11D7C88A1009C21CA /* FeedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233771D7C88A1009C21CA /* FeedViewModel.m */; };
+		F2E233D21D7C88A1009C21CA /* SearchViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233781D7C88A1009C21CA /* SearchViewModel.h */; };
+		F2E233D31D7C88A1009C21CA /* SearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233791D7C88A1009C21CA /* SearchViewModel.m */; };
+		F2E233EB1D7C88A1009C21CA /* DiscoverViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233951D7C88A1009C21CA /* DiscoverViewController.h */; };
+		F2E233EC1D7C88A1009C21CA /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233961D7C88A1009C21CA /* DiscoverViewController.m */; };
+		F2E233ED1D7C88A1009C21CA /* LKSearchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233971D7C88A1009C21CA /* LKSearchViewController.h */; };
+		F2E233EE1D7C88A1009C21CA /* LKSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233981D7C88A1009C21CA /* LKSearchViewController.m */; };
+		F2E233EF1D7C88A1009C21CA /* DiscoverAdCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E2339A1D7C88A1009C21CA /* DiscoverAdCell.h */; };
+		F2E233F01D7C88A1009C21CA /* DiscoverAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E2339B1D7C88A1009C21CA /* DiscoverAdCell.m */; };
+		F2E233F11D7C88A1009C21CA /* DiscoverAdPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E2339C1D7C88A1009C21CA /* DiscoverAdPageView.h */; };
+		F2E233F21D7C88A1009C21CA /* DiscoverAdPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E2339D1D7C88A1009C21CA /* DiscoverAdPageView.m */; };
+		F2E233F31D7C88A1009C21CA /* DiscoverSectionHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E2339E1D7C88A1009C21CA /* DiscoverSectionHeader.h */; };
+		F2E233F41D7C88A1009C21CA /* DiscoverSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E2339F1D7C88A1009C21CA /* DiscoverSectionHeader.m */; };
+		F2E233F51D7C88A1009C21CA /* LKSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233A01D7C88A1009C21CA /* LKSearchBar.h */; };
+		F2E233F61D7C88A1009C21CA /* LKSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233A11D7C88A1009C21CA /* LKSearchBar.m */; };
+		F2E233F71D7C88A1009C21CA /* SpecialColumnCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233A21D7C88A1009C21CA /* SpecialColumnCell.h */; };
+		F2E233F81D7C88A1009C21CA /* SpecialColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233A31D7C88A1009C21CA /* SpecialColumnCell.m */; };
+		F2E233F91D7C88A1009C21CA /* SpecialColumnItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233A41D7C88A1009C21CA /* SpecialColumnItemView.h */; };
+		F2E233FA1D7C88A1009C21CA /* SpecialColumnItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233A51D7C88A1009C21CA /* SpecialColumnItemView.m */; };
+		F2E233FB1D7C88A1009C21CA /* SpecialColumnView.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233A61D7C88A1009C21CA /* SpecialColumnView.h */; };
+		F2E233FC1D7C88A1009C21CA /* SpecialColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233A71D7C88A1009C21CA /* SpecialColumnView.m */; };
+		F2E233FD1D7C88A1009C21CA /* LKDiscoverModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233A91D7C88A1009C21CA /* LKDiscoverModule.h */; };
+		F2E233FE1D7C88A1009C21CA /* LKDiscoverModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233AA1D7C88A1009C21CA /* LKDiscoverModule.m */; };
+		F2E234051D7C88A1009C21CA /* FeedAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233B21D7C88A1009C21CA /* FeedAPIManager.h */; };
+		F2E234061D7C88A1009C21CA /* FeedAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233B31D7C88A1009C21CA /* FeedAPIManager.m */; };
+		F2E234071D7C88A1009C21CA /* SearchAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233B41D7C88A1009C21CA /* SearchAPIManager.h */; };
+		F2E234081D7C88A1009C21CA /* SearchAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233B51D7C88A1009C21CA /* SearchAPIManager.m */; };
+		F2E2340F1D7C88A1009C21CA /* FeedModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233BD1D7C88A1009C21CA /* FeedModel.h */; };
+		F2E234101D7C88A1009C21CA /* FeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233BE1D7C88A1009C21CA /* FeedModel.m */; };
+		F2E234111D7C88A1009C21CA /* HeadlineModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233BF1D7C88A1009C21CA /* HeadlineModel.h */; };
+		F2E234121D7C88A1009C21CA /* HeadlineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233C01D7C88A1009C21CA /* HeadlineModel.m */; };
+		F2E234131D7C88A1009C21CA /* SearchResultModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233C11D7C88A1009C21CA /* SearchResultModel.h */; };
+		F2E234141D7C88A1009C21CA /* SearchResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233C21D7C88A1009C21CA /* SearchResultModel.m */; };
+		F2E234171D7C88A1009C21CA /* SpecialColumnModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E233C51D7C88A1009C21CA /* SpecialColumnModel.h */; };
+		F2E234181D7C88A1009C21CA /* SpecialColumnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E233C61D7C88A1009C21CA /* SpecialColumnModel.m */; };
+		F2EA53231E9DEAC90060441C /* LKCarouselSection.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EA53211E9DEAC90060441C /* LKCarouselSection.h */; };
+		F2EA53241E9DEAC90060441C /* LKCarouselSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA53221E9DEAC90060441C /* LKCarouselSection.m */; };
+		F2EA53271E9DEAE90060441C /* LKSpecialColumnSection.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EA53251E9DEAE90060441C /* LKSpecialColumnSection.h */; };
+		F2EA53281E9DEAE90060441C /* LKSpecialColumnSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA53261E9DEAE90060441C /* LKSpecialColumnSection.m */; };
+		F2EA532B1E9DEB030060441C /* LKConfessionSection.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EA53291E9DEB030060441C /* LKConfessionSection.h */; };
+		F2EA532C1E9DEB030060441C /* LKConfessionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA532A1E9DEB030060441C /* LKConfessionSection.m */; };
+		F2EA532F1E9DEB190060441C /* LKClubClassifySection.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EA532D1E9DEB190060441C /* LKClubClassifySection.h */; };
+		F2EA53301E9DEB190060441C /* LKClubClassifySection.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA532E1E9DEB190060441C /* LKClubClassifySection.m */; };
+		F2EA53331E9DEB350060441C /* LKHotestClubSection.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EA53311E9DEB350060441C /* LKHotestClubSection.h */; };
+		F2EA53341E9DEB350060441C /* LKHotestClubSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA53321E9DEB350060441C /* LKHotestClubSection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2E2335E1D7C886D009C21CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2E233491D7C886C009C21CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2E233511D7C886C009C21CA;
+			remoteInfo = LKDiscoverModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C18ACD54FA30CD298DC13A9 /* Pods-LKDiscoverModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKDiscoverModule.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-LKDiscoverModule/Pods-LKDiscoverModule.debug.xcconfig"; sourceTree = "<group>"; };
+		95BDF65F22F8D8CDE718B4DE /* Pods-LKDiscoverModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKDiscoverModule.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-LKDiscoverModule/Pods-LKDiscoverModule.release.xcconfig"; sourceTree = "<group>"; };
+		F22418C61E1B9C160057953C /* DiscoverHeadlineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverHeadlineCell.h; sourceTree = "<group>"; };
+		F22418C71E1B9C160057953C /* DiscoverHeadlineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverHeadlineCell.m; sourceTree = "<group>"; };
+		F22A099D1EA6B94700D3ADE2 /* AcademyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcademyManager.h; sourceTree = "<group>"; };
+		F22A099E1EA6B94700D3ADE2 /* AcademyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcademyManager.m; sourceTree = "<group>"; };
+		F23104B21EB65F2E005153C4 /* AcademyAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcademyAPIManager.h; sourceTree = "<group>"; };
+		F23104B31EB65F2E005153C4 /* AcademyAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcademyAPIManager.m; sourceTree = "<group>"; };
+		F23104B41EB65F2E005153C4 /* LKCommentAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentAPIManager.h; sourceTree = "<group>"; };
+		F23104B51EB65F2E005153C4 /* LKCommentAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentAPIManager.m; sourceTree = "<group>"; };
+		F23104B61EB65F2E005153C4 /* LKCommentListAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentListAPIManager.h; sourceTree = "<group>"; };
+		F23104B71EB65F2E005153C4 /* LKCommentListAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentListAPIManager.m; sourceTree = "<group>"; };
+		F23104B81EB65F2E005153C4 /* LKPostAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostAPIManager.h; sourceTree = "<group>"; };
+		F23104B91EB65F2E005153C4 /* LKPostAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostAPIManager.m; sourceTree = "<group>"; };
+		F23104BA1EB65F2E005153C4 /* LKPostListAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostListAPIManager.h; sourceTree = "<group>"; };
+		F23104BB1EB65F2E005153C4 /* LKPostListAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostListAPIManager.m; sourceTree = "<group>"; };
+		F23104C71EB65F3D005153C4 /* CommunityViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewContoller.h; sourceTree = "<group>"; };
+		F23104C81EB65F3D005153C4 /* CommunityViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewContoller.m; sourceTree = "<group>"; };
+		F23104CA1EB65F3D005153C4 /* LKPostEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostEditViewController.h; sourceTree = "<group>"; };
+		F23104CB1EB65F3D005153C4 /* LKPostEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostEditViewController.m; sourceTree = "<group>"; };
+		F23104CC1EB65F3D005153C4 /* ReferEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferEditViewController.h; sourceTree = "<group>"; };
+		F23104CD1EB65F3D005153C4 /* ReferEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferEditViewController.m; sourceTree = "<group>"; };
+		F23104CF1EB65F3D005153C4 /* AcademyPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcademyPickerCell.h; sourceTree = "<group>"; };
+		F23104D01EB65F3D005153C4 /* AcademyPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcademyPickerCell.m; sourceTree = "<group>"; };
+		F23104D11EB65F3D005153C4 /* AcademyPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AcademyPickerCell.xib; sourceTree = "<group>"; };
+		F23104D21EB65F3D005153C4 /* LKPostDetailViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostDetailViewContoller.h; sourceTree = "<group>"; };
+		F23104D31EB65F3D005153C4 /* LKPostDetailViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostDetailViewContoller.m; sourceTree = "<group>"; };
+		F23104D51EB65F3D005153C4 /* LKPostMessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostMessageHeader.h; sourceTree = "<group>"; };
+		F23104D61EB65F3D005153C4 /* LKPostMessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostMessageHeader.m; sourceTree = "<group>"; };
+		F23104D71EB65F3D005153C4 /* LKPostMessageHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKPostMessageHeader.xib; sourceTree = "<group>"; };
+		F23104D81EB65F3D005153C4 /* LKAnonymousPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKAnonymousPostCell.h; sourceTree = "<group>"; };
+		F23104D91EB65F3D005153C4 /* LKAnonymousPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKAnonymousPostCell.m; sourceTree = "<group>"; };
+		F23104DA1EB65F3D005153C4 /* LKAnonymousPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKAnonymousPostCell.xib; sourceTree = "<group>"; };
+		F23104DB1EB65F3D005153C4 /* LKAnonymousPostDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKAnonymousPostDetailCell.h; sourceTree = "<group>"; };
+		F23104DC1EB65F3D005153C4 /* LKAnonymousPostDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKAnonymousPostDetailCell.m; sourceTree = "<group>"; };
+		F23104DD1EB65F3D005153C4 /* LKAnonymousPostDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKAnonymousPostDetailCell.xib; sourceTree = "<group>"; };
+		F23104DE1EB65F3D005153C4 /* LKAvatarsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKAvatarsView.h; sourceTree = "<group>"; };
+		F23104DF1EB65F3D005153C4 /* LKAvatarsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKAvatarsView.m; sourceTree = "<group>"; };
+		F23104E01EB65F3D005153C4 /* LKCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentCell.h; sourceTree = "<group>"; };
+		F23104E11EB65F3D005153C4 /* LKCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentCell.m; sourceTree = "<group>"; };
+		F23104E21EB65F3D005153C4 /* LKCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKCommentCell.xib; sourceTree = "<group>"; };
+		F23104E31EB65F3D005153C4 /* LKCommentMosaicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentMosaicCell.h; sourceTree = "<group>"; };
+		F23104E41EB65F3D005153C4 /* LKCommentMosaicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentMosaicCell.m; sourceTree = "<group>"; };
+		F23104E51EB65F3D005153C4 /* LKCommentMosaicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKCommentMosaicCell.xib; sourceTree = "<group>"; };
+		F23104E61EB65F3D005153C4 /* LKCommunityEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommunityEntryCell.h; sourceTree = "<group>"; };
+		F23104E71EB65F3D005153C4 /* LKCommunityEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommunityEntryCell.m; sourceTree = "<group>"; };
+		F23104E81EB65F3D005153C4 /* LKCommunityEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKCommunityEntryCell.xib; sourceTree = "<group>"; };
+		F23104E91EB65F3D005153C4 /* LKPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostCell.h; sourceTree = "<group>"; };
+		F23104EA1EB65F3D005153C4 /* LKPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostCell.m; sourceTree = "<group>"; };
+		F23104EB1EB65F3D005153C4 /* LKPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKPostCell.xib; sourceTree = "<group>"; };
+		F23104EC1EB65F3D005153C4 /* LKPostDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostDetailCell.h; sourceTree = "<group>"; };
+		F23104ED1EB65F3D005153C4 /* LKPostDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostDetailCell.m; sourceTree = "<group>"; };
+		F23104EE1EB65F3D005153C4 /* LKPostDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKPostDetailCell.xib; sourceTree = "<group>"; };
+		F23105151EB65F4E005153C4 /* LKCommentListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentListViewModel.h; sourceTree = "<group>"; };
+		F23105161EB65F4E005153C4 /* LKCommentListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentListViewModel.m; sourceTree = "<group>"; };
+		F23105171EB65F4E005153C4 /* LKCommentViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentViewModel.h; sourceTree = "<group>"; };
+		F23105181EB65F4E005153C4 /* LKCommentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentViewModel.m; sourceTree = "<group>"; };
+		F23105191EB65F4E005153C4 /* LKPostListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostListViewModel.h; sourceTree = "<group>"; };
+		F231051A1EB65F4E005153C4 /* LKPostListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostListViewModel.m; sourceTree = "<group>"; };
+		F231051B1EB65F4E005153C4 /* LKPostViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostViewModel.h; sourceTree = "<group>"; };
+		F231051C1EB65F4E005153C4 /* LKPostViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostViewModel.m; sourceTree = "<group>"; };
+		F23105261EB65F64005153C4 /* CommunityContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityContext.h; sourceTree = "<group>"; };
+		F23105271EB65F64005153C4 /* CommunityContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityContext.m; sourceTree = "<group>"; };
+		F23105281EB65F64005153C4 /* LKCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentModel.h; sourceTree = "<group>"; };
+		F23105291EB65F64005153C4 /* LKCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentModel.m; sourceTree = "<group>"; };
+		F231052A1EB65F64005153C4 /* LKPostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostModel.h; sourceTree = "<group>"; };
+		F231052B1EB65F64005153C4 /* LKPostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostModel.m; sourceTree = "<group>"; };
+		F231052C1EB65F64005153C4 /* MTLValueTransformer+Community.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLValueTransformer+Community.h"; sourceTree = "<group>"; };
+		F231052D1EB65F64005153C4 /* MTLValueTransformer+Community.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLValueTransformer+Community.m"; sourceTree = "<group>"; };
+		F26B8A381E7EA3B300A6DDAD /* ActivityListAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityListAPIManager.h; sourceTree = "<group>"; };
+		F26B8A391E7EA3B300A6DDAD /* ActivityListAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityListAPIManager.m; sourceTree = "<group>"; };
+		F26B8A3A1E7EA3B300A6DDAD /* ClubDetailAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubDetailAPIManager.h; sourceTree = "<group>"; };
+		F26B8A3B1E7EA3B300A6DDAD /* ClubDetailAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubDetailAPIManager.m; sourceTree = "<group>"; };
+		F26B8A3C1E7EA3B300A6DDAD /* ClubListAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubListAPIManager.h; sourceTree = "<group>"; };
+		F26B8A3D1E7EA3B300A6DDAD /* ClubListAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubListAPIManager.m; sourceTree = "<group>"; };
+		F26B8A451E7EA3C600A6DDAD /* ActivityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityListViewController.h; sourceTree = "<group>"; };
+		F26B8A461E7EA3C600A6DDAD /* ActivityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityListViewController.m; sourceTree = "<group>"; };
+		F26B8A471E7EA3C600A6DDAD /* ClubListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubListViewController.h; sourceTree = "<group>"; };
+		F26B8A481E7EA3C600A6DDAD /* ClubListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubListViewController.m; sourceTree = "<group>"; };
+		F26B8A491E7EA3C600A6DDAD /* ClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubViewController.h; sourceTree = "<group>"; };
+		F26B8A4A1E7EA3C600A6DDAD /* ClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubViewController.m; sourceTree = "<group>"; };
+		F26B8A4B1E7EA3C600A6DDAD /* ClubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClubViewController.xib; sourceTree = "<group>"; };
+		F26B8A4C1E7EA3C600A6DDAD /* DepartmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartmentsViewController.h; sourceTree = "<group>"; };
+		F26B8A4D1E7EA3C600A6DDAD /* DepartmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentsViewController.m; sourceTree = "<group>"; };
+		F26B8A501E7EA3C600A6DDAD /* ActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCell.h; sourceTree = "<group>"; };
+		F26B8A511E7EA3C600A6DDAD /* ActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCell.m; sourceTree = "<group>"; };
+		F26B8A521E7EA3C600A6DDAD /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
+		F26B8A531E7EA3C600A6DDAD /* ClubClassifyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubClassifyHeader.h; sourceTree = "<group>"; };
+		F26B8A541E7EA3C600A6DDAD /* ClubClassifyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubClassifyHeader.m; sourceTree = "<group>"; };
+		F26B8A551E7EA3C600A6DDAD /* ClubItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubItemCell.h; sourceTree = "<group>"; };
+		F26B8A561E7EA3C600A6DDAD /* ClubItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubItemCell.m; sourceTree = "<group>"; };
+		F26B8A571E7EA3C600A6DDAD /* ClubItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClubItemCell.xib; sourceTree = "<group>"; };
+		F26B8A581E7EA3C600A6DDAD /* DepartmentPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartmentPageView.h; sourceTree = "<group>"; };
+		F26B8A591E7EA3C600A6DDAD /* DepartmentPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentPageView.m; sourceTree = "<group>"; };
+		F26B8A6F1E7EA3ED00A6DDAD /* ActivityListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityListViewModel.h; sourceTree = "<group>"; };
+		F26B8A701E7EA3ED00A6DDAD /* ActivityListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityListViewModel.m; sourceTree = "<group>"; };
+		F26B8A711E7EA3ED00A6DDAD /* ClubListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubListViewModel.h; sourceTree = "<group>"; };
+		F26B8A721E7EA3ED00A6DDAD /* ClubListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubListViewModel.m; sourceTree = "<group>"; };
+		F26B8A731E7EA3ED00A6DDAD /* ClubTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClubTypes.plist; sourceTree = "<group>"; };
+		F26B8A741E7EA3ED00A6DDAD /* ClubViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubViewModel.h; sourceTree = "<group>"; };
+		F26B8A751E7EA3ED00A6DDAD /* ClubViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubViewModel.m; sourceTree = "<group>"; };
+		F26B8A761E7EA3ED00A6DDAD /* DepartmentsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartmentsViewModel.h; sourceTree = "<group>"; };
+		F26B8A771E7EA3ED00A6DDAD /* DepartmentsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentsViewModel.m; sourceTree = "<group>"; };
+		F26B8A841E7EA42E00A6DDAD /* ActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityModel.h; sourceTree = "<group>"; };
+		F26B8A851E7EA42E00A6DDAD /* ActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityModel.m; sourceTree = "<group>"; };
+		F26B8A861E7EA42E00A6DDAD /* ClubModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubModel.h; sourceTree = "<group>"; };
+		F26B8A871E7EA42E00A6DDAD /* ClubModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubModel.m; sourceTree = "<group>"; };
+		F26B8A881E7EA42E00A6DDAD /* DepartmentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartmentModel.h; sourceTree = "<group>"; };
+		F26B8A891E7EA42E00A6DDAD /* DepartmentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentModel.m; sourceTree = "<group>"; };
+		F29402521E86BFA800B401A5 /* LKLikeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKLikeManager.h; sourceTree = "<group>"; };
+		F29402531E86BFA800B401A5 /* LKLikeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKLikeManager.m; sourceTree = "<group>"; };
+		F2AD63911E858C2A0041CC3E /* LikeAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeAPIManager.h; sourceTree = "<group>"; };
+		F2AD63921E858C2A0041CC3E /* LikeAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeAPIManager.m; sourceTree = "<group>"; };
+		F2E233521D7C886C009C21CA /* LKDiscoverModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LKDiscoverModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E233571D7C886D009C21CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E2335C1D7C886D009C21CA /* LKDiscoverModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKDiscoverModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E233611D7C886D009C21CA /* LKDiscoverModuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKDiscoverModuleTests.m; sourceTree = "<group>"; };
+		F2E233631D7C886D009C21CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E233761D7C88A1009C21CA /* FeedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewModel.h; sourceTree = "<group>"; };
+		F2E233771D7C88A1009C21CA /* FeedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewModel.m; sourceTree = "<group>"; };
+		F2E233781D7C88A1009C21CA /* SearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewModel.h; sourceTree = "<group>"; };
+		F2E233791D7C88A1009C21CA /* SearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewModel.m; sourceTree = "<group>"; };
+		F2E233951D7C88A1009C21CA /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		F2E233961D7C88A1009C21CA /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		F2E233971D7C88A1009C21CA /* LKSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSearchViewController.h; sourceTree = "<group>"; };
+		F2E233981D7C88A1009C21CA /* LKSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSearchViewController.m; sourceTree = "<group>"; };
+		F2E2339A1D7C88A1009C21CA /* DiscoverAdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverAdCell.h; sourceTree = "<group>"; };
+		F2E2339B1D7C88A1009C21CA /* DiscoverAdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverAdCell.m; sourceTree = "<group>"; };
+		F2E2339C1D7C88A1009C21CA /* DiscoverAdPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverAdPageView.h; sourceTree = "<group>"; };
+		F2E2339D1D7C88A1009C21CA /* DiscoverAdPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverAdPageView.m; sourceTree = "<group>"; };
+		F2E2339E1D7C88A1009C21CA /* DiscoverSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverSectionHeader.h; sourceTree = "<group>"; };
+		F2E2339F1D7C88A1009C21CA /* DiscoverSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverSectionHeader.m; sourceTree = "<group>"; };
+		F2E233A01D7C88A1009C21CA /* LKSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSearchBar.h; sourceTree = "<group>"; };
+		F2E233A11D7C88A1009C21CA /* LKSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSearchBar.m; sourceTree = "<group>"; };
+		F2E233A21D7C88A1009C21CA /* SpecialColumnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialColumnCell.h; sourceTree = "<group>"; };
+		F2E233A31D7C88A1009C21CA /* SpecialColumnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialColumnCell.m; sourceTree = "<group>"; };
+		F2E233A41D7C88A1009C21CA /* SpecialColumnItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialColumnItemView.h; sourceTree = "<group>"; };
+		F2E233A51D7C88A1009C21CA /* SpecialColumnItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialColumnItemView.m; sourceTree = "<group>"; };
+		F2E233A61D7C88A1009C21CA /* SpecialColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialColumnView.h; sourceTree = "<group>"; };
+		F2E233A71D7C88A1009C21CA /* SpecialColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialColumnView.m; sourceTree = "<group>"; };
+		F2E233A91D7C88A1009C21CA /* LKDiscoverModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDiscoverModule.h; sourceTree = "<group>"; };
+		F2E233AA1D7C88A1009C21CA /* LKDiscoverModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDiscoverModule.m; sourceTree = "<group>"; };
+		F2E233B21D7C88A1009C21CA /* FeedAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedAPIManager.h; sourceTree = "<group>"; };
+		F2E233B31D7C88A1009C21CA /* FeedAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedAPIManager.m; sourceTree = "<group>"; };
+		F2E233B41D7C88A1009C21CA /* SearchAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchAPIManager.h; sourceTree = "<group>"; };
+		F2E233B51D7C88A1009C21CA /* SearchAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchAPIManager.m; sourceTree = "<group>"; };
+		F2E233BD1D7C88A1009C21CA /* FeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedModel.h; sourceTree = "<group>"; };
+		F2E233BE1D7C88A1009C21CA /* FeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedModel.m; sourceTree = "<group>"; };
+		F2E233BF1D7C88A1009C21CA /* HeadlineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadlineModel.h; sourceTree = "<group>"; };
+		F2E233C01D7C88A1009C21CA /* HeadlineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadlineModel.m; sourceTree = "<group>"; };
+		F2E233C11D7C88A1009C21CA /* SearchResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultModel.h; sourceTree = "<group>"; };
+		F2E233C21D7C88A1009C21CA /* SearchResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultModel.m; sourceTree = "<group>"; };
+		F2E233C51D7C88A1009C21CA /* SpecialColumnModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialColumnModel.h; sourceTree = "<group>"; };
+		F2E233C61D7C88A1009C21CA /* SpecialColumnModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialColumnModel.m; sourceTree = "<group>"; };
+		F2EA53211E9DEAC90060441C /* LKCarouselSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCarouselSection.h; sourceTree = "<group>"; };
+		F2EA53221E9DEAC90060441C /* LKCarouselSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCarouselSection.m; sourceTree = "<group>"; };
+		F2EA53251E9DEAE90060441C /* LKSpecialColumnSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSpecialColumnSection.h; sourceTree = "<group>"; };
+		F2EA53261E9DEAE90060441C /* LKSpecialColumnSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSpecialColumnSection.m; sourceTree = "<group>"; };
+		F2EA53291E9DEB030060441C /* LKConfessionSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKConfessionSection.h; sourceTree = "<group>"; };
+		F2EA532A1E9DEB030060441C /* LKConfessionSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKConfessionSection.m; sourceTree = "<group>"; };
+		F2EA532D1E9DEB190060441C /* LKClubClassifySection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKClubClassifySection.h; sourceTree = "<group>"; };
+		F2EA532E1E9DEB190060441C /* LKClubClassifySection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKClubClassifySection.m; sourceTree = "<group>"; };
+		F2EA53311E9DEB350060441C /* LKHotestClubSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKHotestClubSection.h; sourceTree = "<group>"; };
+		F2EA53321E9DEB350060441C /* LKHotestClubSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKHotestClubSection.m; sourceTree = "<group>"; };
+		F32850E0463E237A2BE5672F /* libPods-LKDiscoverModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKDiscoverModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2E2334E1D7C886C009C21CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E660105B983F60DECEC9D2 /* libPods-LKDiscoverModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E233591D7C886D009C21CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E2335D1D7C886D009C21CA /* LKDiscoverModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12C327FDC4D4A0B262F0536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F32850E0463E237A2BE5672F /* libPods-LKDiscoverModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2C960CFD6714E1A4844DD95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C18ACD54FA30CD298DC13A9 /* Pods-LKDiscoverModule.debug.xcconfig */,
+				95BDF65F22F8D8CDE718B4DE /* Pods-LKDiscoverModule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F23104B11EB65F2E005153C4 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				F23104B21EB65F2E005153C4 /* AcademyAPIManager.h */,
+				F23104B31EB65F2E005153C4 /* AcademyAPIManager.m */,
+				F23104B81EB65F2E005153C4 /* LKPostAPIManager.h */,
+				F23104B91EB65F2E005153C4 /* LKPostAPIManager.m */,
+				F23104BA1EB65F2E005153C4 /* LKPostListAPIManager.h */,
+				F23104BB1EB65F2E005153C4 /* LKPostListAPIManager.m */,
+				F23104B41EB65F2E005153C4 /* LKCommentAPIManager.h */,
+				F23104B51EB65F2E005153C4 /* LKCommentAPIManager.m */,
+				F23104B61EB65F2E005153C4 /* LKCommentListAPIManager.h */,
+				F23104B71EB65F2E005153C4 /* LKCommentListAPIManager.m */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		F23104C61EB65F3D005153C4 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				F23104D41EB65F3D005153C4 /* Views */,
+				F23104C91EB65F3D005153C4 /* Editor */,
+				F23104C71EB65F3D005153C4 /* CommunityViewContoller.h */,
+				F23104C81EB65F3D005153C4 /* CommunityViewContoller.m */,
+				F23104D21EB65F3D005153C4 /* LKPostDetailViewContoller.h */,
+				F23104D31EB65F3D005153C4 /* LKPostDetailViewContoller.m */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		F23104C91EB65F3D005153C4 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				F23104CE1EB65F3D005153C4 /* Views */,
+				F23104CA1EB65F3D005153C4 /* LKPostEditViewController.h */,
+				F23104CB1EB65F3D005153C4 /* LKPostEditViewController.m */,
+				F23104CC1EB65F3D005153C4 /* ReferEditViewController.h */,
+				F23104CD1EB65F3D005153C4 /* ReferEditViewController.m */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		F23104CE1EB65F3D005153C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F23104CF1EB65F3D005153C4 /* AcademyPickerCell.h */,
+				F23104D01EB65F3D005153C4 /* AcademyPickerCell.m */,
+				F23104D11EB65F3D005153C4 /* AcademyPickerCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F23104D41EB65F3D005153C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F23104DE1EB65F3D005153C4 /* LKAvatarsView.h */,
+				F23104DF1EB65F3D005153C4 /* LKAvatarsView.m */,
+				F23104E61EB65F3D005153C4 /* LKCommunityEntryCell.h */,
+				F23104E71EB65F3D005153C4 /* LKCommunityEntryCell.m */,
+				F23104E81EB65F3D005153C4 /* LKCommunityEntryCell.xib */,
+				F23104D51EB65F3D005153C4 /* LKPostMessageHeader.h */,
+				F23104D61EB65F3D005153C4 /* LKPostMessageHeader.m */,
+				F23104D71EB65F3D005153C4 /* LKPostMessageHeader.xib */,
+				F23104E91EB65F3D005153C4 /* LKPostCell.h */,
+				F23104EA1EB65F3D005153C4 /* LKPostCell.m */,
+				F23104EB1EB65F3D005153C4 /* LKPostCell.xib */,
+				F23104EC1EB65F3D005153C4 /* LKPostDetailCell.h */,
+				F23104ED1EB65F3D005153C4 /* LKPostDetailCell.m */,
+				F23104EE1EB65F3D005153C4 /* LKPostDetailCell.xib */,
+				F23104D81EB65F3D005153C4 /* LKAnonymousPostCell.h */,
+				F23104D91EB65F3D005153C4 /* LKAnonymousPostCell.m */,
+				F23104DA1EB65F3D005153C4 /* LKAnonymousPostCell.xib */,
+				F23104DB1EB65F3D005153C4 /* LKAnonymousPostDetailCell.h */,
+				F23104DC1EB65F3D005153C4 /* LKAnonymousPostDetailCell.m */,
+				F23104DD1EB65F3D005153C4 /* LKAnonymousPostDetailCell.xib */,
+				F23104E01EB65F3D005153C4 /* LKCommentCell.h */,
+				F23104E11EB65F3D005153C4 /* LKCommentCell.m */,
+				F23104E21EB65F3D005153C4 /* LKCommentCell.xib */,
+				F23104E31EB65F3D005153C4 /* LKCommentMosaicCell.h */,
+				F23104E41EB65F3D005153C4 /* LKCommentMosaicCell.m */,
+				F23104E51EB65F3D005153C4 /* LKCommentMosaicCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F23105141EB65F4E005153C4 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				F231051B1EB65F4E005153C4 /* LKPostViewModel.h */,
+				F231051C1EB65F4E005153C4 /* LKPostViewModel.m */,
+				F23105191EB65F4E005153C4 /* LKPostListViewModel.h */,
+				F231051A1EB65F4E005153C4 /* LKPostListViewModel.m */,
+				F23105171EB65F4E005153C4 /* LKCommentViewModel.h */,
+				F23105181EB65F4E005153C4 /* LKCommentViewModel.m */,
+				F23105151EB65F4E005153C4 /* LKCommentListViewModel.h */,
+				F23105161EB65F4E005153C4 /* LKCommentListViewModel.m */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		F23105251EB65F64005153C4 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				F23105261EB65F64005153C4 /* CommunityContext.h */,
+				F23105271EB65F64005153C4 /* CommunityContext.m */,
+				F231052A1EB65F64005153C4 /* LKPostModel.h */,
+				F231052B1EB65F64005153C4 /* LKPostModel.m */,
+				F23105281EB65F64005153C4 /* LKCommentModel.h */,
+				F23105291EB65F64005153C4 /* LKCommentModel.m */,
+				F231052C1EB65F64005153C4 /* MTLValueTransformer+Community.h */,
+				F231052D1EB65F64005153C4 /* MTLValueTransformer+Community.m */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		F26B8A371E7EA3B300A6DDAD /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				F26B8A381E7EA3B300A6DDAD /* ActivityListAPIManager.h */,
+				F26B8A391E7EA3B300A6DDAD /* ActivityListAPIManager.m */,
+				F26B8A3A1E7EA3B300A6DDAD /* ClubDetailAPIManager.h */,
+				F26B8A3B1E7EA3B300A6DDAD /* ClubDetailAPIManager.m */,
+				F26B8A3C1E7EA3B300A6DDAD /* ClubListAPIManager.h */,
+				F26B8A3D1E7EA3B300A6DDAD /* ClubListAPIManager.m */,
+			);
+			path = Club;
+			sourceTree = "<group>";
+		};
+		F26B8A441E7EA3C600A6DDAD /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				F26B8A4E1E7EA3C600A6DDAD /* Public */,
+				F26B8A4F1E7EA3C600A6DDAD /* Views */,
+				F26B8A451E7EA3C600A6DDAD /* ActivityListViewController.h */,
+				F26B8A461E7EA3C600A6DDAD /* ActivityListViewController.m */,
+				F26B8A471E7EA3C600A6DDAD /* ClubListViewController.h */,
+				F26B8A481E7EA3C600A6DDAD /* ClubListViewController.m */,
+				F26B8A491E7EA3C600A6DDAD /* ClubViewController.h */,
+				F26B8A4A1E7EA3C600A6DDAD /* ClubViewController.m */,
+				F26B8A4B1E7EA3C600A6DDAD /* ClubViewController.xib */,
+				F26B8A4C1E7EA3C600A6DDAD /* DepartmentsViewController.h */,
+				F26B8A4D1E7EA3C600A6DDAD /* DepartmentsViewController.m */,
+			);
+			path = Club;
+			sourceTree = "<group>";
+		};
+		F26B8A4E1E7EA3C600A6DDAD /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		F26B8A4F1E7EA3C600A6DDAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F26B8A501E7EA3C600A6DDAD /* ActivityCell.h */,
+				F26B8A511E7EA3C600A6DDAD /* ActivityCell.m */,
+				F26B8A521E7EA3C600A6DDAD /* ActivityCell.xib */,
+				F26B8A531E7EA3C600A6DDAD /* ClubClassifyHeader.h */,
+				F26B8A541E7EA3C600A6DDAD /* ClubClassifyHeader.m */,
+				F26B8A551E7EA3C600A6DDAD /* ClubItemCell.h */,
+				F26B8A561E7EA3C600A6DDAD /* ClubItemCell.m */,
+				F26B8A571E7EA3C600A6DDAD /* ClubItemCell.xib */,
+				F26B8A581E7EA3C600A6DDAD /* DepartmentPageView.h */,
+				F26B8A591E7EA3C600A6DDAD /* DepartmentPageView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F26B8A6E1E7EA3ED00A6DDAD /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				F26B8A6F1E7EA3ED00A6DDAD /* ActivityListViewModel.h */,
+				F26B8A701E7EA3ED00A6DDAD /* ActivityListViewModel.m */,
+				F26B8A711E7EA3ED00A6DDAD /* ClubListViewModel.h */,
+				F26B8A721E7EA3ED00A6DDAD /* ClubListViewModel.m */,
+				F26B8A731E7EA3ED00A6DDAD /* ClubTypes.plist */,
+				F26B8A741E7EA3ED00A6DDAD /* ClubViewModel.h */,
+				F26B8A751E7EA3ED00A6DDAD /* ClubViewModel.m */,
+				F26B8A761E7EA3ED00A6DDAD /* DepartmentsViewModel.h */,
+				F26B8A771E7EA3ED00A6DDAD /* DepartmentsViewModel.m */,
+			);
+			path = Club;
+			sourceTree = "<group>";
+		};
+		F26B8A831E7EA42E00A6DDAD /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				F26B8A841E7EA42E00A6DDAD /* ActivityModel.h */,
+				F26B8A851E7EA42E00A6DDAD /* ActivityModel.m */,
+				F26B8A861E7EA42E00A6DDAD /* ClubModel.h */,
+				F26B8A871E7EA42E00A6DDAD /* ClubModel.m */,
+				F26B8A881E7EA42E00A6DDAD /* DepartmentModel.h */,
+				F26B8A891E7EA42E00A6DDAD /* DepartmentModel.m */,
+			);
+			path = Club;
+			sourceTree = "<group>";
+		};
+		F2E233481D7C886C009C21CA = {
+			isa = PBXGroup;
+			children = (
+				F2E233541D7C886D009C21CA /* LKDiscoverModule */,
+				F2E233601D7C886D009C21CA /* LKDiscoverModuleTests */,
+				F2E233531D7C886C009C21CA /* Products */,
+				E2C960CFD6714E1A4844DD95 /* Pods */,
+				A12C327FDC4D4A0B262F0536 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2E233531D7C886C009C21CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2E233521D7C886C009C21CA /* LKDiscoverModule.framework */,
+				F2E2335C1D7C886D009C21CA /* LKDiscoverModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2E233541D7C886D009C21CA /* LKDiscoverModule */ = {
+			isa = PBXGroup;
+			children = (
+				F2E2336C1D7C88A1009C21CA /* ViewModel */,
+				F2E2337A1D7C88A1009C21CA /* View */,
+				F2E233A81D7C88A1009C21CA /* Public */,
+				F2E233AB1D7C88A1009C21CA /* Networking */,
+				F2E233B61D7C88A1009C21CA /* Model */,
+				F2E233571D7C886D009C21CA /* Info.plist */,
+			);
+			path = LKDiscoverModule;
+			sourceTree = "<group>";
+		};
+		F2E233601D7C886D009C21CA /* LKDiscoverModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2E233611D7C886D009C21CA /* LKDiscoverModuleTests.m */,
+				F2E233631D7C886D009C21CA /* Info.plist */,
+			);
+			path = LKDiscoverModuleTests;
+			sourceTree = "<group>";
+		};
+		F2E2336C1D7C88A1009C21CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F26B8A6E1E7EA3ED00A6DDAD /* Club */,
+				F23105141EB65F4E005153C4 /* Community */,
+				F2E233761D7C88A1009C21CA /* FeedViewModel.h */,
+				F2E233771D7C88A1009C21CA /* FeedViewModel.m */,
+				F2E233781D7C88A1009C21CA /* SearchViewModel.h */,
+				F2E233791D7C88A1009C21CA /* SearchViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F2E2337A1D7C88A1009C21CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2E233991D7C88A1009C21CA /* Views */,
+				F2EA53201E9DEA760060441C /* Sections */,
+				F26B8A441E7EA3C600A6DDAD /* Club */,
+				F23104C61EB65F3D005153C4 /* Community */,
+				F2E233951D7C88A1009C21CA /* DiscoverViewController.h */,
+				F2E233961D7C88A1009C21CA /* DiscoverViewController.m */,
+				F2E233971D7C88A1009C21CA /* LKSearchViewController.h */,
+				F2E233981D7C88A1009C21CA /* LKSearchViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2E233991D7C88A1009C21CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F22418C61E1B9C160057953C /* DiscoverHeadlineCell.h */,
+				F22418C71E1B9C160057953C /* DiscoverHeadlineCell.m */,
+				F2E2339A1D7C88A1009C21CA /* DiscoverAdCell.h */,
+				F2E2339B1D7C88A1009C21CA /* DiscoverAdCell.m */,
+				F2E2339C1D7C88A1009C21CA /* DiscoverAdPageView.h */,
+				F2E2339D1D7C88A1009C21CA /* DiscoverAdPageView.m */,
+				F2E2339E1D7C88A1009C21CA /* DiscoverSectionHeader.h */,
+				F2E2339F1D7C88A1009C21CA /* DiscoverSectionHeader.m */,
+				F2E233A01D7C88A1009C21CA /* LKSearchBar.h */,
+				F2E233A11D7C88A1009C21CA /* LKSearchBar.m */,
+				F2E233A21D7C88A1009C21CA /* SpecialColumnCell.h */,
+				F2E233A31D7C88A1009C21CA /* SpecialColumnCell.m */,
+				F2E233A41D7C88A1009C21CA /* SpecialColumnItemView.h */,
+				F2E233A51D7C88A1009C21CA /* SpecialColumnItemView.m */,
+				F2E233A61D7C88A1009C21CA /* SpecialColumnView.h */,
+				F2E233A71D7C88A1009C21CA /* SpecialColumnView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2E233A81D7C88A1009C21CA /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				F2E233A91D7C88A1009C21CA /* LKDiscoverModule.h */,
+				F2E233AA1D7C88A1009C21CA /* LKDiscoverModule.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		F2E233AB1D7C88A1009C21CA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F23104B11EB65F2E005153C4 /* Community */,
+				F26B8A371E7EA3B300A6DDAD /* Club */,
+				F2E233B21D7C88A1009C21CA /* FeedAPIManager.h */,
+				F2E233B31D7C88A1009C21CA /* FeedAPIManager.m */,
+				F2E233B41D7C88A1009C21CA /* SearchAPIManager.h */,
+				F2E233B51D7C88A1009C21CA /* SearchAPIManager.m */,
+				F2AD63911E858C2A0041CC3E /* LikeAPIManager.h */,
+				F2AD63921E858C2A0041CC3E /* LikeAPIManager.m */,
+				F29402521E86BFA800B401A5 /* LKLikeManager.h */,
+				F29402531E86BFA800B401A5 /* LKLikeManager.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F2E233B61D7C88A1009C21CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F26B8A831E7EA42E00A6DDAD /* Club */,
+				F23105251EB65F64005153C4 /* Community */,
+				F2E233BD1D7C88A1009C21CA /* FeedModel.h */,
+				F2E233BE1D7C88A1009C21CA /* FeedModel.m */,
+				F2E233BF1D7C88A1009C21CA /* HeadlineModel.h */,
+				F2E233C01D7C88A1009C21CA /* HeadlineModel.m */,
+				F2E233C11D7C88A1009C21CA /* SearchResultModel.h */,
+				F2E233C21D7C88A1009C21CA /* SearchResultModel.m */,
+				F2E233C51D7C88A1009C21CA /* SpecialColumnModel.h */,
+				F2E233C61D7C88A1009C21CA /* SpecialColumnModel.m */,
+				F22A099D1EA6B94700D3ADE2 /* AcademyManager.h */,
+				F22A099E1EA6B94700D3ADE2 /* AcademyManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2EA53201E9DEA760060441C /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				F2EA53211E9DEAC90060441C /* LKCarouselSection.h */,
+				F2EA53221E9DEAC90060441C /* LKCarouselSection.m */,
+				F2EA53251E9DEAE90060441C /* LKSpecialColumnSection.h */,
+				F2EA53261E9DEAE90060441C /* LKSpecialColumnSection.m */,
+				F2EA53291E9DEB030060441C /* LKConfessionSection.h */,
+				F2EA532A1E9DEB030060441C /* LKConfessionSection.m */,
+				F2EA532D1E9DEB190060441C /* LKClubClassifySection.h */,
+				F2EA532E1E9DEB190060441C /* LKClubClassifySection.m */,
+				F2EA53311E9DEB350060441C /* LKHotestClubSection.h */,
+				F2EA53321E9DEB350060441C /* LKHotestClubSection.m */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F2E2334F1D7C886C009C21CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F231050B1EB65F3D005153C4 /* LKCommunityEntryCell.h in Headers */,
+				F26B8A8C1E7EA42E00A6DDAD /* ClubModel.h in Headers */,
+				F23104C01EB65F2E005153C4 /* LKCommentListAPIManager.h in Headers */,
+				F2AD63931E858C2A0041CC3E /* LikeAPIManager.h in Headers */,
+				F2E233EB1D7C88A1009C21CA /* DiscoverViewController.h in Headers */,
+				F2EA53271E9DEAE90060441C /* LKSpecialColumnSection.h in Headers */,
+				F23105211EB65F4E005153C4 /* LKPostListViewModel.h in Headers */,
+				F2E233FD1D7C88A1009C21CA /* LKDiscoverModule.h in Headers */,
+				F23104BE1EB65F2E005153C4 /* LKCommentAPIManager.h in Headers */,
+				F22A099F1EA6B94700D3ADE2 /* AcademyManager.h in Headers */,
+				F26B8A611E7EA3C600A6DDAD /* DepartmentsViewController.h in Headers */,
+				F23105301EB65F64005153C4 /* LKCommentModel.h in Headers */,
+				F29402541E86BFA800B401A5 /* LKLikeManager.h in Headers */,
+				F22418C81E1B9C160057953C /* DiscoverHeadlineCell.h in Headers */,
+				F23105031EB65F3D005153C4 /* LKAvatarsView.h in Headers */,
+				F23105001EB65F3D005153C4 /* LKAnonymousPostDetailCell.h in Headers */,
+				F2EA53231E9DEAC90060441C /* LKCarouselSection.h in Headers */,
+				F23104BC1EB65F2E005153C4 /* AcademyAPIManager.h in Headers */,
+				F23104EF1EB65F3D005153C4 /* CommunityViewContoller.h in Headers */,
+				F2E234051D7C88A1009C21CA /* FeedAPIManager.h in Headers */,
+				F26B8A661E7EA3C600A6DDAD /* ClubClassifyHeader.h in Headers */,
+				F26B8A7E1E7EA3ED00A6DDAD /* ClubViewModel.h in Headers */,
+				F2E233FB1D7C88A1009C21CA /* SpecialColumnView.h in Headers */,
+				F231051D1EB65F4E005153C4 /* LKCommentListViewModel.h in Headers */,
+				F26B8A5A1E7EA3C600A6DDAD /* ActivityListViewController.h in Headers */,
+				F2E233D21D7C88A1009C21CA /* SearchViewModel.h in Headers */,
+				F23104F51EB65F3D005153C4 /* AcademyPickerCell.h in Headers */,
+				F2E233EF1D7C88A1009C21CA /* DiscoverAdCell.h in Headers */,
+				F26B8A801E7EA3ED00A6DDAD /* DepartmentsViewModel.h in Headers */,
+				F26B8A6B1E7EA3C600A6DDAD /* DepartmentPageView.h in Headers */,
+				F23104F31EB65F3D005153C4 /* ReferEditViewController.h in Headers */,
+				F26B8A3E1E7EA3B300A6DDAD /* ActivityListAPIManager.h in Headers */,
+				F26B8A5E1E7EA3C600A6DDAD /* ClubViewController.h in Headers */,
+				F23105321EB65F64005153C4 /* LKPostModel.h in Headers */,
+				F2EA532F1E9DEB190060441C /* LKClubClassifySection.h in Headers */,
+				F2E234171D7C88A1009C21CA /* SpecialColumnModel.h in Headers */,
+				F26B8A421E7EA3B300A6DDAD /* ClubListAPIManager.h in Headers */,
+				F26B8A7B1E7EA3ED00A6DDAD /* ClubListViewModel.h in Headers */,
+				F26B8A631E7EA3C600A6DDAD /* ActivityCell.h in Headers */,
+				F2E234111D7C88A1009C21CA /* HeadlineModel.h in Headers */,
+				F23105051EB65F3D005153C4 /* LKCommentCell.h in Headers */,
+				F26B8A8E1E7EA42E00A6DDAD /* DepartmentModel.h in Headers */,
+				F26B8A681E7EA3C600A6DDAD /* ClubItemCell.h in Headers */,
+				F23104F11EB65F3D005153C4 /* LKPostEditViewController.h in Headers */,
+				F23104C21EB65F2E005153C4 /* LKPostAPIManager.h in Headers */,
+				F26B8A5C1E7EA3C600A6DDAD /* ClubListViewController.h in Headers */,
+				F231050E1EB65F3D005153C4 /* LKPostCell.h in Headers */,
+				F26B8A8A1E7EA42E00A6DDAD /* ActivityModel.h in Headers */,
+				F2E233F91D7C88A1009C21CA /* SpecialColumnItemView.h in Headers */,
+				F26B8A791E7EA3ED00A6DDAD /* ActivityListViewModel.h in Headers */,
+				F23105341EB65F64005153C4 /* MTLValueTransformer+Community.h in Headers */,
+				F2EA53331E9DEB350060441C /* LKHotestClubSection.h in Headers */,
+				F231051F1EB65F4E005153C4 /* LKCommentViewModel.h in Headers */,
+				F2E233F31D7C88A1009C21CA /* DiscoverSectionHeader.h in Headers */,
+				F2E234071D7C88A1009C21CA /* SearchAPIManager.h in Headers */,
+				F2E233ED1D7C88A1009C21CA /* LKSearchViewController.h in Headers */,
+				F2E233F71D7C88A1009C21CA /* SpecialColumnCell.h in Headers */,
+				F23104FA1EB65F3D005153C4 /* LKPostMessageHeader.h in Headers */,
+				F231052E1EB65F64005153C4 /* CommunityContext.h in Headers */,
+				F23105081EB65F3D005153C4 /* LKCommentMosaicCell.h in Headers */,
+				F2E233F51D7C88A1009C21CA /* LKSearchBar.h in Headers */,
+				F2E234131D7C88A1009C21CA /* SearchResultModel.h in Headers */,
+				F2EA532B1E9DEB030060441C /* LKConfessionSection.h in Headers */,
+				F2E2340F1D7C88A1009C21CA /* FeedModel.h in Headers */,
+				F23105111EB65F3D005153C4 /* LKPostDetailCell.h in Headers */,
+				F23105231EB65F4E005153C4 /* LKPostViewModel.h in Headers */,
+				F23104C41EB65F2E005153C4 /* LKPostListAPIManager.h in Headers */,
+				F23104FD1EB65F3D005153C4 /* LKAnonymousPostCell.h in Headers */,
+				F23104F81EB65F3D005153C4 /* LKPostDetailViewContoller.h in Headers */,
+				F26B8A401E7EA3B300A6DDAD /* ClubDetailAPIManager.h in Headers */,
+				F2E233D01D7C88A1009C21CA /* FeedViewModel.h in Headers */,
+				F2E233F11D7C88A1009C21CA /* DiscoverAdPageView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F2E233511D7C886C009C21CA /* LKDiscoverModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E233661D7C886D009C21CA /* Build configuration list for PBXNativeTarget "LKDiscoverModule" */;
+			buildPhases = (
+				3FF71E64BE44AB3299A13A91 /* [CP] Check Pods Manifest.lock */,
+				F2E2334D1D7C886C009C21CA /* Sources */,
+				F2E2334E1D7C886C009C21CA /* Frameworks */,
+				F2E2334F1D7C886C009C21CA /* Headers */,
+				F2E233501D7C886C009C21CA /* Resources */,
+				4E14EAA1E285FA9858FA8176 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LKDiscoverModule;
+			productName = LKDiscoverModule;
+			productReference = F2E233521D7C886C009C21CA /* LKDiscoverModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2E2335B1D7C886D009C21CA /* LKDiscoverModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E233691D7C886D009C21CA /* Build configuration list for PBXNativeTarget "LKDiscoverModuleTests" */;
+			buildPhases = (
+				F2E233581D7C886D009C21CA /* Sources */,
+				F2E233591D7C886D009C21CA /* Frameworks */,
+				F2E2335A1D7C886D009C21CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2E2335F1D7C886D009C21CA /* PBXTargetDependency */,
+			);
+			name = LKDiscoverModuleTests;
+			productName = LKDiscoverModuleTests;
+			productReference = F2E2335C1D7C886D009C21CA /* LKDiscoverModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2E233491D7C886C009C21CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Yunpeng;
+				TargetAttributes = {
+					F2E233511D7C886C009C21CA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F2E2335B1D7C886D009C21CA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F2E2334C1D7C886C009C21CA /* Build configuration list for PBXProject "LKDiscoverModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F2E233481D7C886C009C21CA;
+			productRefGroup = F2E233531D7C886C009C21CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2E233511D7C886C009C21CA /* LKDiscoverModule */,
+				F2E2335B1D7C886D009C21CA /* LKDiscoverModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2E233501D7C886C009C21CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23104FC1EB65F3D005153C4 /* LKPostMessageHeader.xib in Resources */,
+				F26B8A7D1E7EA3ED00A6DDAD /* ClubTypes.plist in Resources */,
+				F231050A1EB65F3D005153C4 /* LKCommentMosaicCell.xib in Resources */,
+				F231050D1EB65F3D005153C4 /* LKCommunityEntryCell.xib in Resources */,
+				F26B8A601E7EA3C600A6DDAD /* ClubViewController.xib in Resources */,
+				F26B8A651E7EA3C600A6DDAD /* ActivityCell.xib in Resources */,
+				F23104F71EB65F3D005153C4 /* AcademyPickerCell.xib in Resources */,
+				F23104FF1EB65F3D005153C4 /* LKAnonymousPostCell.xib in Resources */,
+				F23105101EB65F3D005153C4 /* LKPostCell.xib in Resources */,
+				F26B8A6A1E7EA3C600A6DDAD /* ClubItemCell.xib in Resources */,
+				F23105071EB65F3D005153C4 /* LKCommentCell.xib in Resources */,
+				F23105131EB65F3D005153C4 /* LKPostDetailCell.xib in Resources */,
+				F23105021EB65F3D005153C4 /* LKAnonymousPostDetailCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E2335A1D7C886D009C21CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FF71E64BE44AB3299A13A91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E14EAA1E285FA9858FA8176 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-LKDiscoverModule/Pods-LKDiscoverModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2E2334D1D7C886C009C21CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E233F81D7C88A1009C21CA /* SpecialColumnCell.m in Sources */,
+				F26B8A431E7EA3B300A6DDAD /* ClubListAPIManager.m in Sources */,
+				F26B8A8F1E7EA42E00A6DDAD /* DepartmentModel.m in Sources */,
+				F23104F21EB65F3D005153C4 /* LKPostEditViewController.m in Sources */,
+				F23105061EB65F3D005153C4 /* LKCommentCell.m in Sources */,
+				F23105201EB65F4E005153C4 /* LKCommentViewModel.m in Sources */,
+				F2E233F01D7C88A1009C21CA /* DiscoverAdCell.m in Sources */,
+				F2E233FA1D7C88A1009C21CA /* SpecialColumnItemView.m in Sources */,
+				F23104C51EB65F2E005153C4 /* LKPostListAPIManager.m in Sources */,
+				F26B8A641E7EA3C600A6DDAD /* ActivityCell.m in Sources */,
+				F29402551E86BFA800B401A5 /* LKLikeManager.m in Sources */,
+				F26B8A8D1E7EA42E00A6DDAD /* ClubModel.m in Sources */,
+				F231050F1EB65F3D005153C4 /* LKPostCell.m in Sources */,
+				F23105241EB65F4E005153C4 /* LKPostViewModel.m in Sources */,
+				F2E233FC1D7C88A1009C21CA /* SpecialColumnView.m in Sources */,
+				F2E234081D7C88A1009C21CA /* SearchAPIManager.m in Sources */,
+				F231050C1EB65F3D005153C4 /* LKCommunityEntryCell.m in Sources */,
+				F2EA53341E9DEB350060441C /* LKHotestClubSection.m in Sources */,
+				F23104C11EB65F2E005153C4 /* LKCommentListAPIManager.m in Sources */,
+				F2E234121D7C88A1009C21CA /* HeadlineModel.m in Sources */,
+				F2E233EC1D7C88A1009C21CA /* DiscoverViewController.m in Sources */,
+				F26B8A3F1E7EA3B300A6DDAD /* ActivityListAPIManager.m in Sources */,
+				F23104F01EB65F3D005153C4 /* CommunityViewContoller.m in Sources */,
+				F26B8A7C1E7EA3ED00A6DDAD /* ClubListViewModel.m in Sources */,
+				F26B8A7A1E7EA3ED00A6DDAD /* ActivityListViewModel.m in Sources */,
+				F2E234141D7C88A1009C21CA /* SearchResultModel.m in Sources */,
+				F23105311EB65F64005153C4 /* LKCommentModel.m in Sources */,
+				F23104FE1EB65F3D005153C4 /* LKAnonymousPostCell.m in Sources */,
+				F26B8A7F1E7EA3ED00A6DDAD /* ClubViewModel.m in Sources */,
+				F23105121EB65F3D005153C4 /* LKPostDetailCell.m in Sources */,
+				F26B8A621E7EA3C600A6DDAD /* DepartmentsViewController.m in Sources */,
+				F23105331EB65F64005153C4 /* LKPostModel.m in Sources */,
+				F2E234061D7C88A1009C21CA /* FeedAPIManager.m in Sources */,
+				F2E234101D7C88A1009C21CA /* FeedModel.m in Sources */,
+				F23105091EB65F3D005153C4 /* LKCommentMosaicCell.m in Sources */,
+				F2EA53281E9DEAE90060441C /* LKSpecialColumnSection.m in Sources */,
+				F2E234181D7C88A1009C21CA /* SpecialColumnModel.m in Sources */,
+				F26B8A811E7EA3ED00A6DDAD /* DepartmentsViewModel.m in Sources */,
+				F2EA53301E9DEB190060441C /* LKClubClassifySection.m in Sources */,
+				F2AD63941E858C2A0041CC3E /* LikeAPIManager.m in Sources */,
+				F2E233D11D7C88A1009C21CA /* FeedViewModel.m in Sources */,
+				F2E233F21D7C88A1009C21CA /* DiscoverAdPageView.m in Sources */,
+				F2EA532C1E9DEB030060441C /* LKConfessionSection.m in Sources */,
+				F23104C31EB65F2E005153C4 /* LKPostAPIManager.m in Sources */,
+				F2E233F61D7C88A1009C21CA /* LKSearchBar.m in Sources */,
+				F26B8A5D1E7EA3C600A6DDAD /* ClubListViewController.m in Sources */,
+				F23104F91EB65F3D005153C4 /* LKPostDetailViewContoller.m in Sources */,
+				F23105351EB65F64005153C4 /* MTLValueTransformer+Community.m in Sources */,
+				F26B8A5F1E7EA3C600A6DDAD /* ClubViewController.m in Sources */,
+				F22418C91E1B9C160057953C /* DiscoverHeadlineCell.m in Sources */,
+				F23105041EB65F3D005153C4 /* LKAvatarsView.m in Sources */,
+				F231051E1EB65F4E005153C4 /* LKCommentListViewModel.m in Sources */,
+				F26B8A5B1E7EA3C600A6DDAD /* ActivityListViewController.m in Sources */,
+				F26B8A691E7EA3C600A6DDAD /* ClubItemCell.m in Sources */,
+				F23104BF1EB65F2E005153C4 /* LKCommentAPIManager.m in Sources */,
+				F23104F61EB65F3D005153C4 /* AcademyPickerCell.m in Sources */,
+				F2EA53241E9DEAC90060441C /* LKCarouselSection.m in Sources */,
+				F26B8A8B1E7EA42E00A6DDAD /* ActivityModel.m in Sources */,
+				F23104F41EB65F3D005153C4 /* ReferEditViewController.m in Sources */,
+				F231052F1EB65F64005153C4 /* CommunityContext.m in Sources */,
+				F2E233EE1D7C88A1009C21CA /* LKSearchViewController.m in Sources */,
+				F2E233F41D7C88A1009C21CA /* DiscoverSectionHeader.m in Sources */,
+				F2E233FE1D7C88A1009C21CA /* LKDiscoverModule.m in Sources */,
+				F26B8A411E7EA3B300A6DDAD /* ClubDetailAPIManager.m in Sources */,
+				F26B8A671E7EA3C600A6DDAD /* ClubClassifyHeader.m in Sources */,
+				F23104FB1EB65F3D005153C4 /* LKPostMessageHeader.m in Sources */,
+				F2E233D31D7C88A1009C21CA /* SearchViewModel.m in Sources */,
+				F23104BD1EB65F2E005153C4 /* AcademyAPIManager.m in Sources */,
+				F23105221EB65F4E005153C4 /* LKPostListViewModel.m in Sources */,
+				F26B8A6C1E7EA3C600A6DDAD /* DepartmentPageView.m in Sources */,
+				F22A09A01EA6B94700D3ADE2 /* AcademyManager.m in Sources */,
+				F23105011EB65F3D005153C4 /* LKAnonymousPostDetailCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E233581D7C886D009C21CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E233621D7C886D009C21CA /* LKDiscoverModuleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2E2335F1D7C886D009C21CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2E233511D7C886C009C21CA /* LKDiscoverModule */;
+			targetProxy = F2E2335E1D7C886D009C21CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F2E233641D7C886D009C21CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2E233651D7C886D009C21CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2E233671D7C886D009C21CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C18ACD54FA30CD298DC13A9 /* Pods-LKDiscoverModule.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LKDiscoverModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKDiscoverModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F2E233681D7C886D009C21CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95BDF65F22F8D8CDE718B4DE /* Pods-LKDiscoverModule.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LKDiscoverModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKDiscoverModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F2E2336A1D7C886D009C21CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LKDiscoverModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKDiscoverModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2E2336B1D7C886D009C21CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LKDiscoverModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = link.xjtu.LKDiscoverModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2E2334C1D7C886C009C21CA /* Build configuration list for PBXProject "LKDiscoverModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E233641D7C886D009C21CA /* Debug */,
+				F2E233651D7C886D009C21CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E233661D7C886D009C21CA /* Build configuration list for PBXNativeTarget "LKDiscoverModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E233671D7C886D009C21CA /* Debug */,
+				F2E233681D7C886D009C21CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E233691D7C886D009C21CA /* Build configuration list for PBXNativeTarget "LKDiscoverModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E2336A1D7C886D009C21CA /* Debug */,
+				F2E2336B1D7C886D009C21CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2E233491D7C886C009C21CA /* Project object */;
+}

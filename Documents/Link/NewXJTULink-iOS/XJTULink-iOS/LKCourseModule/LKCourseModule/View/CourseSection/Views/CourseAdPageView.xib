@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ILB-aN-GsI" customClass="CourseAdPageView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马克思主义基本原理" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zm-t1-maz">
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indexTagBackground" translatesAutoresizingMaskIntoConstraints="NO" id="83A-J6-f3k"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主A-402" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-2n-p1M">
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00-09:50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ly2-cp-crP">
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" tag="100100" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MapLogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="vAH-7z-eIt">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="13" id="7k9-fP-cyI"/>
+                        <constraint firstAttribute="height" constant="18" id="cnz-Id-hCl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-2   " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFt-tW-vYg">
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQK-If-UMr">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bee-gF-GuZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.57451188919999996" green="0.57451188919999996" blue="0.57451188919999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1d-iE-9NS">
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.57451188919999996" green="0.57451188919999996" blue="0.57451188919999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAx-fU-PTg">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ull-4m-paw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.57451188919999996" green="0.57451188919999996" blue="0.57451188919999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pAx-fU-PTg" firstAttribute="leading" secondItem="hQK-If-UMr" secondAttribute="leading" id="8rf-Ua-q2X"/>
+                <constraint firstItem="Ly2-cp-crP" firstAttribute="trailing" secondItem="fZy-2n-p1M" secondAttribute="trailing" id="953-Ud-4RH"/>
+                <constraint firstItem="Ly2-cp-crP" firstAttribute="top" secondItem="fZy-2n-p1M" secondAttribute="bottom" constant="9.5" id="Av9-2K-0Zb"/>
+                <constraint firstItem="83A-J6-f3k" firstAttribute="centerY" secondItem="ILB-aN-GsI" secondAttribute="centerY" id="DOd-Mw-BIg"/>
+                <constraint firstItem="83A-J6-f3k" firstAttribute="leading" secondItem="ILB-aN-GsI" secondAttribute="leading" constant="23" id="DR9-Nj-mJq"/>
+                <constraint firstItem="NFt-tW-vYg" firstAttribute="centerY" secondItem="Ly2-cp-crP" secondAttribute="centerY" id="PTm-Fo-2oI"/>
+                <constraint firstItem="pAx-fU-PTg" firstAttribute="top" secondItem="M1d-iE-9NS" secondAttribute="bottom" constant="4" id="Q0q-aM-1hE"/>
+                <constraint firstItem="fZy-2n-p1M" firstAttribute="centerY" secondItem="ILB-aN-GsI" secondAttribute="centerY" id="VLV-J4-efS"/>
+                <constraint firstItem="M1d-iE-9NS" firstAttribute="leading" secondItem="hQK-If-UMr" secondAttribute="leading" id="W53-iL-4QG"/>
+                <constraint firstAttribute="trailing" secondItem="fZy-2n-p1M" secondAttribute="trailing" constant="12" id="WWZ-lL-Cin"/>
+                <constraint firstItem="fZy-2n-p1M" firstAttribute="top" secondItem="8Zm-t1-maz" secondAttribute="bottom" constant="9.5" id="YfW-oQ-ecg"/>
+                <constraint firstItem="hQK-If-UMr" firstAttribute="top" secondItem="ILB-aN-GsI" secondAttribute="top" constant="12" id="aEj-z9-gYf"/>
+                <constraint firstItem="Ly2-cp-crP" firstAttribute="leading" secondItem="NFt-tW-vYg" secondAttribute="trailing" constant="5" id="aFg-WZ-h3E"/>
+                <constraint firstItem="8Zm-t1-maz" firstAttribute="trailing" secondItem="fZy-2n-p1M" secondAttribute="trailing" id="c7d-J0-uvG"/>
+                <constraint firstItem="M1d-iE-9NS" firstAttribute="top" secondItem="hQK-If-UMr" secondAttribute="bottom" constant="7" id="dGh-Mc-xpL"/>
+                <constraint firstItem="fZy-2n-p1M" firstAttribute="leading" secondItem="vAH-7z-eIt" secondAttribute="trailing" constant="6" id="fKv-LD-7Fu"/>
+                <constraint firstItem="hQK-If-UMr" firstAttribute="leading" secondItem="ILB-aN-GsI" secondAttribute="leading" constant="69" id="g11-YY-D7a"/>
+                <constraint firstAttribute="trailing" secondItem="8Zm-t1-maz" secondAttribute="trailing" constant="12" id="iGa-GR-kke"/>
+                <constraint firstItem="vAH-7z-eIt" firstAttribute="centerY" secondItem="fZy-2n-p1M" secondAttribute="centerY" id="jlU-ou-2Hu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="courseLocaleLabel" destination="fZy-2n-p1M" id="Npq-w9-mnk"/>
+                <outlet property="courseNameLabel" destination="8Zm-t1-maz" id="U0p-9p-yce"/>
+                <outlet property="courseRawTimeLabel" destination="Ly2-cp-crP" id="BNe-az-b3p"/>
+                <outlet property="courseTimeLabel" destination="NFt-tW-vYg" id="Rlm-cZ-MCI"/>
+                <outlet property="tag1Label" destination="hQK-If-UMr" id="CgT-XV-NkE"/>
+                <outlet property="tag2Label" destination="M1d-iE-9NS" id="Zje-d9-FYS"/>
+                <outlet property="tag3Label" destination="pAx-fU-PTg" id="NzJ-EB-jX7"/>
+            </connections>
+            <point key="canvasLocation" x="345" y="400"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MapLogoImage" width="13" height="18"/>
+        <image name="indexTagBackground" width="109" height="60"/>
+    </resources>
+</document>

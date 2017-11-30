@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LKAnonymousPostDetailCell" rowHeight="133" id="KGk-i7-Jjw" customClass="LKAnonymousPostDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="132.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="To: 张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifJ-Db-pmZ" userLabel="targetLabel">
+                        <rect key="frame" x="13" y="13" width="60.5" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="NQk-H5-6GC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDN-aL-uTc" userLabel="likeBtn">
+                        <rect key="frame" x="287" y="94" width="30" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="mKf-RS-hag"/>
+                            <constraint firstAttribute="width" constant="30" id="t7r-Ar-et2"/>
+                        </constraints>
+                        <color key="tintColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="wall_like_normal"/>
+                        <connections>
+                            <action selector="pressLikeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CSl-RG-Bwq"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-24    17:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBQ-95-5ij" userLabel="timeLabel">
+                        <rect key="frame" x="171" y="98" width="76" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBZ-l7-C0r">
+                        <rect key="frame" x="13" y="37.5" width="298" height="53"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13E-fb-ZmO" customClass="LKLabel">
+                        <rect key="frame" x="75" y="100" width="31" height="14.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <font key="NSFont" size="12" name=".AppleSystemUIFont"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="浏览15次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6v-hr-hqW" userLabel="readCountLabel">
+                        <rect key="frame" x="13" y="98.5" width="54" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qb-eh-lwA">
+                        <rect key="frame" x="0.0" y="123.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Haf-WF-kJ5"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DR7-kY-Yh3">
+                        <rect key="frame" x="257" y="97" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Gyg-Ji-35V"/>
+                            <constraint firstAttribute="height" constant="20" id="kfB-ht-D9g"/>
+                        </constraints>
+                        <color key="tintColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="nav_message_icon">
+                            <color key="titleColor" red="0.19607843137254902" green="0.20000000000000001" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="pressReferStudentBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="t66-JQ-We0"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6qb-eh-lwA" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="0zB-wt-7Dx"/>
+                    <constraint firstItem="Q6v-hr-hqW" firstAttribute="top" secondItem="wBZ-l7-C0r" secondAttribute="bottom" constant="8" id="3Vj-zP-Jxw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wBZ-l7-C0r" secondAttribute="trailing" constant="1" id="4zl-6k-rSX"/>
+                    <constraint firstItem="DR7-kY-Yh3" firstAttribute="leading" secondItem="cBQ-95-5ij" secondAttribute="trailing" constant="10" id="8xS-Wb-Zb3"/>
+                    <constraint firstItem="ifJ-Db-pmZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="DCM-1B-b4s"/>
+                    <constraint firstItem="wBZ-l7-C0r" firstAttribute="top" secondItem="ifJ-Db-pmZ" secondAttribute="bottom" constant="5" id="Fc5-HE-eUZ"/>
+                    <constraint firstItem="DR7-kY-Yh3" firstAttribute="centerY" secondItem="Q6v-hr-hqW" secondAttribute="centerY" id="JlP-mu-u7L"/>
+                    <constraint firstItem="hDN-aL-uTc" firstAttribute="centerY" secondItem="Q6v-hr-hqW" secondAttribute="centerY" id="K4W-ie-M0z"/>
+                    <constraint firstItem="13E-fb-ZmO" firstAttribute="leading" secondItem="Q6v-hr-hqW" secondAttribute="trailing" constant="8" id="OY1-kA-9gx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Q6v-hr-hqW" secondAttribute="bottom" constant="10" id="Qcc-Rq-CZi"/>
+                    <constraint firstItem="ifJ-Db-pmZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Szx-FK-TX3"/>
+                    <constraint firstItem="Q6v-hr-hqW" firstAttribute="leading" secondItem="ifJ-Db-pmZ" secondAttribute="leading" id="Whq-K8-9s3"/>
+                    <constraint firstAttribute="trailing" secondItem="hDN-aL-uTc" secondAttribute="trailing" constant="3" id="Xhj-06-oTI"/>
+                    <constraint firstItem="6qb-eh-lwA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="fWJ-OP-QgR"/>
+                    <constraint firstItem="13E-fb-ZmO" firstAttribute="centerY" secondItem="Q6v-hr-hqW" secondAttribute="centerY" id="fiE-tk-VUX"/>
+                    <constraint firstItem="wBZ-l7-C0r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="kTX-H6-Kkk"/>
+                    <constraint firstAttribute="bottom" secondItem="6qb-eh-lwA" secondAttribute="bottom" constant="8" id="uiH-f3-kev"/>
+                    <constraint firstItem="hDN-aL-uTc" firstAttribute="leading" secondItem="DR7-kY-Yh3" secondAttribute="trailing" constant="10" id="upb-gi-PqU"/>
+                    <constraint firstItem="cBQ-95-5ij" firstAttribute="centerY" secondItem="Q6v-hr-hqW" secondAttribute="centerY" id="xZl-Wj-SRn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="acceptTag" destination="13E-fb-ZmO" id="L03-Ay-Rqe"/>
+                <outlet property="contentLabel" destination="wBZ-l7-C0r" id="hpw-Q0-j1b"/>
+                <outlet property="likeBtn" destination="hDN-aL-uTc" id="0nt-fB-9rK"/>
+                <outlet property="readCountLabel" destination="Q6v-hr-hqW" id="db4-7b-5Xp"/>
+                <outlet property="referStudentBtn" destination="DR7-kY-Yh3" id="EwO-7F-WGn"/>
+                <outlet property="targetLabel" destination="ifJ-Db-pmZ" id="gYB-7t-FBe"/>
+                <outlet property="timeLabel" destination="cBQ-95-5ij" id="B61-d3-7rA"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="96.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="nav_message_icon" width="20" height="20"/>
+        <image name="wall_like_normal" width="16" height="13"/>
+    </resources>
+</document>

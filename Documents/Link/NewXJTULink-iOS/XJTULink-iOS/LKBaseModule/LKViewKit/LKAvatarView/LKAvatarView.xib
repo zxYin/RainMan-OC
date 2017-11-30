@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UdO-cy-sIj" customClass="LKAvatarView">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_avatar_default" translatesAutoresizingMaskIntoConstraints="NO" id="vHD-Ar-UQN">
+                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="EYh-2J-4DD"/>
+                        <constraint firstAttribute="width" constant="32" id="tAk-vK-dQP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXh-tj-m4W">
+                    <rect key="frame" x="40" y="0.0" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqU-Bm-8kJ">
+                    <rect key="frame" x="40" y="19" width="62" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标签" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZN-dL-E4A" customClass="LKLabel">
+                    <rect key="frame" x="75" y="1" width="25" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MqU-Bm-8kJ" firstAttribute="leading" secondItem="sXh-tj-m4W" secondAttribute="leading" id="93G-qp-wpf"/>
+                <constraint firstItem="vHD-Ar-UQN" firstAttribute="top" secondItem="UdO-cy-sIj" secondAttribute="top" id="LyQ-6O-l92"/>
+                <constraint firstItem="sXh-tj-m4W" firstAttribute="leading" secondItem="vHD-Ar-UQN" secondAttribute="trailing" constant="8" id="Nl8-8N-6sY"/>
+                <constraint firstItem="vHD-Ar-UQN" firstAttribute="leading" secondItem="UdO-cy-sIj" secondAttribute="leading" id="RO7-Di-mj5"/>
+                <constraint firstItem="7ZN-dL-E4A" firstAttribute="leading" secondItem="sXh-tj-m4W" secondAttribute="trailing" constant="4" id="X3Z-nW-l5Y"/>
+                <constraint firstItem="sXh-tj-m4W" firstAttribute="top" secondItem="vHD-Ar-UQN" secondAttribute="top" id="cSN-RO-QNi"/>
+                <constraint firstItem="7ZN-dL-E4A" firstAttribute="top" secondItem="sXh-tj-m4W" secondAttribute="top" constant="1" id="hjf-LL-jlI"/>
+                <constraint firstAttribute="bottom" secondItem="vHD-Ar-UQN" secondAttribute="bottom" id="kTm-K0-afu"/>
+                <constraint firstItem="MqU-Bm-8kJ" firstAttribute="top" secondItem="sXh-tj-m4W" secondAttribute="bottom" constant="1" id="nLH-BI-Uhb"/>
+                <constraint firstAttribute="trailing" secondItem="7ZN-dL-E4A" secondAttribute="trailing" constant="6" id="vU3-k9-167"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="vHD-Ar-UQN" id="r0A-cM-zlx"/>
+                <outlet property="nameLabel" destination="sXh-tj-m4W" id="5TA-qt-zep"/>
+                <outlet property="subtitleLabel" destination="MqU-Bm-8kJ" id="x24-hU-KNd"/>
+                <outlet property="tagLabel" destination="7ZN-dL-E4A" id="czm-mr-v1Z"/>
+            </connections>
+            <point key="canvasLocation" x="-388" y="-482"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_avatar_default" width="172" height="172"/>
+    </resources>
+</document>
